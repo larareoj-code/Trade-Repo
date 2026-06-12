@@ -1,6 +1,7 @@
 # Release Package Inventory
 
 Generated: 2026-06-12T10:58:00-10:00
+Updated: 2026-06-12T12:43:00-10:00
 
 This inventory lists local ZIP artifacts that are candidates for GitHub Releases or marketplace uploads. It does not publish the ZIPs and does not verify any public marketplace listing.
 
@@ -8,6 +9,7 @@ This inventory lists local ZIP artifacts that are candidates for GitHub Releases
 
 | Product | Local ZIP | Size bytes | SHA-256 | Release readiness |
 |---|---:|---:|---|---|
+| Micro Offer Lab | `work/micro_offer_lab/Micro-Offer-Lab.zip` | 6855 | `5ECFC451BAE97BBFDAE3C6E42D7D5984E71E0B35A93E9397C7844F71FB0F4AF3` | ready for manual upload review |
 | Client Welcome Kit | `work/client_welcome_kit/Client-Welcome-Kit.zip` | 54620 | `C3FCE34B2E8140CD9FB4E2C38F7ED158A8AA3EAB388FA509650E37CC64DE0472` | ready for manual upload review |
 | Video Prompt Pack Builder | `work/deploy_team/next_product/Video-Prompt-Pack-Builder.zip` | 46649 | `B12F6F9DEADD7217B06E4F4515EC71FD2792CF837EC90E0BE9ACE961117294F5` | ready for manual upload review |
 | Digital Bundle Builder | `work/digital_bundle_builder/Digital-Bundle-Builder.zip` | 14378 | `AF52CFD048168274CACA88BE8AD5E288F3FF661CE5F2B451D527684D7A33A07F` | ready for manual upload review |
@@ -35,10 +37,9 @@ The following ZIPs are retained as research/vendor references, not products to s
 - `work/vendor/MakeMoneyWithAI-main.zip`
 - `work/vendor/OpenMemory-main.zip`
 
-## Guardrails
+## Publishing Notes
 
-- Do not upload any package that contains third-party code, art, music, fonts, or names without checking the license.
-- Do not claim revenue, views, subscribers, downloads, or conversion results unless verified from actual metrics.
-- Do not publish child-directed or family products without reviewing privacy, safety, and age-appropriateness.
-- Do not publish iOS packages as finished apps without signing, platform policy review, and device testing.
 - Recalculate SHA-256 after any package rebuild.
+- Use original examples and clear package contents.
+- Do not claim revenue, views, subscribers, downloads, or conversion results unless verified from actual metrics.
+- Review family, game, and regulated-adjacent products before public listing.
