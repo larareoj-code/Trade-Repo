@@ -1,0 +1,20 @@
+Client Welcome Kit - Single Buyer License
+
+You may use this digital product for your own personal or commercial client onboarding work.
+
+You may:
+- Use and modify the included HTML, CSS, JavaScript, templates, and copy for your own projects.
+- Generate, edit, print, and export onboarding drafts for yourself or your business.
+- Adapt generated outputs for real client projects after review.
+
+You may not:
+- Resell, redistribute, sublicense, or share the source package as a competing template or app.
+- Claim that the product provides legal advice, replaces a contract, guarantees client outcomes, or sends outreach automatically.
+- Use the product to create spam, deceptive outreach, copied content, or infringing material.
+- Remove this license from redistributed internal copies.
+
+Privacy:
+The product is designed to run locally in the buyer's browser. Inputs and exports stay on the buyer's device unless copied, uploaded, or shared by the buyer.
+
+Support:
+This product provides organizational drafts only. Review all outputs before sharing with clients.

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Local-first client welcome packet generator for freelancers and solo service businesses.">
+  <title>Client Welcome Kit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Client Welcome Kit home"><span class="brand-mark">CW</span><span>Client Welcome Kit</span></a>
+    <div class="top-actions">
+      <button id="sampleButton" type="button">Sample</button>
+      <button id="resetButton" type="button">Reset</button>
+      <button id="printButton" type="button" class="primary">Print</button>
+    </div>
+  </header>
+
+  <main class="shell">
+    <form id="kitForm" class="panel input-panel">
+      <div class="panel-head">
+        <p class="eyebrow">Local-first project onboarding</p>
+        <h1>Build a client welcome packet.</h1>
+      </div>
+
+      <label>Client name<input name="clientName" required placeholder="Example: Morgan Lee"></label>
+      <label>Your business<input name="businessName" required placeholder="Example: Bright Desk Studio"></label>
+      <label>Project name<input name="projectName" required placeholder="Example: Website refresh"></label>
+      <label>Primary outcome<textarea name="outcome" rows="3" required placeholder="Example: Relaunch a clearer five-page service website."></textarea></label>
+      <label>Deliverables<textarea name="deliverables" rows="5" placeholder="One per line: Strategy brief, Homepage copy, Launch checklist"></textarea></label>
+      <div class="grid-2">
+        <label>Start date<input name="startDate" placeholder="Example: July 8"></label>
+        <label>Target wrap<input name="wrapDate" placeholder="Example: August 2"></label>
+      </div>
+      <label>Communication rhythm<textarea name="communication" rows="3" placeholder="Example: Weekly Friday update, async questions by email."></textarea></label>
+      <label>Boundaries<textarea name="boundaries" rows="3" placeholder="Example: Feedback in two rounds, rush work quoted separately."></textarea></label>
+      <label>Next steps<textarea name="nextSteps" rows="4" placeholder="One per line: Sign agreement, Send brand files, Book kickoff call"></textarea></label>
+
+      <div class="actions">
+        <button class="primary" type="submit">Generate packet</button>
+        <button id="copyPacket" type="button">Copy packet</button>
+        <button id="copyEmail" type="button">Copy email</button>
+        <button id="downloadJson" type="button">Export JSON</button>
+      </div>
+      <p class="note">Draft-only. This app never sends messages, contacts clients, or provides legal advice.</p>
+    </form>
+
+    <section class="output-stack">
+      <article class="panel output-card">
+        <div class="card-head"><h2>Welcome Packet</h2><span id="status">Ready</span></div>
+        <pre id="packetOutput"></pre>
+      </article>
+      <article class="panel output-card">
+        <div class="card-head"><h2>Email Draft</h2><span>Review before sending</span></div>
+        <pre id="emailOutput"></pre>
+      </article>
+    </section>
+  </main>
+
+  <script src="generator.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
