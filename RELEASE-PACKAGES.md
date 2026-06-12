@@ -1,9 +1,9 @@
 # Release Package Inventory
 
 Generated: 2026-06-12T10:58:00-10:00
-Updated: 2026-06-12T13:29:36-10:00
+Updated: 2026-06-12T13:30:58-10:00
 
-This inventory lists local ZIP artifacts that are candidates for GitHub Releases or marketplace uploads. It does not publish the ZIPs and does not verify any public marketplace listing.
+This inventory lists local ZIP artifacts that are candidates for GitHub Releases or marketplace uploads. Marketplace URL verification is tracked in `PUBLISHED-URLS.md`; only rows marked with a live storefront status should be treated as customer-available.
 
 ## Product Packages
 
@@ -30,6 +30,6 @@ Reference/vendor ZIPs under `work/external_repos` and `work/vendor` are not prod
 ## Publishing Notes
 
 - Recalculate SHA-256 after any package rebuild.
-- Do not claim paid availability until a storefront product page or license-gated checkout exists.
+- Do not claim paid availability until a storefront product page or license-gated checkout exists and is listed in `PUBLISHED-URLS.md`.
 - Use original examples and clear package contents.
 - Review family, game, and regulated-adjacent products before public listing.
