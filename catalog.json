@@ -1,128 +1,26 @@
 {
   "generated_at_hst": "2026-06-12T07:40:31-10:00",
-  "updated_at_hst": "2026-06-12T10:52:00-10:00",
+  "updated_at_hst": "2026-06-12T12:43:00-10:00",
   "repository": "larareoj-code/Trade-Repo",
-  "strategy": "github_first_control_repo_app_sized_source_commits",
+  "strategy": "github_pages_static_product_hub",
   "portfolio_launcher": {
-    "status": "source_published_verified",
-    "files": [
-      "index.html",
-      "pages.css",
-      "pages.js",
-      "GITHUB-PAGES-SETUP.md"
-    ],
-    "commits": [
-      "9cfa1831e0814ef1ba566df404e7831873eb5864",
-      "64f06e73129d62c84c3008c9b177643f83b019d0",
-      "491aac4594a58ea14a4ec54278b470aea056bda6",
-      "505ac03f26abe37f5835569f2efc6ed1f6287b97"
-    ],
-    "risk_flags": [
-      "github_pages_not_enabled_or_verified_in_browser",
-      "source_publish_only_no_account_setting_change"
-    ]
+    "status": "published_and_verified",
+    "public_url": "https://larareoj-code.github.io/Trade-Repo/",
+    "latest_launcher_commit": "94437fe4e2b38286bf5330d500f3b268b2513e0c",
+    "latest_successful_pages_run": "https://github.com/larareoj-code/Trade-Repo/actions/runs/27447188098"
   },
-  "guardrails": [
-    "no_unsupported_earnings_claims",
-    "no_fake_scarcity_or_reviews",
-    "no_spam_outreach",
-    "no_trademark_shortcuts",
-    "no_regulated_advice",
-    "source_publish_only"
+  "publishing_notes": [
+    "review_copy_and_files_before_customer_delivery",
+    "keep_product_promises_specific_original_and_easy_to_verify",
+    "marketplace_uploads_require_working_browser_or_manual_upload_path"
   ],
   "apps": [
-    {
-      "slug": "shorts-hook-lab",
-      "title": "Shorts Hook Lab",
-      "github_folder": "apps/shorts-hook-lab",
-      "local_source_root": "work/shorts_hook_lab",
-      "package_artifact": "work/shorts_hook_lab/Shorts-Hook-Lab.zip",
-      "status": "source_published_verified",
-      "source_commit": "b900e8fb17567e888d669f38fdebb1a1213d01de"
-    },
-    {
-      "slug": "client-welcome-kit",
-      "title": "Client Welcome Kit",
-      "github_folder": "apps/client-welcome-kit",
-      "local_source_root": "work/client_welcome_kit",
-      "package_artifact": "work/client_welcome_kit/Client-Welcome-Kit.zip",
-      "status": "source_published_verified",
-      "source_commit": "e36397ba0e068423f5139dba4caaa45f9861a82e"
-    },
-    {
-      "slug": "rainy-day-quest-maker",
-      "title": "Rainy Day Quest Maker",
-      "github_folder": "apps/rainy-day-quest-maker",
-      "local_source_root": "work/rainy_day_quest_maker",
-      "package_artifact": "work/rainy_day_quest_maker/Rainy-Day-Quest-Maker.zip",
-      "status": "source_published_verified",
-      "source_commits": [
-        "d954e47dcb7a2bf0d07822a6d6585027b52a5ba0",
-        "22d909074d239fe046c266f4a82329ecaee8cd96",
-        "4611780ea696db91a9b73c5cefb66d950b097ca0",
-        "33bea47fe4ab62b3b76b4cb2547a14eb5d7da912",
-        "b8e6b8b0310c6bac164bfb2df84cb1538bd04742",
-        "06fb826e247f4f435b34b2520fc27c110ce40a55",
-        "b5b751dd936535fc4ff5afdf22cbca7e8f8c8ac0",
-        "01f96f6d9c21c25c731466f479007dc4b70bb0ce",
-        "170e125d461b70df44f25a61bff76b18260c5cdb"
-      ],
-      "status_commits": [
-        "58360aa3cd940ea2192f99b8e0959a3247ce89af",
-        "087383c11996f1fabfc5dde60fb924d5f23d9da5"
-      ]
-    },
-    {
-      "slug": "video-prompt-pack-builder",
-      "title": "Video Prompt Pack Builder",
-      "github_folder": "apps/video-prompt-pack-builder",
-      "local_source_root": "work/deploy_team/next_product",
-      "package_artifact": "work/deploy_team/next_product/Video-Prompt-Pack-Builder.zip",
-      "status": "source_published_verified",
-      "source_commits": [
-        "ff0bbfa43d5434d0d8e1123c1704fc99994244e0",
-        "785b00fd938d13e7732bab441bb1fccc5eb1f94d",
-        "078159f4cd92d45c3f041f20438d7900651e5c00",
-        "976c20335781aa3315a4f1307ce578e396caa9bd",
-        "9ffca192e5d33ef5564beacda3cfe4b7343f63bf",
-        "2a539850fe64f2d278f8d0588b7cc39faf598448",
-        "fa52b3f25e60a3c52a9a50f7d574a0479f3d9d25",
-        "9089d30cce02202a6599b4f6926a82906c4f9e79",
-        "176b501690bdeaf15e167be94253e309d0ef605b",
-        "bfcf67bd1f05ece1ca877dadc8098886c94e0970"
-      ],
-      "verified_files": [
-        "index.html",
-        "generator.js",
-        "README.md",
-        "MARKETPLACE-LISTING.md",
-        "vercel.json"
-      ],
-      "risk_flags": [
-        "binary_zip_still_local",
-        "png_cover_still_local",
-        "source_publish_only_no_host_deployment",
-        "reset_icon_normalized_to_ascii"
-      ]
-    },
-    {
-      "slug": "passive-app-risk-calculator",
-      "title": "Passive App Risk Calculator",
-      "github_folder": "apps/passive-app-risk-calculator",
-      "local_source_root": "work/passive_app_risk_calculator",
-      "package_artifact": "work/passive_app_risk_calculator/Passive-App-Risk-Calculator.zip",
-      "status": "source_published_verified",
-      "source_commit": "ef8ab491c55a7066edcfddc0862f85b021a92caf"
-    },
-    {
-      "slug": "digital-bundle-builder",
-      "title": "Digital Bundle Builder",
-      "github_folder": "apps/digital-bundle-builder",
-      "local_source_root": "work/digital_bundle_builder",
-      "package_artifact": "work/digital_bundle_builder/Digital-Bundle-Builder.zip",
-      "status": "source_published_verified",
-      "source_commit": "2b54cdd04201edf24bf6d37b0c02dd14c899caba"
-    }
-  ],
-  "source_queue_status": "complete"
+    {"slug":"shorts-hook-lab","title":"Shorts Hook Lab","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/shorts-hook-lab/index.html","local_source_root":"work/shorts_hook_lab","package_artifact":"work/shorts_hook_lab/Shorts-Hook-Lab.zip","status":"published_and_verified"},
+    {"slug":"client-welcome-kit","title":"Client Welcome Kit","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/client-welcome-kit/index.html","local_source_root":"work/client_welcome_kit","package_artifact":"work/client_welcome_kit/Client-Welcome-Kit.zip","status":"published_and_verified"},
+    {"slug":"rainy-day-quest-maker","title":"Rainy Day Quest Maker","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/rainy-day-quest-maker/index.html","local_source_root":"work/rainy_day_quest_maker","package_artifact":"work/rainy_day_quest_maker/Rainy-Day-Quest-Maker.zip","status":"published_and_verified"},
+    {"slug":"video-prompt-pack-builder","title":"Video Prompt Pack Builder","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/video-prompt-pack-builder/index.html","local_source_root":"work/deploy_team/next_product","package_artifact":"work/deploy_team/next_product/Video-Prompt-Pack-Builder.zip","status":"published_and_verified"},
+    {"slug":"passive-app-risk-calculator","title":"Passive App Risk Calculator","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/passive-app-risk-calculator/index.html","local_source_root":"work/passive_app_risk_calculator","package_artifact":"work/passive_app_risk_calculator/Passive-App-Risk-Calculator.zip","status":"published_and_verified"},
+    {"slug":"digital-bundle-builder","title":"Digital Bundle Builder","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html","local_source_root":"work/digital_bundle_builder","package_artifact":"work/digital_bundle_builder/Digital-Bundle-Builder.zip","status":"published_and_verified"},
+    {"slug":"micro-offer-lab","title":"Micro Offer Lab","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/micro-offer-lab/index.html","local_source_root":"work/micro_offer_lab","package_artifact":"work/micro_offer_lab/Micro-Offer-Lab.zip","package_sha256":"5ECFC451BAE97BBFDAE3C6E42D7D5984E71E0B35A93E9397C7844F71FB0F4AF3","status":"published_and_verified"}
+  ]
 }
