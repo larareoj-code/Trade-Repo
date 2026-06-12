@@ -1,7 +1,7 @@
 # Published URL Registry
 
 Generated: 2026-06-12T11:19:00-10:00
-Updated: 2026-06-12T13:55:00-10:00
+Updated: 2026-06-12T14:10:00-10:00
 
 This registry records public deployment URLs that were verified after publishing. GitHub Pages URLs are free previews and demos unless a separate paid storefront URL is listed and verified.
 
@@ -9,51 +9,48 @@ This registry records public deployment URLs that were verified after publishing
 
 | Product | Storefront URL | Platform | Price | Status | Verification |
 |---|---|---|---:|---|---|
-| Scope Creep Rescue Kit | https://payhip.com/b/1QTL0 | Payhip | $19 | paid checkout live | Public page returned HTTP 200 and contains product title and price |
-| Sales Page Snack Pack | https://payhip.com/b/lWBKA | Payhip | $9 | paid checkout live | Public page returned HTTP 200 and contains product title and price |
-| Micro Offer Lab | https://payhip.com/b/cNulr | Payhip | $9 | paid checkout live | Public page returned HTTP 200 and contains product title and price |
+| Scope Creep Rescue Kit | https://payhip.com/b/1QTL0 | Payhip | $19 | paid checkout live | HTTP 200; title and price present |
+| Sales Page Snack Pack | https://payhip.com/b/lWBKA | Payhip | $9 | paid checkout live | HTTP 200; title and price present |
+| Micro Offer Lab | https://payhip.com/b/cNulr | Payhip | $9 | paid checkout live | HTTP 200; title and price present |
+| Preview Caption Kit | https://payhip.com/b/15pdM | Payhip | $9 | paid checkout live | HTTP 200; title and price present |
+| Client Welcome Kit | https://payhip.com/b/z3dep | Payhip | $19 | paid checkout live | HTTP 200; title and price present |
+| Video Prompt Pack Builder | https://payhip.com/b/1NYvO | Payhip | $19 | paid checkout live | HTTP 200; title and price present |
+| Shorts Hook Lab | https://payhip.com/b/hsoWn | Payhip | $9 | paid checkout live | HTTP 200; title and price present |
+| Listing Launch Auditor | https://payhip.com/b/bHoKZ | Payhip | $19 | paid checkout live | HTTP 200; title and price present |
+| Rainy Day Quest Maker | https://payhip.com/b/1Aezk | Payhip | $9 | paid checkout live | HTTP 200; title and price present |
 | Digital Bundle Builder | https://larareoj.gumroad.com/l/digital-bundle-builder | Gumroad | $19 | paid checkout live | Public page returned HTTP 200, product title present, no `not currently for sale` text, and checkout button verified in Chrome |
 
-## Verified Vercel Production URLs
+## Verified Preview URLs
 
-| Product | Public URL | Status | Verification |
-|---|---|---|---|
-| Listing Launch Auditor | https://listing-launch-auditor.vercel.app | live preview | Vercel project READY; canonical domain returned HTTP 200 |
-| Party Quest Maker | https://party-quest-maker.vercel.app | live preview | Vercel project READY; canonical domain returned HTTP 200 |
-| Story Spark Studio | https://story-spark-studio-two.vercel.app | live preview | Vercel project READY; canonical domain returned HTTP 200 |
-
-## Verified GitHub Pages Preview URLs
-
-| Product | Public URL | Status | Verification |
-|---|---|---|---|
-| Portfolio Launcher | https://larareoj-code.github.io/Trade-Repo/ | live preview hub | GitHub Pages returned HTTP 200; title `Passive Income App Portfolio` |
-| Scope Creep Rescue Kit | https://larareoj-code.github.io/Trade-Repo/apps/scope-creep-rescue-kit/index.html | live preview; Payhip checkout linked | HTTP 200 verified; hub card verified |
-| Sales Page Snack Pack | https://larareoj-code.github.io/Trade-Repo/apps/sales-page-snack-pack/index.html | live preview; Payhip checkout linked | HTTP 200 verified; hub card verified |
-| Micro Offer Lab | https://larareoj-code.github.io/Trade-Repo/apps/micro-offer-lab/index.html | live preview; Payhip checkout linked | HTTP 200 verified; hub card verified |
-| Preview Caption Kit | https://larareoj-code.github.io/Trade-Repo/apps/preview-caption-kit/index.html | live preview; paid ZIP ready | HTTP 200 verified |
-| Client Welcome Kit | https://larareoj-code.github.io/Trade-Repo/apps/client-welcome-kit/index.html | live preview; paid ZIP ready | HTTP 200 verified |
-| Digital Bundle Builder | https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html | live preview; paid Gumroad checkout linked | HTTP 200 verified |
-| Passive App Risk Calculator | https://larareoj-code.github.io/Trade-Repo/apps/passive-app-risk-calculator/index.html | live preview | HTTP 200 verified |
-| Rainy Day Quest Maker | https://larareoj-code.github.io/Trade-Repo/apps/rainy-day-quest-maker/index.html | live preview; paid ZIP ready | HTTP 200 verified |
-| Shorts Hook Lab | https://larareoj-code.github.io/Trade-Repo/apps/shorts-hook-lab/index.html | live preview; paid ZIP ready | HTTP 200 verified |
-| Video Prompt Pack Builder | https://larareoj-code.github.io/Trade-Repo/apps/video-prompt-pack-builder/index.html | live preview; paid ZIP ready | HTTP 200 verified |
+| Product | Public URL | Status |
+|---|---|---|
+| Portfolio Launcher | https://larareoj-code.github.io/Trade-Repo/ | live preview hub |
+| Scope Creep Rescue Kit | https://larareoj-code.github.io/Trade-Repo/apps/scope-creep-rescue-kit/index.html | live preview; Payhip checkout linked |
+| Sales Page Snack Pack | https://larareoj-code.github.io/Trade-Repo/apps/sales-page-snack-pack/index.html | live preview; Payhip checkout linked |
+| Micro Offer Lab | https://larareoj-code.github.io/Trade-Repo/apps/micro-offer-lab/index.html | live preview; Payhip checkout linked |
+| Preview Caption Kit | https://larareoj-code.github.io/Trade-Repo/apps/preview-caption-kit/index.html | live preview; Payhip checkout linked |
+| Client Welcome Kit | https://larareoj-code.github.io/Trade-Repo/apps/client-welcome-kit/index.html | live preview; Payhip checkout linked |
+| Video Prompt Pack Builder | https://larareoj-code.github.io/Trade-Repo/apps/video-prompt-pack-builder/index.html | live preview; Payhip checkout linked |
+| Shorts Hook Lab | https://larareoj-code.github.io/Trade-Repo/apps/shorts-hook-lab/index.html | live preview; Payhip checkout linked |
+| Listing Launch Auditor | https://listing-launch-auditor.vercel.app | live preview; Payhip checkout linked |
+| Rainy Day Quest Maker | https://larareoj-code.github.io/Trade-Repo/apps/rainy-day-quest-maker/index.html | live preview; Payhip checkout linked |
+| Digital Bundle Builder | https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html | live preview; Gumroad checkout linked |
+| Passive App Risk Calculator | https://larareoj-code.github.io/Trade-Repo/apps/passive-app-risk-calculator/index.html | live preview; lead magnet |
 
 ## Payment Gate Reality
 
 - GitHub Pages cannot enforce payment for static files in this setup; it is the discovery and demo layer.
 - Paid access requires a verified storefront product page or a server-side checkout/license gate.
-- Current live paid checkouts: three Payhip products plus one Gumroad product.
+- Current live paid checkouts: nine Payhip products plus one Gumroad product.
 
-## Source-Ready But Not Checkout-Gated
+## Blocked Or Skipped
 
 | Surface | Status | Blocker |
 |---|---|---|
-| Preview Caption Kit ZIP | ready for marketplace upload | Needs storefront product page and verified paid URL |
-| Client Welcome Kit ZIP | ready for marketplace upload | Needs storefront product page and verified paid URL |
-| Video Prompt Pack Builder ZIP | ready for marketplace upload | Needs storefront product page and verified paid URL |
-| Remaining Gumroad listings | draft/blocked | New Gumroad file upload did not open through Chrome file chooser |
+| New Gumroad listings | blocked/draft only | New Gumroad file upload did not open through Chrome file chooser; do not publish empty products |
 | Ko-fi listings | blocked | Ko-fi requires location confirmation and file upload did not open through Chrome file chooser |
-| Trade-Repo release ZIPs | inventoried | GitHub connector cannot upload release assets in this session |
+| Fourthwall / Buy Me a Coffee | not completed in this pass | No verified upload flow completed before the Payhip batch finished |
+| Passive App Risk Calculator | lead magnet | Kept free/educational instead of charging for a regulated-adjacent calculator |
 
 ## Publishing Notes
 
