@@ -133,7 +133,9 @@ main {
 }
 
 .app-card {
-  min-height: 260px;
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 22px;
@@ -151,7 +153,8 @@ main {
 
 .app-card span {
   display: inline-block;
-  margin-bottom: 34px;
+  width: fit-content;
+  margin-bottom: 26px;
   padding: 5px 9px;
   border: 1px solid rgba(23, 32, 38, 0.14);
   border-radius: 999px;
@@ -170,17 +173,37 @@ main {
   line-height: 1.5;
 }
 
+.price-note {
+  margin-bottom: 0;
+  color: #1f3f34;
+  font-size: 0.92rem;
+  font-weight: 750;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 18px;
+}
+
 .app-card a {
   display: inline-flex;
   align-items: center;
   min-height: 40px;
-  margin-top: 12px;
   padding: 0 14px;
   border-radius: 6px;
   background: var(--ink);
   color: white;
   text-decoration: none;
   font-weight: 800;
+}
+
+.app-card a.secondary {
+  border: 1px solid rgba(23, 32, 38, 0.24);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink);
 }
 
 .guardrails {
