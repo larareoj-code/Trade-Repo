@@ -1,15 +1,56 @@
 # Digital Bundle Builder
 
-Local-first browser app for digital-product sellers preparing customer ZIP downloads. It creates bundle manifests, start-here docs, storefront checklists, QA checklists, and handoff exports.
+Digital Bundle Builder is a dependency-free, local-first browser app for digital-product sellers preparing customer ZIP downloads. It turns a bundle title, audience, deliverables list, license label, support text, version, and update notes into customer-facing bundle documents.
 
-## GitHub Status
+## Included
 
-Runbook published. Source batch queued from local root `work/digital_bundle_builder`.
+- `index.html` - app shell.
+- `styles.css` - responsive styling.
+- `app.js` - local generator, draft storage, copy, download, import, and export controls.
+- `tests.html` - browser-based tests for the generator.
+- `MARKETPLACE-LISTING.md` - marketplace-ready product listing draft.
+- `vercel.json` - static deployment config.
+- `Digital-Bundle-Builder.zip` - packaged app archive.
 
-## Local Package
+## Run Locally
 
-`work/digital_bundle_builder/Digital-Bundle-Builder.zip`
+Open `index.html` in a browser. No install, build step, account, server, or external API is required.
 
-## Safety Notes
+The app stores the active draft in `localStorage` on the current browser and device. Use `Export Draft` if you want a portable JSON backup.
 
-No earnings promises, legal advice, marketplace approval promises, uploading, publishing, tracking, or external calls.
+## Deliverables Format
+
+Enter one deliverable per line:
+
+```text
+filename.ext | Type | Customer-facing note
+```
+
+Example:
+
+```text
+welcome-guide.pdf | PDF | Main guide
+email-template.docx | Template | Editable client email
+bonus-checklist.pdf | Checklist | Optional bonus
+```
+
+## Generated Files
+
+- `bundle-manifest.json`
+- `START-HERE.md`
+- `STOREFRONT-CHECKLIST.md`
+- `QA-CHECKLIST.md`
+- Combined text export for handoff and review
+
+## Tests
+
+Open `tests.html` in a browser. Tests run automatically and report pass or fail in the page.
+
+## Guardrails
+
+- No earnings promises.
+- No legal advice.
+- No marketplace approval promises.
+- No uploading or publishing features.
+- No external calls.
+- No third-party copied assets.

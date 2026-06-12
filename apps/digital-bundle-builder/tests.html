@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Bundle Builder Tests</title>
+    <style>
+      :root {
+        --ink: #16201c;
+        --line: #d8dfd8;
+        --ok: #236c5c;
+        --fail: #9a2f25;
+        --paper: #fbfbf7;
+      }
+
+      body {
+        margin: 0;
+        padding: 28px;
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: var(--paper);
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        letter-spacing: 0;
+      }
+
+      #summary {
+        margin-bottom: 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 12px 14px;
+        background: #fff;
+        font-weight: 800;
+      }
+
+      .pass,
+      .fail {
+        margin: 8px 0;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 10px 12px;
+        background: #fff;
+      }
+
+      .pass {
+        border-left: 6px solid var(--ok);
+      }
+
+      .fail {
+        border-left: 6px solid var(--fail);
+      }
+
+      pre {
+        overflow: auto;
+        white-space: pre-wrap;
+      }
+    </style>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Digital Bundle Builder Tests</h1>
+      <div id="summary">Running tests...</div>
+      <section id="results" aria-live="polite"></section>
+    </main>
+
+    <script>
+      (function () {
+        "use strict";
+
+        var results = document.getElementById("results");
+        var summary = document.getElementById("summary");
+        var tests = [];
+
+        function test(name, fn) {
+          tests.push({ name: name, fn: fn });
+        }
+
+        function assert(condition, message) {
+          if (!condition) {
+            throw new Error(message || "Assertion failed");
+          }
+        }
+
+        function assertEqual(actual, expected, message) {
+          if (actual !== expected) {
+            throw new Error((message || "Values differ") + ": expected " + expected + ", got " + actual);
+          }
+        }
+
+        function addResult(name, passed, error) {
+          var item = document.createElement("article");
+          item.className = passed ? "pass" : "fail";
+          item.innerHTML = "<strong>" + (passed ? "PASS" : "FAIL") + "</strong> " + name;
+          if (error) {
+            var pre = document.createElement("pre");
+            pre.textContent = error.stack || error.message || String(error);
+            item.appendChild(pre);
+          }
+          results.appendChild(item);
+        }
+
+        var api = window.DigitalBundleBuilder;
+
+        test("slug generation is stable and ASCII-safe", function () {
+          assertEqual(api.createSlug(" My Great Bundle! 2026 "), "my-great-bundle-2026");
+          assertEqual(api.createSlug(""), "digital-bundle");
+        });
+
+        test("deliverables parse filename, type, and notes", function () {
+          var items = api.parseDeliverables("guide.pdf | PDF | Main guide\nemail.docx | Template | Editable");
+          assertEqual(items.length, 2);
+          assertEqual(items[0].filename, "guide.pdf");
+          assertEqual(items[0].type, "PDF");
+          assertEqual(items[1].notes, "Editable");
+        });
+
+        test("manifest contains required customer package fields", function () {
+          var outputs = api.buildOutputs(
+            {
+              bundleTitle: "Client Welcome Kit",
+              audience: "freelance designers",
+              deliverables: "welcome.pdf | PDF | Main guide",
+              licenseType: "Commercial use",
+              supportText: "Email support for download issues.",
+              version: "2.1.0",
+              updateNotes: "Added a cleaner checklist."
+            },
+            { createdAt: "2026-06-12T00:00:00.000Z" }
+          );
+          var manifest = JSON.parse(outputs.manifest);
+          assertEqual(manifest.product.slug, "client-welcome-kit");
+          assertEqual(manifest.product.audience, "freelance designers");
+          assertEqual(manifest.license.label, "Commercial use");
+          assertEqual(manifest.deliverables.length, 1);
+        });
+
+        test("generated docs include support and update notes", function () {
+          var outputs = api.buildOutputs({
+            bundleTitle: "Client Welcome Kit",
+            audience: "freelance designers",
+            deliverables: "welcome.pdf | PDF | Main guide",
+            licenseType: "Client work",
+            supportText: "Reply with your order number.",
+            version: "1.0.0",
+            updateNotes: "Initial release."
+          });
+          assert(outputs.startHere.indexOf("Reply with your order number.") !== -1, "support text missing");
+          assert(outputs.startHere.indexOf("Initial release.") !== -1, "update notes missing");
+          assert(outputs.storefront.indexOf("Client work") !== -1, "license missing");
+          assert(outputs.qa.indexOf("Extract the final ZIP") !== -1, "ZIP QA step missing");
+        });
+
+        test("outputs keep required guardrail language", function () {
+          var outputs = api.buildOutputs({
+            bundleTitle: "Template Pack",
+            audience: "shop owners",
+            deliverables: "template.docx | Template | Editable",
+            licenseType: "Personal use",
+            supportText: "Support by email.",
+            version: "1.0.0",
+            updateNotes: "Launch."
+          });
+          var joined = [outputs.manifest, outputs.startHere, outputs.storefront, outputs.qa].join("\n");
+          assert(joined.indexOf("does not promise earnings") !== -1, "earnings guardrail missing");
+          assert(joined.indexOf("not legal advice") !== -1, "legal guardrail missing");
+          assert(joined.indexOf("approval promises") !== -1, "approval guardrail missing");
+        });
+
+        test("combined export includes all generated document sections", function () {
+          var outputs = api.buildOutputs({
+            bundleTitle: "Template Pack",
+            audience: "shop owners",
+            deliverables: "template.docx | Template | Editable",
+            licenseType: "Personal use",
+            supportText: "Support by email.",
+            version: "1.0.0",
+            updateNotes: "Launch."
+          });
+          var combined = api.combinedExport(outputs);
+          assert(combined.indexOf("bundle-manifest.json") !== -1);
+          assert(combined.indexOf("START-HERE.md") !== -1);
+          assert(combined.indexOf("STOREFRONT-CHECKLIST.md") !== -1);
+          assert(combined.indexOf("QA-CHECKLIST.md") !== -1);
+        });
+
+        var passed = 0;
+        tests.forEach(function (entry) {
+          try {
+            entry.fn();
+            passed += 1;
+            addResult(entry.name, true);
+          } catch (error) {
+            addResult(entry.name, false, error);
+          }
+        });
+
+        summary.textContent = passed + " of " + tests.length + " tests passed";
+        summary.style.borderColor = passed === tests.length ? "#236c5c" : "#9a2f25";
+      })();
+    </script>
+  </body>
+</html>

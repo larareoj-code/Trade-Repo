@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Local-first digital bundle document builder for sellers packaging ZIP downloads."
+    >
+    <title>Digital Bundle Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Local-first product packager</p>
+          <h1>Digital Bundle Builder</h1>
+        </div>
+        <div class="status-wrap">
+          <span id="saveStatus" class="status">Draft ready</span>
+        </div>
+      </header>
+
+      <section class="workspace" aria-label="Bundle builder workspace">
+        <form id="bundleForm" class="panel form-panel">
+          <div class="panel-head">
+            <h2>Bundle Inputs</h2>
+            <button type="button" id="resetDraft" class="ghost">Reset</button>
+          </div>
+
+          <label for="bundleTitle">
+            Bundle title
+            <input
+              id="bundleTitle"
+              name="bundleTitle"
+              type="text"
+              autocomplete="off"
+              placeholder="Example: Printable Client Welcome Kit"
+              required
+            >
+          </label>
+
+          <label for="audience">
+            Audience
+            <input
+              id="audience"
+              name="audience"
+              type="text"
+              autocomplete="off"
+              placeholder="Example: freelance designers onboarding new clients"
+              required
+            >
+          </label>
+
+          <label for="deliverables">
+            Files and deliverables
+            <textarea
+              id="deliverables"
+              name="deliverables"
+              rows="8"
+              placeholder="welcome-guide.pdf | PDF | Main guide&#10;email-template.docx | Template | Editable client email&#10;bonus-checklist.pdf | Checklist | Optional bonus"
+              required
+            ></textarea>
+          </label>
+
+          <div class="field-grid">
+            <label for="licenseType">
+              License type
+              <select id="licenseType" name="licenseType">
+                <option value="Personal use">Personal use</option>
+                <option value="Commercial use">Commercial use</option>
+                <option value="Client work">Client work</option>
+                <option value="Private label rights">Private label rights</option>
+                <option value="Custom terms">Custom terms</option>
+              </select>
+            </label>
+
+            <label for="version">
+              Version
+              <input id="version" name="version" type="text" autocomplete="off" value="1.0.0">
+            </label>
+          </div>
+
+          <label for="supportText">
+            Support text
+            <textarea
+              id="supportText"
+              name="supportText"
+              rows="4"
+              placeholder="Example: For download issues, reply to your purchase receipt within 14 days with your order number."
+            ></textarea>
+          </label>
+
+          <label for="updateNotes">
+            Update notes
+            <textarea
+              id="updateNotes"
+              name="updateNotes"
+              rows="4"
+              placeholder="Example: Version 1.0.0 includes the launch bundle and printable PDF set."
+            ></textarea>
+          </label>
+
+          <div class="action-row">
+            <button type="submit" class="primary">Generate</button>
+            <button type="button" id="copyAll">Copy All</button>
+            <button type="button" id="downloadAll">Download All</button>
+          </div>
+
+          <div class="action-row secondary-actions">
+            <button type="button" id="exportDraft">Export Draft</button>
+            <button type="button" id="importDraft">Import Draft</button>
+            <input id="draftFile" type="file" accept="application/json,.json" hidden>
+          </div>
+        </form>
+
+        <section class="outputs" aria-label="Generated bundle documents">
+          <article class="panel output-card">
+            <div class="panel-head">
+              <h2>Bundle Manifest</h2>
+              <div class="mini-actions">
+                <button type="button" data-copy="manifest">Copy</button>
+                <button type="button" data-download="manifest">Download</button>
+              </div>
+            </div>
+            <pre id="manifestOutput" class="output" tabindex="0"></pre>
+          </article>
+
+          <article class="panel output-card">
+            <div class="panel-head">
+              <h2>Start Here</h2>
+              <div class="mini-actions">
+                <button type="button" data-copy="startHere">Copy</button>
+                <button type="button" data-download="startHere">Download</button>
+              </div>
+            </div>
+            <pre id="startHereOutput" class="output" tabindex="0"></pre>
+          </article>
+
+          <article class="panel output-card">
+            <div class="panel-head">
+              <h2>Storefront Checklist</h2>
+              <div class="mini-actions">
+                <button type="button" data-copy="storefront">Copy</button>
+                <button type="button" data-download="storefront">Download</button>
+              </div>
+            </div>
+            <pre id="storefrontOutput" class="output" tabindex="0"></pre>
+          </article>
+
+          <article class="panel output-card">
+            <div class="panel-head">
+              <h2>QA Checklist</h2>
+              <div class="mini-actions">
+                <button type="button" data-copy="qa">Copy</button>
+                <button type="button" data-download="qa">Download</button>
+              </div>
+            </div>
+            <pre id="qaOutput" class="output" tabindex="0"></pre>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
