@@ -29,6 +29,8 @@ This registry records public deployment URLs that were verified after the user r
 - Workflow commit: `d32f8a0c78ebe7b1047cd8cd0b1e2d2feda79dd5`.
 - `.nojekyll` commit: `bbbed4caa3e83ac7362f45797bd75ce7a5beea00`.
 - Verification after publication: `https://larareoj-code.github.io/Trade-Repo/` still returned HTTP 404.
+- Workflow status check: latest run completed with failure at `Configure Pages`; upload and deploy steps were skipped.
+- Failed run: `https://github.com/larareoj-code/Trade-Repo/actions/runs/27444597245`.
 
 ## Verification Notes
 
