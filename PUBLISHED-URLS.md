@@ -31,6 +31,9 @@ This registry records public deployment URLs that were verified after the user r
 - Verification after publication: `https://larareoj-code.github.io/Trade-Repo/` still returned HTTP 404.
 - Workflow status check: latest run completed with failure at `Configure Pages`; upload and deploy steps were skipped.
 - Failed run: `https://github.com/larareoj-code/Trade-Repo/actions/runs/27444597245`.
+- Browser settings update: GitHub Pages source was changed from `Deploy from a branch` to `GitHub Actions`.
+- Retry workflow commit with `enablement: true`: `3f517856b8a0f34f58bdad3ab527d69bdbb66669`.
+- Retry run still failed because the workflow token could not create the Pages site before the browser settings change: `https://github.com/larareoj-code/Trade-Repo/actions/runs/27446620033`.
 
 ## Verification Notes
 
