@@ -1,6 +1,6 @@
 {
   "generated_at_hst": "2026-06-12T07:40:31-10:00",
-  "updated_at_hst": "2026-06-12T08:24:00-10:00",
+  "updated_at_hst": "2026-06-12T08:47:00-10:00",
   "repository": "larareoj-code/Trade-Repo",
   "strategy": "github_first_control_repo_app_sized_source_commits",
   "guardrails": [
@@ -18,7 +18,12 @@
       "github_folder": "apps/shorts-hook-lab",
       "local_source_root": "work/shorts_hook_lab",
       "package_artifact": "work/shorts_hook_lab/Shorts-Hook-Lab.zip",
-      "status": "runbook_published_source_batch_queued"
+      "status": "source_published_verified",
+      "source_commit": "b900e8fb17567e888d669f38fdebb1a1213d01de",
+      "status_commits": [
+        "afe742592f05eb39c7067c729920d8dd008875ec",
+        "88bb4766c1fed2c949fd22734d93cb0da20884b5"
+      ]
     },
     {
       "slug": "client-welcome-kit",
@@ -64,7 +69,8 @@
       "source_commit": "2b54cdd04201edf24bf6d37b0c02dd14c899caba",
       "status_commits": [
         "2bf2d0d57866208bac18a75e2926de0bb180d895",
-        "a50c4065229e3d2e8d79518223c8684d88eb1fbc"
+        "a50c4065229e3d2e8d79518223c8684d88eb1fbc",
+        "0bb5bbe4ba3c76820eef4554d93ad6a0d7349c81"
       ]
     }
   ]
