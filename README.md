@@ -8,7 +8,7 @@ This repository is intentionally framed as a portfolio of low-touch product expe
 
 | App | Folder | GitHub status | Local source root |
 |---|---|---|---|
-| Shorts Hook Lab | `apps/shorts-hook-lab` | Runbook published, source batch queued | `work/shorts_hook_lab` |
+| Shorts Hook Lab | `apps/shorts-hook-lab` | Source published and verified | `work/shorts_hook_lab` |
 | Client Welcome Kit | `apps/client-welcome-kit` | Runbook published, source batch queued | `work/client_welcome_kit` |
 | Rainy Day Quest Maker | `apps/rainy-day-quest-maker` | Runbook published, source batch queued | `work/rainy_day_quest_maker` |
 | Video Prompt Pack Builder | `apps/video-prompt-pack-builder` | Runbook published, source batch queued | `work/deploy_team/next_product` |
