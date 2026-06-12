@@ -1,6 +1,6 @@
 {
   "generated_at_hst": "2026-06-12T07:40:31-10:00",
-  "updated_at_hst": "2026-06-12T09:42:00-10:00",
+  "updated_at_hst": "2026-06-12T10:32:00-10:00",
   "repository": "larareoj-code/Trade-Repo",
   "strategy": "github_first_control_repo_app_sized_source_commits",
   "guardrails": [
@@ -59,7 +59,32 @@
       "github_folder": "apps/video-prompt-pack-builder",
       "local_source_root": "work/deploy_team/next_product",
       "package_artifact": "work/deploy_team/next_product/Video-Prompt-Pack-Builder.zip",
-      "status": "runbook_published_source_batch_queued"
+      "status": "source_published_verified",
+      "source_commits": [
+        "ff0bbfa43d5434d0d8e1123c1704fc99994244e0",
+        "785b00fd938d13e7732bab441bb1fccc5eb1f94d",
+        "078159f4cd92d45c3f041f20438d7900651e5c00",
+        "976c20335781aa3315a4f1307ce578e396caa9bd",
+        "9ffca192e5d33ef5564beacda3cfe4b7343f63bf",
+        "2a539850fe64f2d278f8d0588b7cc39faf598448",
+        "fa52b3f25e60a3c52a9a50f7d574a0479f3d9d25",
+        "9089d30cce02202a6599b4f6926a82906c4f9e79",
+        "176b501690bdeaf15e167be94253e309d0ef605b",
+        "bfcf67bd1f05ece1ca877dadc8098886c94e0970"
+      ],
+      "verified_files": [
+        "index.html",
+        "generator.js",
+        "README.md",
+        "MARKETPLACE-LISTING.md",
+        "vercel.json"
+      ],
+      "risk_flags": [
+        "binary_zip_still_local",
+        "png_cover_still_local",
+        "source_publish_only_no_host_deployment",
+        "reset_icon_normalized_to_ascii"
+      ]
     },
     {
       "slug": "passive-app-risk-calculator",
@@ -79,5 +104,6 @@
       "status": "source_published_verified",
       "source_commit": "2b54cdd04201edf24bf6d37b0c02dd14c899caba"
     }
-  ]
+  ],
+  "source_queue_status": "complete"
 }
