@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video Prompt Pack Builder</title>
+  <meta name="description" content="Local-first video prompt pack planner with no APIs, no accounts, and no generation costs.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">No-API planning kit</p>
+      <h1>Video Prompt Pack Builder</h1>
+    </div>
+    <div class="status-pill" id="saveStatus">Saved locally</div>
+  </header>
+
+  <main class="workspace">
+    <section class="panel controls" aria-labelledby="builderTitle">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Build</p>
+          <h2 id="builderTitle">Prompt Pack Inputs</h2>
+        </div>
+        <button class="icon-btn" id="resetBtn" type="button" title="Reset inputs" aria-label="Reset inputs">Reset</button>
+      </div>
+
+      <label>Product, channel, or idea<input id="idea" type="text" value="A local-first planner for faceless tutorial shorts"></label>
+      <div class="field-grid">
+        <label>Audience<input id="audience" type="text" value="solo creators and freelancers"></label>
+        <label>Outcome<input id="outcome" type="text" value="turn a rough idea into a shoot-ready video plan"></label>
+      </div>
+      <div class="field-grid">
+        <label>Format<select id="format"><option value="short" selected>Vertical short</option><option value="explainer">Product explainer</option><option value="tutorial">Tutorial sequence</option><option value="promo">Marketplace promo</option></select></label>
+        <label>Tone<select id="tone"><option value="clear" selected>Clear and useful</option><option value="playful">Playful and bright</option><option value="premium">Premium and calm</option><option value="urgent">Direct and energetic</option></select></label>
+      </div>
+      <div class="field-grid">
+        <label>Runtime<select id="runtime"><option value="15">15 seconds</option><option value="30" selected>30 seconds</option><option value="45">45 seconds</option><option value="60">60 seconds</option></select></label>
+        <label>Scenes<input id="sceneCount" type="number" min="3" max="8" value="5"></label>
+      </div>
+      <fieldset>
+        <legend>Production limits</legend>
+        <label class="check-row"><input id="noFaces" type="checkbox" checked> Faceless-friendly shots</label>
+        <label class="check-row"><input id="localAssets" type="checkbox" checked> Use original or licensed assets only</label>
+        <label class="check-row"><input id="noClaims" type="checkbox" checked> Avoid revenue, view, or performance promises</label>
+      </fieldset>
+      <label>Must include<textarea id="mustInclude" rows="3">screen recording, simple captions, before/after workflow, clear adult-facing CTA</textarea></label>
+      <label>Avoid<textarea id="avoid" rows="3">copyrighted characters, scraped clips, platform logos as main visuals, fake testimonials</textarea></label>
+      <div class="button-row">
+        <button id="buildBtn" class="primary" type="button">Build pack</button>
+        <button id="copyBtn" type="button">Copy pack</button>
+        <button id="downloadTxtBtn" type="button">Download TXT</button>
+        <button id="downloadJsonBtn" type="button">Download JSON</button>
+      </div>
+    </section>
+
+    <section class="panel output" aria-labelledby="outputTitle">
+      <div class="section-head">
+        <div><p class="eyebrow">Output</p><h2 id="outputTitle">Ready-to-use Planning Pack</h2></div>
+        <div class="mini-metrics" aria-label="Pack metrics"><span id="sceneMetric">5 scenes</span><span id="runtimeMetric">30 sec</span></div>
+      </div>
+      <nav class="tabs" aria-label="Output views"><button class="tab active" data-tab="brief" type="button">Brief</button><button class="tab" data-tab="prompts" type="button">Prompts</button><button class="tab" data-tab="qa" type="button">QA</button><button class="tab" data-tab="export" type="button">Export</button></nav>
+      <div id="briefView" class="tab-view active"></div><div id="promptsView" class="tab-view"></div><div id="qaView" class="tab-view"></div><div id="exportView" class="tab-view"></div>
+    </section>
+  </main>
+
+  <script src="generator.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
