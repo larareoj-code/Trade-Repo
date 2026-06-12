@@ -11,7 +11,7 @@ This repository is intentionally framed as a portfolio of low-touch product expe
 | Shorts Hook Lab | `apps/shorts-hook-lab` | Source published and verified | `work/shorts_hook_lab` |
 | Client Welcome Kit | `apps/client-welcome-kit` | Source published and verified | `work/client_welcome_kit` |
 | Rainy Day Quest Maker | `apps/rainy-day-quest-maker` | Source published and verified | `work/rainy_day_quest_maker` |
-| Video Prompt Pack Builder | `apps/video-prompt-pack-builder` | Runbook published, source batch queued | `work/deploy_team/next_product` |
+| Video Prompt Pack Builder | `apps/video-prompt-pack-builder` | Source published and verified | `work/deploy_team/next_product` |
 | Passive App Risk Calculator | `apps/passive-app-risk-calculator` | Source published and verified | `work/passive_app_risk_calculator` |
 | Digital Bundle Builder | `apps/digital-bundle-builder` | Source published and verified | `work/digital_bundle_builder` |
 
