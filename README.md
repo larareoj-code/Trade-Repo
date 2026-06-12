@@ -15,6 +15,10 @@ The repo root now includes a GitHub Pages-ready static launcher:
 
 If GitHub Pages is enabled from the default branch root, the launcher becomes the entry point for the app batch and links to each `apps/<slug>/index.html` surface.
 
+## Release Packages
+
+`RELEASE-PACKAGES.md` inventories local ZIP artifacts, SHA-256 hashes, and manual review status. It is a release-prep document only; ZIPs have not been uploaded to GitHub Releases or marketplaces from this step.
+
 ## Current GitHub Publication State
 
 | App | Folder | GitHub status | Local source root |
