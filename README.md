@@ -19,6 +19,8 @@ If GitHub Pages is enabled from the default branch root, the launcher becomes th
 
 `RELEASE-PACKAGES.md` inventories local ZIP artifacts, SHA-256 hashes, and manual review status. It is a release-prep document only; ZIPs have not been uploaded to GitHub Releases or marketplaces from this step.
 
+`STOREFRONT-UPLOAD-MATRIX.md` maps the product ZIPs to suggested storefront channels, price bands, review gates, and post-upload verification steps. It is a planning document only; no storefront products are created by it.
+
 ## Current GitHub Publication State
 
 | App | Folder | GitHub status | Local source root |
