@@ -1,7 +1,7 @@
 # GitHub Publish Manifest
 
 Generated: 2026-06-12T07:40:31-10:00
-Updated: 2026-06-12T10:59:00-10:00
+Updated: 2026-06-12T11:09:00-10:00
 Repository: `larareoj-code/Trade-Repo`
 Strategy: GitHub-first control repo for static/local-first product apps.
 
@@ -11,6 +11,7 @@ Strategy: GitHub-first control repo for static/local-first product apps.
 - Root GitHub Pages-ready portfolio launcher: `index.html`, `pages.css`, `pages.js`.
 - GitHub Pages setup runbook: `GITHUB-PAGES-SETUP.md`.
 - Release package inventory with local ZIP hashes: `RELEASE-PACKAGES.md`.
+- Storefront upload matrix: `STOREFRONT-UPLOAD-MATRIX.md`.
 - Catalog JSON for the queued app portfolio.
 - Full source for `apps/shorts-hook-lab`.
 - Full source for `apps/client-welcome-kit`.
@@ -37,6 +38,7 @@ Strategy: GitHub-first control repo for static/local-first product apps.
 - `491aac4594a58ea14a4ec54278b470aea056bda6` - root `pages.js`
 - `505ac03f26abe37f5835569f2efc6ed1f6287b97` - `GITHUB-PAGES-SETUP.md`
 - `e19eede1bd50db46d8e52c2555213b443304f744` - `RELEASE-PACKAGES.md`
+- `f426aef0a85abe21627d138c7bccd19929eda885` - `STOREFRONT-UPLOAD-MATRIX.md`
 
 ## Connector Limitation
 
@@ -49,10 +51,12 @@ The current GitHub connector can create and update UTF-8 files and Git tree obje
 - No account settings, marketplace products, payments, emails, or outreach were changed.
 - GitHub publication is source-control/distribution preparation only; public hosting still requires GitHub Pages enablement or another host import/deployment step.
 - `RELEASE-PACKAGES.md` is an inventory only, not a public binary release.
+- `STOREFRONT-UPLOAD-MATRIX.md` is a planning/control document only, not a marketplace upload.
 
 ## Next Steps
 
 1. Enable GitHub Pages from the default branch root when ready.
 2. Verify the launcher and each app card after Pages builds.
 3. Use GitHub Releases or marketplace upload tools for ZIP/PNG binaries when a release flow is available.
-4. Use the local learning ledger and Obsidian deployment history as the decision log before selecting the next build lane.
+4. Use `STOREFRONT-UPLOAD-MATRIX.md` to prioritize manual Gumroad, Payhip, Ko-fi, Fourthwall, and Buy Me a Coffee uploads.
+5. Use the local learning ledger and Obsidian deployment history as the decision log before selecting the next build lane.
