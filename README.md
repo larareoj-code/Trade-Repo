@@ -4,6 +4,16 @@ GitHub-first control repo for the local-first apps and digital product utilities
 
 This repository is intentionally framed as a portfolio of low-touch product experiments, not guaranteed income. The apps are static or local-first unless their own README says otherwise. They do not make earnings promises, publish externally, send outreach, or provide regulated legal, financial, medical, or tax advice.
 
+## Verified Live Apps
+
+These public Vercel production URLs were verified after the publishing pass:
+
+- [Listing Launch Auditor](https://listing-launch-auditor.vercel.app)
+- [Party Quest Maker](https://party-quest-maker.vercel.app)
+- [Story Spark Studio](https://story-spark-studio-two.vercel.app)
+
+See `PUBLISHED-URLS.md` for verification notes, deployment status, and blockers for remaining channels.
+
 ## Portfolio Launcher
 
 The repo root now includes a GitHub Pages-ready static launcher:
