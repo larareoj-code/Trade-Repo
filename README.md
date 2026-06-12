@@ -6,8 +6,9 @@ This repository is intentionally framed as a portfolio of low-touch product expe
 
 ## Verified Live Apps
 
-These public Vercel production URLs were verified after the publishing pass:
+These public URLs were verified after the publishing pass:
 
+- [GitHub Pages Portfolio Launcher](https://larareoj-code.github.io/Trade-Repo/)
 - [Listing Launch Auditor](https://listing-launch-auditor.vercel.app)
 - [Party Quest Maker](https://party-quest-maker.vercel.app)
 - [Story Spark Studio](https://story-spark-studio-two.vercel.app)
@@ -16,14 +17,16 @@ See `PUBLISHED-URLS.md` for verification notes, deployment status, and blockers 
 
 ## Portfolio Launcher
 
-The repo root now includes a GitHub Pages-ready static launcher:
+The repo root now includes a verified GitHub Pages static launcher:
 
 - `index.html`
 - `pages.css`
 - `pages.js`
 - `GITHUB-PAGES-SETUP.md`
 
-If GitHub Pages is enabled from the default branch root, the launcher becomes the entry point for the app batch and links to each `apps/<slug>/index.html` surface.
+Live launcher: https://larareoj-code.github.io/Trade-Repo/
+
+The launcher links to each `apps/<slug>/index.html` surface. All six app-card URLs were verified with HTTP 200 after Pages deployment.
 
 ## Release Packages
 
@@ -35,12 +38,12 @@ If GitHub Pages is enabled from the default branch root, the launcher becomes th
 
 | App | Folder | GitHub status | Local source root |
 |---|---|---|---|
-| Shorts Hook Lab | `apps/shorts-hook-lab` | Source published and verified | `work/shorts_hook_lab` |
-| Client Welcome Kit | `apps/client-welcome-kit` | Source published and verified | `work/client_welcome_kit` |
-| Rainy Day Quest Maker | `apps/rainy-day-quest-maker` | Source published and verified | `work/rainy_day_quest_maker` |
-| Video Prompt Pack Builder | `apps/video-prompt-pack-builder` | Source published and verified | `work/deploy_team/next_product` |
-| Passive App Risk Calculator | `apps/passive-app-risk-calculator` | Source published and verified | `work/passive_app_risk_calculator` |
-| Digital Bundle Builder | `apps/digital-bundle-builder` | Source published and verified | `work/digital_bundle_builder` |
+| Shorts Hook Lab | `apps/shorts-hook-lab` | Source published and Pages URL verified | `work/shorts_hook_lab` |
+| Client Welcome Kit | `apps/client-welcome-kit` | Source published and Pages URL verified | `work/client_welcome_kit` |
+| Rainy Day Quest Maker | `apps/rainy-day-quest-maker` | Source published and Pages URL verified | `work/rainy_day_quest_maker` |
+| Video Prompt Pack Builder | `apps/video-prompt-pack-builder` | Source published and Pages URL verified | `work/deploy_team/next_product` |
+| Passive App Risk Calculator | `apps/passive-app-risk-calculator` | Source published and Pages URL verified | `work/passive_app_risk_calculator` |
+| Digital Bundle Builder | `apps/digital-bundle-builder` | Source published and Pages URL verified | `work/digital_bundle_builder` |
 
 Already-live sibling repositories remain active:
 
@@ -50,9 +53,9 @@ Already-live sibling repositories remain active:
 
 ## Deployment Notes
 
-Each queued app is designed for static hosting. Most can run by opening `index.html` directly in a browser. To deploy through GitHub-backed hosting after source upload, import this repository and set the host root directory to the specific app folder.
+Each queued app is designed for static hosting. Most can run by opening `index.html` directly in a browser. The GitHub Pages launcher is now the verified public hub for the static app batch.
 
-For GitHub Pages, enable Pages from the default branch root and verify the launcher plus each app card before using the public URL in storefront listings. For Vercel or another host, create one project per app and set the project root to the desired `apps/<slug>` folder.
+For Vercel or another host, create one project per app and set the project root to the desired `apps/<slug>` folder.
 
 ## Safety Boundaries
 
