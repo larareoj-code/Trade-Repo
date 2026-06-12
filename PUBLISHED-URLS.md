@@ -12,11 +12,22 @@ This registry records public deployment URLs that were verified after the user r
 | Party Quest Maker | https://party-quest-maker.vercel.app | live | Vercel project READY; canonical domain returned HTTP 200 |
 | Story Spark Studio | https://story-spark-studio-two.vercel.app | live | Vercel project READY; canonical domain returned HTTP 200 |
 
+## Verified GitHub Pages URLs
+
+| Product | Public URL | Status | Verification |
+|---|---|---|---|
+| Portfolio Launcher | https://larareoj-code.github.io/Trade-Repo/ | live | GitHub Pages returned HTTP 200; title `Passive Income App Portfolio` |
+| Client Welcome Kit | https://larareoj-code.github.io/Trade-Repo/apps/client-welcome-kit/index.html | live | HTTP 200 verified |
+| Digital Bundle Builder | https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html | live | HTTP 200 verified |
+| Passive App Risk Calculator | https://larareoj-code.github.io/Trade-Repo/apps/passive-app-risk-calculator/index.html | live | HTTP 200 verified |
+| Rainy Day Quest Maker | https://larareoj-code.github.io/Trade-Repo/apps/rainy-day-quest-maker/index.html | live | HTTP 200 verified |
+| Shorts Hook Lab | https://larareoj-code.github.io/Trade-Repo/apps/shorts-hook-lab/index.html | live | HTTP 200 verified |
+| Video Prompt Pack Builder | https://larareoj-code.github.io/Trade-Repo/apps/video-prompt-pack-builder/index.html | live | HTTP 200 verified |
+
 ## Source-Ready But Not Publicly Hosted Here
 
 | Surface | Status | Blocker |
 |---|---|---|
-| Trade-Repo portfolio launcher | Pages workflow installed | GitHub Pages expected URL still returns 404 after workflow publication; Pages settings/build status not confirmed |
 | Trade-Repo release ZIPs | inventoried | GitHub connector cannot upload release assets in this session |
 | Gumroad listings | not executed in this turn | Marketplace browser upload requires working Chrome/in-app account automation |
 | Payhip listings | not executed in this turn | Marketplace browser upload requires working Chrome/in-app account automation |
@@ -34,6 +45,9 @@ This registry records public deployment URLs that were verified after the user r
 - Browser settings update: GitHub Pages source was changed from `Deploy from a branch` to `GitHub Actions`.
 - Retry workflow commit with `enablement: true`: `3f517856b8a0f34f58bdad3ab527d69bdbb66669`.
 - Retry run still failed because the workflow token could not create the Pages site before the browser settings change: `https://github.com/larareoj-code/Trade-Repo/actions/runs/27446620033`.
+- Final trigger commit: `d20b1e9b686289a84752e84b21955e2eb1d19cd2`.
+- Successful run: `https://github.com/larareoj-code/Trade-Repo/actions/runs/27446711820`.
+- Final verification: root launcher and all six linked static app pages returned HTTP 200.
 
 ## Verification Notes
 
