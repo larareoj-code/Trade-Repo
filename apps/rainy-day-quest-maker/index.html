@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Local-first printable indoor quest maker for supervised family play.">
+  <title>Rainy Day Quest Maker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="mark">RQ</span><span>Rainy Day Quest Maker</span></a>
+    <div class="top-actions">
+      <button id="sampleButton" type="button">Sample</button>
+      <button id="printButton" class="primary" type="button">Print</button>
+    </div>
+  </header>
+  <main class="shell">
+    <form id="questForm" class="panel controls">
+      <p class="eyebrow">Parent-first indoor play</p>
+      <h1>Make a printable quest in minutes.</h1>
+      <label>Quest title<input name="title" required placeholder="Rainy day living room quest"></label>
+      <label>Age band<select name="age"><option value="4-6">4-6</option><option value="7-9" selected>7-9</option><option value="10-12">10-12</option></select></label>
+      <label>Theme<select name="theme"><option value="cozy">Cozy clues</option><option value="detective">Mini detective</option><option value="museum">Home museum</option><option value="maker">Maker mission</option></select></label>
+      <label>Difficulty<select name="difficulty"><option value="easy">Easy</option><option value="medium" selected>Medium</option><option value="hard">Hard</option></select></label>
+      <label>Number of clues<input name="count" type="number" min="3" max="10" value="6"></label>
+      <label>Room/location exclusions<textarea name="exclusions" rows="3" placeholder="Example: kitchen, bathroom, stairs"></textarea></label>
+      <label>Supplies available<textarea name="supplies" rows="3" placeholder="Example: crayons, paper, tape, timer"></textarea></label>
+      <div class="actions">
+        <button class="primary" type="submit">Generate quest</button>
+        <button id="copyButton" type="button">Copy</button>
+        <button id="jsonButton" type="button">Export JSON</button>
+      </div>
+      <p class="note">Designed for grown-up setup and supervision. No accounts, API calls, ads, tracking, or child data collection.</p>
+    </form>
+    <section class="output-stack">
+      <article class="panel hero-card"><h2 id="questTitle">Quest</h2><p id="questMeta"></p></article>
+      <article class="panel"><div class="card-head"><h2>Parent Setup Brief</h2><span id="status">Ready</span></div><pre id="briefOutput"></pre></article>
+      <article class="panel"><div class="card-head"><h2>Clue Cards</h2><span>Cut apart after printing</span></div><div id="cardsOutput" class="cards"></div></article>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
