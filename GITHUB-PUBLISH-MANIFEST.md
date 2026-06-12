@@ -1,7 +1,7 @@
 # GitHub Publish Manifest
 
 Generated: 2026-06-12T07:40:31-10:00
-Updated: 2026-06-12T08:04:00-10:00
+Updated: 2026-06-12T08:24:00-10:00
 Repository: `larareoj-code/Trade-Repo`
 Strategy: GitHub-first control repo for static/local-first product apps.
 
@@ -21,6 +21,17 @@ Strategy: GitHub-first control repo for static/local-first product apps.
   - `LICENSE.txt`
   - `vercel.json`
   - `cover.svg`
+- Full source for `apps/digital-bundle-builder`:
+  - `index.html`
+  - `styles.css`
+  - `app.js`
+  - `tests.html`
+  - `README.md`
+  - `MARKETPLACE-LISTING.md`
+  - `PRIVACY.md`
+  - `LICENSE.txt`
+  - `vercel.json`
+  - `cover.svg`
 
 ## Queued Source Roots
 
@@ -30,8 +41,8 @@ Strategy: GitHub-first control repo for static/local-first product apps.
 | Client Welcome Kit | `apps/client-welcome-kit` | `work/client_welcome_kit` | `work/client_welcome_kit/Client-Welcome-Kit.zip` | source queued |
 | Rainy Day Quest Maker | `apps/rainy-day-quest-maker` | `work/rainy_day_quest_maker` | `work/rainy_day_quest_maker/Rainy-Day-Quest-Maker.zip` | source queued |
 | Video Prompt Pack Builder | `apps/video-prompt-pack-builder` | `work/deploy_team/next_product` | `work/deploy_team/next_product/Video-Prompt-Pack-Builder.zip` | source queued |
-| Passive App Risk Calculator | `apps/passive-app-risk-calculator` | `work/passive_app_risk_calculator` | `work/passive_app_risk_calculator/Passive-App-Risk-Calculator.zip` | source published |
-| Digital Bundle Builder | `apps/digital-bundle-builder` | `work/digital_bundle_builder` | `work/digital_bundle_builder/Digital-Bundle-Builder.zip` | source queued |
+| Passive App Risk Calculator | `apps/passive-app-risk-calculator` | `work/passive_app_risk_calculator` | `work/passive_app_risk_calculator/Passive-App-Risk-Calculator.zip` | source published and verified |
+| Digital Bundle Builder | `apps/digital-bundle-builder` | `work/digital_bundle_builder` | `work/digital_bundle_builder/Digital-Bundle-Builder.zip` | source published and verified |
 
 ## Connector Limitation
 
@@ -46,7 +57,7 @@ The current GitHub connector can create and update UTF-8 files and Git tree obje
 
 ## Next Steps
 
-1. Continue source upload for the remaining five queued apps.
+1. Continue source upload for the remaining four queued apps.
 2. Use GitHub Releases or marketplace upload tools for ZIP/PNG binaries.
 3. Import each completed `apps/<slug>` folder into Vercel or another static host when authenticated.
 4. Verify public pages after host deployment before adding marketplace links.
