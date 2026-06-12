@@ -1,30 +1,41 @@
 # GitHub Publish Manifest
 
 Generated: 2026-06-12T07:40:31-10:00
+Updated: 2026-06-12T08:04:00-10:00
 Repository: `larareoj-code/Trade-Repo`
 Strategy: GitHub-first control repo for static/local-first product apps.
 
-## Published In This Commit
+## Published So Far
 
 - Root portfolio README.
 - Catalog JSON for the queued app portfolio.
 - Per-app runbooks under `apps/<slug>/README.md`.
-- Safety notes and source mapping for follow-on source upload.
+- Full source for `apps/passive-app-risk-calculator`:
+  - `index.html`
+  - `styles.css`
+  - `app.js`
+  - `calculator.js`
+  - `tests.html`
+  - `README.md`
+  - `MARKETPLACE-LISTING.md`
+  - `LICENSE.txt`
+  - `vercel.json`
+  - `cover.svg`
 
 ## Queued Source Roots
 
-| App | GitHub folder | Local source root | Package artifact |
-|---|---|---|---|
-| Shorts Hook Lab | `apps/shorts-hook-lab` | `work/shorts_hook_lab` | `work/shorts_hook_lab/Shorts-Hook-Lab.zip` |
-| Client Welcome Kit | `apps/client-welcome-kit` | `work/client_welcome_kit` | `work/client_welcome_kit/Client-Welcome-Kit.zip` |
-| Rainy Day Quest Maker | `apps/rainy-day-quest-maker` | `work/rainy_day_quest_maker` | `work/rainy_day_quest_maker/Rainy-Day-Quest-Maker.zip` |
-| Video Prompt Pack Builder | `apps/video-prompt-pack-builder` | `work/deploy_team/next_product` | `work/deploy_team/next_product/Video-Prompt-Pack-Builder.zip` |
-| Passive App Risk Calculator | `apps/passive-app-risk-calculator` | `work/passive_app_risk_calculator` | `work/passive_app_risk_calculator/Passive-App-Risk-Calculator.zip` |
-| Digital Bundle Builder | `apps/digital-bundle-builder` | `work/digital_bundle_builder` | `work/digital_bundle_builder/Digital-Bundle-Builder.zip` |
+| App | GitHub folder | Local source root | Package artifact | Status |
+|---|---|---|---|---|
+| Shorts Hook Lab | `apps/shorts-hook-lab` | `work/shorts_hook_lab` | `work/shorts_hook_lab/Shorts-Hook-Lab.zip` | source queued |
+| Client Welcome Kit | `apps/client-welcome-kit` | `work/client_welcome_kit` | `work/client_welcome_kit/Client-Welcome-Kit.zip` | source queued |
+| Rainy Day Quest Maker | `apps/rainy-day-quest-maker` | `work/rainy_day_quest_maker` | `work/rainy_day_quest_maker/Rainy-Day-Quest-Maker.zip` | source queued |
+| Video Prompt Pack Builder | `apps/video-prompt-pack-builder` | `work/deploy_team/next_product` | `work/deploy_team/next_product/Video-Prompt-Pack-Builder.zip` | source queued |
+| Passive App Risk Calculator | `apps/passive-app-risk-calculator` | `work/passive_app_risk_calculator` | `work/passive_app_risk_calculator/Passive-App-Risk-Calculator.zip` | source published |
+| Digital Bundle Builder | `apps/digital-bundle-builder` | `work/digital_bundle_builder` | `work/digital_bundle_builder/Digital-Bundle-Builder.zip` | source queued |
 
 ## Connector Limitation
 
-The current GitHub connector can create and update UTF-8 files and Git tree objects, but it does not expose a direct local-folder upload or GitHub Releases asset upload flow in this session. The repository therefore publishes the portfolio control plane first and queues source/binary upload as the next GitHub batch.
+The current GitHub connector can create and update UTF-8 files and Git tree objects. It does not expose a direct local-folder upload or GitHub Releases asset upload flow in this session, so source upload is proceeding in app-sized commits. ZIP and PNG package artifacts remain local or marketplace/release-only.
 
 ## Safety Notes
 
@@ -35,7 +46,7 @@ The current GitHub connector can create and update UTF-8 files and Git tree obje
 
 ## Next Steps
 
-1. Upload app source files into each `apps/<slug>` folder.
+1. Continue source upload for the remaining five queued apps.
 2. Use GitHub Releases or marketplace upload tools for ZIP/PNG binaries.
-3. Import each `apps/<slug>` folder into Vercel or another static host when authenticated.
+3. Import each completed `apps/<slug>` folder into Vercel or another static host when authenticated.
 4. Verify public pages after host deployment before adding marketplace links.
