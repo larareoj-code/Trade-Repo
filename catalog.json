@@ -1,6 +1,6 @@
 {
   "generated_at_hst": "2026-06-12T07:40:31-10:00",
-  "updated_at_hst": "2026-06-12T08:04:00-10:00",
+  "updated_at_hst": "2026-06-12T08:24:00-10:00",
   "repository": "larareoj-code/Trade-Repo",
   "strategy": "github_first_control_repo_app_sized_source_commits",
   "guardrails": [
@@ -51,7 +51,8 @@
       "local_source_root": "work/passive_app_risk_calculator",
       "package_artifact": "work/passive_app_risk_calculator/Passive-App-Risk-Calculator.zip",
       "status": "source_published_verified",
-      "source_commit": "ef8ab491c55a7066edcfddc0862f85b021a92caf"
+      "source_commit": "ef8ab491c55a7066edcfddc0862f85b021a92caf",
+      "status_commit": "0b7134d9fdd396f0e37bbcd1a2053a960e7e6295"
     },
     {
       "slug": "digital-bundle-builder",
@@ -59,7 +60,12 @@
       "github_folder": "apps/digital-bundle-builder",
       "local_source_root": "work/digital_bundle_builder",
       "package_artifact": "work/digital_bundle_builder/Digital-Bundle-Builder.zip",
-      "status": "runbook_published_source_batch_queued"
+      "status": "source_published_verified",
+      "source_commit": "2b54cdd04201edf24bf6d37b0c02dd14c899caba",
+      "status_commits": [
+        "2bf2d0d57866208bac18a75e2926de0bb180d895",
+        "a50c4065229e3d2e8d79518223c8684d88eb1fbc"
+      ]
     }
   ]
 }
