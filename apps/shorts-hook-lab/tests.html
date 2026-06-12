@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shorts Hook Lab Tests</title>
+  <style>
+    body { font: 16px/1.5 system-ui, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; }
+    .pass { color: #087b55; } .fail { color: #b42318; } li { margin: 8px 0; }
+  </style>
+</head>
+<body>
+  <h1>Shorts Hook Lab focused tests</h1>
+  <ol id="results"></ol>
+  <script src="generator.js"></script>
+  <script>
+    const output = document.getElementById("results");
+    function test(name, fn) {
+      const item = document.createElement("li");
+      try { fn(); item.textContent = `PASS: ${name}`; item.className = "pass"; }
+      catch (error) { item.textContent = `FAIL: ${name} - ${error.message}`; item.className = "fail"; }
+      output.appendChild(item);
+    }
+    function assert(condition, message) { if (!condition) throw new Error(message); }
+    const input = { topic: "better home coffee", platform: "shorts", tone: "helpful", length: 30 };
+    test("generation is deterministic", () => {
+      const first = ShortsHookGenerator.generate(input);
+      const second = ShortsHookGenerator.generate(input);
+      assert(JSON.stringify({ ...first, createdAt: "" }) === JSON.stringify({ ...second, createdAt: "" }), "same inputs changed output");
+    });
+    test("every kit has five hooks and five titles", () => {
+      const kit = ShortsHookGenerator.generate(input);
+      assert(kit.hooks.length === 5 && kit.titles.length === 5, "unexpected output count");
+    });
+    test("platform selection changes guidance", () => {
+      const a = ShortsHookGenerator.generate(input);
+      const b = ShortsHookGenerator.generate({ ...input, platform: "tiktok" });
+      assert(a.platformLens !== b.platformLens, "platform lens did not change");
+      assert(a.checklist[0].label !== b.checklist[0].label, "checklist did not change");
+    });
+    test("shot list ends at requested duration", () => {
+      [15, 30, 45, 60].forEach((length) => {
+        const kit = ShortsHookGenerator.generate({ ...input, length });
+        assert(kit.shots.at(-1).time.endsWith(`${length}s`), `shot list missed ${length}s`);
+      });
+    });
+    test("plain-text export contains every deliverable", () => {
+      const text = ShortsHookGenerator.toText(ShortsHookGenerator.generate(input));
+      ["HOOKS", "TITLES", "SHOT LIST", "CAPTION", "POSTING CHECKLIST"].forEach((heading) => assert(text.includes(heading), `missing ${heading}`));
+    });
+    test("unsafe topic characters remain data, not markup", () => {
+      const kit = ShortsHookGenerator.generate({ ...input, topic: "<script>alert(1)<\/script> coffee" });
+      assert(kit.input.topic.includes("<script>"), "generator unexpectedly mutates valid text");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shorts Hook Lab creates platform-aware hooks, titles, shot lists, captions, and posting checklists without an API.">
+  <title>Shorts Hook Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Shorts Hook Lab home">
+      <span class="brand-mark" aria-hidden="true">SH</span>
+      <span>Shorts Hook Lab</span>
+    </a>
+    <div class="top-actions">
+      <button class="quiet-button" id="historyButton" type="button" aria-controls="historyPanel">History</button>
+      <span class="plan-label">Free</span>
+      <button class="upgrade-button" id="upgradeButton" type="button">Lifetime upgrade</button>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="input-rail" aria-label="Generator controls">
+      <form id="generatorForm">
+        <div class="field-group">
+          <div class="label-row">
+            <label>Platform</label>
+            <button class="info-button" type="button" data-tooltip="Each platform gets different pacing, title, caption, and checklist guidance." aria-label="Platform help">i</button>
+          </div>
+          <div class="segmented" id="platformControl">
+            <label><input type="radio" name="platform" value="fastfeed" checked><span>Fast feed</span></label>
+            <label><input type="radio" name="platform" value="visualfeed"><span>Visual feed</span></label>
+            <label><input type="radio" name="platform" value="searchfeed"><span>Search feed</span></label>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <div class="label-row">
+            <label for="topicInput">Topic</label>
+            <span class="counter" id="topicCounter">0 / 180</span>
+          </div>
+          <textarea id="topicInput" maxlength="180" rows="6" required placeholder="Example: 3 cheap ways to make home coffee taste better">3 cheap ways to make home coffee taste better</textarea>
+          <div class="suggestion-row" aria-label="Topic suggestions">
+            <button type="button" class="topic-chip" data-topic="a 10-minute morning routine for busy freelancers">Morning routine</button>
+            <button type="button" class="topic-chip" data-topic="simple meal prep for busy parents on a budget">Meal prep</button>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="toneSelect">Tone</label>
+          <select id="toneSelect">
+            <option value="conversational">Conversational</option>
+            <option value="bold">Bold</option>
+            <option value="helpful">Helpful</option>
+            <option value="playful">Playful</option>
+            <option value="story">Story-led</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <div class="label-row">
+            <label>Length</label>
+            <span class="duration-hint" id="durationHint">Fast, focused value</span>
+          </div>
+          <div class="segmented length-control">
+            <label><input type="radio" name="length" value="15"><span>15s</span></label>
+            <label><input type="radio" name="length" value="30" checked><span>30s</span></label>
+            <label><input type="radio" name="length" value="45"><span>45s</span></label>
+            <label><input type="radio" name="length" value="60"><span>60s</span></label>
+          </div>
+        </div>
+
+        <div class="tip" id="platformTip">
+          <strong>Quick note</strong>
+          <span>Fast-feed clips reward immediate tension and conversational delivery.</span>
+        </div>
+
+        <button class="generate-button" type="submit">Generate content kit</button>
+        <p class="local-note">Runs privately in your browser. No account or API key.</p>
+      </form>
+
+      <section class="free-note" aria-label="Free plan">
+        <div>
+          <strong>Free edition</strong>
+          <p>Core generator, local history, copy, print, and text export included.</p>
+        </div>
+        <button type="button" id="railUpgradeButton">See lifetime extras</button>
+      </section>
+    </aside>
+
+    <section class="workspace" aria-live="polite">
+      <div class="empty-state" id="emptyState" hidden>
+        <span class="empty-mark">SH</span>
+        <h1>Turn one idea into a shoot-ready short.</h1>
+        <p>Add a topic, choose your format, and generate a complete content kit.</p>
+      </div>
+
+      <div id="resultView">
+        <section class="hero-result">
+          <div class="eyebrow">Your top hook</div>
+          <div class="hero-hook-row">
+            <span class="spark" aria-hidden="true">*</span>
+            <div>
+              <h1 id="topHook"></h1>
+              <p id="hookRationale"></p>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <button class="icon-button" id="favoriteTopButton" type="button" title="Favorite this hook" aria-label="Favorite this hook">*</button>
+            <button class="secondary-button" id="copyTopButton" type="button">Copy hook</button>
+            <button class="primary-small" id="copyKitButton" type="button">Copy full kit</button>
+          </div>
+        </section>
+
+        <nav class="tabs" aria-label="Generated content">
+          <button type="button" class="tab active" data-tab="hooks">Hooks <span id="hookCount"></span></button>
+          <button type="button" class="tab" data-tab="titles">Titles</button>
+          <button type="button" class="tab" data-tab="shots">Shot list</button>
+          <button type="button" class="tab" data-tab="caption">Caption</button>
+          <button type="button" class="tab" data-tab="checklist">Checklist</button>
+        </nav>
+
+        <section class="tab-content" id="tabContent"></section>
+
+        <section class="insight-band">
+          <div>
+            <span class="insight-label">Why it works</span>
+            <ul id="whyList"></ul>
+          </div>
+          <div>
+            <span class="insight-label">Platform lens</span>
+            <p id="platformLens"></p>
+          </div>
+        </section>
+
+        <footer class="workspace-footer">
+          <div class="status-message" id="statusMessage">Ready</div>
+          <div class="export-actions">
+            <button class="quiet-button" type="button" id="printButton">Print</button>
+            <button class="quiet-button" type="button" id="jsonButton">Export JSON</button>
+            <button class="secondary-button" type="button" id="textButton">Export text</button>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <aside class="drawer" id="historyPanel" aria-hidden="true">
+    <div class="drawer-header">
+      <div>
+        <span class="eyebrow">Saved locally</span>
+        <h2>History</h2>
+      </div>
+      <button class="icon-button" id="closeHistoryButton" type="button" aria-label="Close history">x</button>
+    </div>
+    <div class="drawer-actions">
+      <button class="quiet-button" id="clearHistoryButton" type="button">Clear all</button>
+    </div>
+    <div class="history-list" id="historyList"></div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <dialog id="upgradeDialog">
+    <button class="dialog-close" id="closeUpgradeButton" type="button" aria-label="Close">x</button>
+    <span class="eyebrow">Optional one-time purchase</span>
+    <h2>Lifetime edition</h2>
+    <p class="dialog-lead">A clear upgrade path for your marketplace product. This demo does not process payments or pretend a purchase is active.</p>
+    <ul class="upgrade-list">
+      <li>Unlimited saved projects and favorites</li>
+      <li>Custom hook formula packs</li>
+      <li>Brand voice presets and reusable CTAs</li>
+      <li>CSV batch generation and branded exports</li>
+    </ul>
+    <div class="price-row">
+      <div><strong>$39</strong><span>suggested one-time price</span></div>
+      <button class="upgrade-button" id="marketplaceCopyButton" type="button">Copy sales-page note</button>
+    </div>
+    <small>Pricing and features are editable product positioning, not a guarantee of future updates or sales results.</small>
+  </dialog>
+
+  <script src="generator.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
