@@ -16,11 +16,19 @@ This registry records public deployment URLs that were verified after the user r
 
 | Surface | Status | Blocker |
 |---|---|---|
-| Trade-Repo portfolio launcher | source published | GitHub Pages expected URL returns 404; Pages not confirmed enabled |
+| Trade-Repo portfolio launcher | Pages workflow installed | GitHub Pages expected URL still returns 404 after workflow publication; Pages settings/build status not confirmed |
 | Trade-Repo release ZIPs | inventoried | GitHub connector cannot upload release assets in this session |
 | Gumroad listings | not executed in this turn | Marketplace browser upload requires working Chrome/in-app account automation |
 | Payhip listings | not executed in this turn | Marketplace browser upload requires working Chrome/in-app account automation |
 | Ko-fi/Fourthwall/Buy Me a Coffee listings | not executed in this turn | Marketplace browser upload requires working Chrome/in-app account automation |
+
+## GitHub Pages Publish Attempt
+
+- Added `.github/workflows/pages.yml` with the official Pages Actions flow.
+- Added `.nojekyll` so static files are served without Jekyll processing.
+- Workflow commit: `d32f8a0c78ebe7b1047cd8cd0b1e2d2feda79dd5`.
+- `.nojekyll` commit: `bbbed4caa3e83ac7362f45797bd75ce7a5beea00`.
+- Verification after publication: `https://larareoj-code.github.io/Trade-Repo/` still returned HTTP 404.
 
 ## Verification Notes
 
