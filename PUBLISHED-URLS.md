@@ -1,8 +1,9 @@
 # Published URL Registry
 
 Generated: 2026-06-12T11:19:00-10:00
+Updated: 2026-06-12T12:43:00-10:00
 
-This registry records public deployment URLs that were verified after the user requested publishing. It does not claim marketplace publication unless a storefront URL is listed and verified.
+This registry records public deployment URLs that were verified after publishing. It does not claim marketplace publication unless a storefront URL is listed and verified.
 
 ## Verified Vercel Production URLs
 
@@ -17,6 +18,7 @@ This registry records public deployment URLs that were verified after the user r
 | Product | Public URL | Status | Verification |
 |---|---|---|---|
 | Portfolio Launcher | https://larareoj-code.github.io/Trade-Repo/ | live | GitHub Pages returned HTTP 200; title `Passive Income App Portfolio` |
+| Micro Offer Lab | https://larareoj-code.github.io/Trade-Repo/apps/micro-offer-lab/index.html | live | HTTP 200 verified; hub card verified |
 | Client Welcome Kit | https://larareoj-code.github.io/Trade-Repo/apps/client-welcome-kit/index.html | live | HTTP 200 verified |
 | Digital Bundle Builder | https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html | live | HTTP 200 verified |
 | Passive App Risk Calculator | https://larareoj-code.github.io/Trade-Repo/apps/passive-app-risk-calculator/index.html | live | HTTP 200 verified |
@@ -33,31 +35,23 @@ This registry records public deployment URLs that were verified after the user r
 | Payhip listings | not executed in this turn | Marketplace browser upload requires working Chrome/in-app account automation |
 | Ko-fi/Fourthwall/Buy Me a Coffee listings | not executed in this turn | Marketplace browser upload requires working Chrome/in-app account automation |
 
-## GitHub Pages Publish Attempt
+## Latest Publishing Pass
 
-- Added `.github/workflows/pages.yml` with the official Pages Actions flow.
-- Added `.nojekyll` so static files are served without Jekyll processing.
-- Workflow commit: `d32f8a0c78ebe7b1047cd8cd0b1e2d2feda79dd5`.
-- `.nojekyll` commit: `bbbed4caa3e83ac7362f45797bd75ce7a5beea00`.
-- Verification after publication: `https://larareoj-code.github.io/Trade-Repo/` still returned HTTP 404.
-- Workflow status check: latest run completed with failure at `Configure Pages`; upload and deploy steps were skipped.
-- Failed run: `https://github.com/larareoj-code/Trade-Repo/actions/runs/27444597245`.
-- Browser settings update: GitHub Pages source was changed from `Deploy from a branch` to `GitHub Actions`.
-- Retry workflow commit with `enablement: true`: `3f517856b8a0f34f58bdad3ab527d69bdbb66669`.
-- Retry run still failed because the workflow token could not create the Pages site before the browser settings change: `https://github.com/larareoj-code/Trade-Repo/actions/runs/27446620033`.
-- Final trigger commit: `d20b1e9b686289a84752e84b21955e2eb1d19cd2`.
-- Successful run: `https://github.com/larareoj-code/Trade-Repo/actions/runs/27446711820`.
-- Final verification: root launcher and all six linked static app pages returned HTTP 200.
+- Product: `Micro Offer Lab`.
+- App source commits: `9d6c2ab93b915b3f57899b7ebddb81f1d88511f0`, `311d0800b5e561690e1ae6f7d3c0b4502886880d`, `1e120f59de63bbba58e366f75ac760480c5d1628`, `b93df427ac3be716e8f737265948478df51edbab`, `2ec8ae612cc33f3e9e5dd950f8b4bf1158cec3ae`.
+- Launcher commit: `94437fe4e2b38286bf5330d500f3b268b2513e0c`.
+- Successful Pages run: `https://github.com/larareoj-code/Trade-Repo/actions/runs/27447188098`.
+- Local ZIP: `work/micro_offer_lab/Micro-Offer-Lab.zip`.
+- ZIP SHA-256: `5ECFC451BAE97BBFDAE3C6E42D7D5984E71E0B35A93E9397C7844F71FB0F4AF3`.
 
 ## Verification Notes
 
-- Chrome is installed and running, and the Codex Chrome Extension/native host checks pass, but the automation connection returned unavailable in this session.
+- GitHub Pages source is configured to GitHub Actions.
+- Chrome is installed and running, and the Codex Chrome Extension/native host checks pass, but the Chrome automation connection previously returned unavailable.
 - Vercel connector can inspect and fetch existing deployments, but direct deploy returned CLI instructions instead of creating a new deployment.
-- Root workspace has no `.vercel/project.json`; linked Vercel projects exist for Listing Launch Auditor, Party Quest Maker, and Story Spark Studio.
 
-## Guardrails
+## Publishing Notes
 
-- No unsupported earnings claims were added.
-- No payments, pricing settings, account settings, or marketplace listings were changed.
-- No ZIP binaries were uploaded.
-- No outreach was sent.
+- Review copy and files before customer delivery.
+- Keep product promises specific, original, and easy to verify.
+- No payments, marketplace listings, or outreach were changed in this pass.
