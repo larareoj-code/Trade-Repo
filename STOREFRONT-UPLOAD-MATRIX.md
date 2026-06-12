@@ -1,15 +1,21 @@
 # Storefront Upload Matrix
 
 Generated: 2026-06-12T11:08:00-10:00
-Updated: 2026-06-12T12:53:00-10:00
+Updated: 2026-06-12T13:30:58-10:00
 
-Purpose: convert the release package inventory into a practical upload queue for the storefronts already used in this project. This is a control document only; it does not publish products, change account settings, or verify live storefront URLs.
+Purpose: convert the release package inventory into a practical upload queue for the storefronts already used in this project. This is a control document for upload status, public URL tracking, and post-upload review; it does not change account settings by itself.
 
 ## Upload Rules
 
 - Use the ZIP path and SHA-256 from `RELEASE-PACKAGES.md` before uploading.
 - Keep product promises specific, original, and easy to verify.
 - After every manual upload, verify the public product page and record the URL in the local learning ledger.
+
+## Verified Storefront Listings
+
+| Product | Platform | Public URL | Price | Verification |
+|---|---|---|---:|---|
+| Digital Bundle Builder | Gumroad | https://larareoj.gumroad.com/l/digital-bundle-builder | $19 | Public page live; no `not currently for sale` text; checkout button verified in Chrome |
 
 ## Priority Queue
 
@@ -18,7 +24,7 @@ Purpose: convert the release package inventory into a practical upload queue for
 | 1 | Sales Page Snack Pack | Gumroad | Payhip, Ko-fi | $9 | ready for manual upload | listing copy, ZIP hash |
 | 2 | Micro Offer Lab | Gumroad | Payhip, Ko-fi | $9-$19 | ready for manual upload | listing copy, ZIP hash |
 | 3 | Video Prompt Pack Builder | Gumroad | Payhip, Ko-fi | $9-$19 | ready for manual upload | listing copy, ZIP hash |
-| 4 | Digital Bundle Builder | Gumroad | Payhip, Ko-fi | $9-$19 | ready for manual upload | listing copy, ZIP hash |
+| 4 | Digital Bundle Builder | Gumroad | Payhip, Ko-fi | $19 | Gumroad published and verified | optional Payhip/Ko-fi mirror review |
 | 5 | Client Welcome Kit | Gumroad | Payhip, Ko-fi | $9-$29 | ready for manual upload | service-business positioning |
 | 6 | Shorts Hook Lab | Gumroad | Payhip, Ko-fi | $9-$19 | ready for manual upload | no platform growth claims |
 | 7 | Listing Launch Auditor | Gumroad | Payhip | $9-$49 | ready for manual upload | software/license notes |
@@ -57,5 +63,6 @@ For each public listing:
 
 ## Current Blockers
 
-- Public marketplace upload requires manual storefront action or browser/account-state automation.
+- Remaining marketplace uploads require manual storefront action or browser/account-state automation.
 - ZIP artifacts are inventoried but not uploaded as GitHub Release assets.
+- Digital Bundle Builder is live on Gumroad; Payhip/Ko-fi mirrors are not yet executed.
