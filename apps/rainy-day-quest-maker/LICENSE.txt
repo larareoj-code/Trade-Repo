@@ -1,0 +1,20 @@
+Rainy Day Quest Maker - Single Buyer License
+
+You may use this digital product for your own personal or commercial printable activity work.
+
+You may:
+- Use and modify the included HTML, CSS, JavaScript, templates, and copy for your own projects.
+- Generate, edit, print, and export family activity drafts for yourself or your business.
+- Adapt generated outputs after review.
+
+You may not:
+- Resell, redistribute, sublicense, or share the source package as a competing template or app.
+- Claim that the product guarantees child engagement, educational outcomes, sales, or platform approval.
+- Use the product with unsafe locations, choking hazards, private information, or unsupervised child-directed purchase prompts.
+- Remove this license from redistributed internal copies.
+
+Privacy:
+The product is designed to run locally in the buyer's browser. Inputs and exports stay on the buyer's device unless copied, uploaded, or shared by the buyer.
+
+Safety:
+This product provides family activity drafts only. A grown-up should review and supervise every activity.
