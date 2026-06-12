@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Estimate the costs and non-financial risks of bandwidth-sharing and similar passive-app experiments before installing anything."
+    />
+    <title>Passive App Risk Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Risk-first calculator</p>
+        <h1>Passive App Risk Calculator</h1>
+        <p class="subtitle">
+          Compare payout claims against electricity, data, privacy, account, and device risks before installing bandwidth-sharing or background earning apps.
+        </p>
+      </div>
+      <div class="status-pill" id="saveState">Draft ready</div>
+    </header>
+
+    <main class="workspace">
+      <section class="panel controls">
+        <h2>Inputs</h2>
+        <form id="riskForm">
+          <label>
+            App or experiment name
+            <input id="appName" placeholder="e.g. bandwidth-sharing app" />
+          </label>
+
+          <label>
+            Category
+            <select id="category">
+              <option>Bandwidth sharing</option>
+              <option>Background rewards app</option>
+              <option>Device node</option>
+              <option>Browser extension rewards</option>
+              <option>Other passive app</option>
+            </select>
+          </label>
+
+          <div class="grid-2">
+            <label>
+              Claimed monthly payout (USD)
+              <input id="claimedPayout" type="number" min="0" step="0.01" />
+            </label>
+            <label>
+              Payout threshold (USD)
+              <input id="payoutThreshold" type="number" min="0" step="0.01" />
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label>
+              Device watts while running
+              <input id="deviceWatts" type="number" min="0" step="1" />
+            </label>
+            <label>
+              Hours per day
+              <input id="hoursPerDay" type="number" min="0" max="24" step="1" />
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label>
+              Electricity cost per kWh
+              <input id="kwhCost" type="number" min="0" step="0.01" />
+            </label>
+            <label>
+              Monthly bandwidth use (GB)
+              <input id="bandwidthGb" type="number" min="0" step="1" />
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label>
+              Data cap (GB/month)
+              <input id="dataCapGb" type="number" min="0" step="1" />
+            </label>
+            <label>
+              Overage cost per GB
+              <input id="overageCost" type="number" min="0" step="0.01" />
+            </label>
+          </div>
+
+          <fieldset>
+            <legend>Risk flags</legend>
+            <label class="check-row"><input id="unknownCompany" type="checkbox" /> Unknown or hard-to-verify operator</label>
+            <label class="check-row"><input id="requiresKyc" type="checkbox" /> Requires identity or payment details before clear payout terms</label>
+            <label class="check-row"><input id="residentialProxy" type="checkbox" /> Sells or routes residential traffic</label>
+            <label class="check-row"><input id="unclearDataUse" type="checkbox" /> Unclear data collection or traffic use</label>
+            <label class="check-row"><input id="ispConcern" type="checkbox" /> May conflict with ISP or device terms</label>
+            <label class="check-row"><input id="alwaysOnDevice" type="checkbox" /> Requires an always-on device</label>
+            <label class="check-row"><input id="lowReviews" type="checkbox" /> Limited independent reviews or unresolved complaints</label>
+          </fieldset>
+
+          <label>
+            Notes
+            <textarea id="notes" rows="4" placeholder="Add review notes, links checked, or questions to resolve before testing."></textarea>
+          </label>
+
+          <div class="button-row">
+            <button type="button" class="primary" id="calculateBtn">Calculate</button>
+            <button type="button" id="copyBtn">Copy report</button>
+            <button type="button" id="downloadJsonBtn">Download JSON</button>
+            <button type="button" id="downloadCsvBtn">Download CSV</button>
+            <button type="button" id="resetBtn">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel output">
+        <h2>Risk Review</h2>
+        <div class="summary-grid">
+          <div class="summary-box">
+            <span>Decision</span>
+            <strong id="decisionValue">Not evaluated</strong>
+          </div>
+          <div class="summary-box">
+            <span>Risk score</span>
+            <strong id="riskScore">--</strong>
+          </div>
+          <div class="summary-box">
+            <span>Monthly net estimate</span>
+            <strong id="netEstimate">--</strong>
+          </div>
+        </div>
+
+        <div class="split">
+          <section class="subpanel">
+            <h3>Cost breakdown</h3>
+            <ul id="costList"></ul>
+          </section>
+          <section class="subpanel">
+            <h3>Risk flags</h3>
+            <ul id="riskList"></ul>
+          </section>
+        </div>
+
+        <section class="subpanel">
+          <h3>Review checklist</h3>
+          <ul id="checklist"></ul>
+        </section>
+
+        <section class="subpanel">
+          <h3>Structured report</h3>
+          <pre id="reportJson"></pre>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Educational calculator only. It does not endorse any app, predict earnings, provide tax advice, or replace reading platform, ISP, device, and privacy terms.
+    </footer>
+
+    <script src="calculator.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

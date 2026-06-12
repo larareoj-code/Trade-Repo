@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Passive App Risk Calculator Tests</title>
+  <style>
+    body { max-width: 760px; margin: 40px auto; padding: 0 20px; font: 16px/1.5 system-ui, sans-serif; }
+    li { margin: 8px 0; }
+    .pass { color: #087b55; }
+    .fail { color: #b42318; }
+  </style>
+</head>
+<body>
+  <h1>Passive App Risk Calculator focused tests</h1>
+  <ol id="results"></ol>
+  <script src="calculator.js"></script>
+  <script>
+    const output = document.getElementById("results");
+    function test(name, fn) {
+      const item = document.createElement("li");
+      try { fn(); item.textContent = `PASS: ${name}`; item.className = "pass"; }
+      catch (error) { item.textContent = `FAIL: ${name} - ${error.message}`; item.className = "fail"; document.title = "Tests failed"; }
+      output.appendChild(item);
+    }
+    function assert(condition, message) { if (!condition) throw new Error(message); }
+
+    const base = {
+      appName: "Review app",
+      category: "Bandwidth sharing",
+      claimedPayout: "20",
+      payoutThreshold: "20",
+      deviceWatts: "20",
+      hoursPerDay: "8",
+      kwhCost: "0.25",
+      bandwidthGb: "50",
+      dataCapGb: "1000",
+      overageCost: "0",
+      notes: ""
+    };
+
+    test("low-risk case permits small test only", () => {
+      const report = PassiveAppRiskCalculator.calculate(base);
+      assert(report.decision === "small_test_only", `unexpected decision ${report.decision}`);
+      assert(report.cost_breakdown.monthly_net_estimate > 0, "net estimate missing");
+    });
+
+    test("residential proxy quarantines", () => {
+      const report = PassiveAppRiskCalculator.calculate({ ...base, residentialProxy: true });
+      assert(report.decision === "avoid_or_quarantine", "proxy risk did not quarantine");
+    });
+
+    test("electricity can make estimate negative", () => {
+      const report = PassiveAppRiskCalculator.calculate({ ...base, claimedPayout: "1", deviceWatts: "100", hoursPerDay: "24", kwhCost: "0.5" });
+      assert(report.cost_breakdown.monthly_net_estimate < 0, "negative estimate not detected");
+    });
+
+    test("data overage is included", () => {
+      const report = PassiveAppRiskCalculator.calculate({ ...base, bandwidthGb: "1200", dataCapGb: "1000", overageCost: "0.25" });
+      assert(report.cost_breakdown.overage_cost === 50, "overage cost mismatch");
+    });
+
+    test("CSV export includes risk score", () => {
+      const report = PassiveAppRiskCalculator.calculate(base);
+      assert(PassiveAppRiskCalculator.toCsv(report).includes("risk_score"), "missing CSV risk score");
+    });
+
+    if (![...output.children].some((item) => item.className === "fail")) {
+      document.title = "All tests passed";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Passive App Risk Calculator cover</title>
+  <desc id="desc">Editorial cover art with device, meter, checklist, and risk markers.</desc>
+  <rect width="1600" height="1000" fill="#f6f7f3"/>
+  <rect x="110" y="110" width="1380" height="780" rx="28" fill="#ffffff" stroke="#d6ddd5" stroke-width="6"/>
+  <rect x="190" y="210" width="510" height="580" rx="38" fill="#162029"/>
+  <rect x="225" y="255" width="440" height="80" rx="14" fill="#0a7c77"/>
+  <circle cx="280" cy="295" r="18" fill="#ffffff"/>
+  <rect x="330" y="278" width="250" height="26" rx="13" fill="#e9f5f3"/>
+  <rect x="245" y="390" width="370" height="36" rx="18" fill="#ffffff" opacity=".9"/>
+  <rect x="245" y="455" width="300" height="36" rx="18" fill="#ffffff" opacity=".78"/>
+  <rect x="245" y="520" width="330" height="36" rx="18" fill="#ffffff" opacity=".66"/>
+  <path d="M780 270h560M780 360h440M780 450h520M780 540h360M780 630h470" stroke="#d6ddd5" stroke-width="32" stroke-linecap="round"/>
+  <circle cx="1260" cy="360" r="74" fill="#fff0f2" stroke="#bf4452" stroke-width="10"/>
+  <path d="M1230 360l26 27 49-61" fill="none" stroke="#bf4452" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1050" cy="650" r="98" fill="#e8f4ef" stroke="#2d7d56" stroke-width="10"/>
+  <path d="M1010 655h80M1050 615v80" stroke="#2d7d56" stroke-width="16" stroke-linecap="round"/>
+  <text x="780" y="220" fill="#162029" font-family="Arial, sans-serif" font-size="70" font-weight="800">Passive App</text>
+  <text x="780" y="305" fill="#0a7c77" font-family="Arial, sans-serif" font-size="70" font-weight="800">Risk Calculator</text>
+  <text x="780" y="760" fill="#697681" font-family="Arial, sans-serif" font-size="34" font-weight="700">Costs, privacy, ISP, and payout review</text>
+</svg>
