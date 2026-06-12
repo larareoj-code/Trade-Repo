@@ -4,6 +4,17 @@ GitHub-first control repo for the local-first apps and digital product utilities
 
 This repository is intentionally framed as a portfolio of low-touch product experiments, not guaranteed income. The apps are static or local-first unless their own README says otherwise. They do not make earnings promises, publish externally, send outreach, or provide regulated legal, financial, medical, or tax advice.
 
+## Portfolio Launcher
+
+The repo root now includes a GitHub Pages-ready static launcher:
+
+- `index.html`
+- `pages.css`
+- `pages.js`
+- `GITHUB-PAGES-SETUP.md`
+
+If GitHub Pages is enabled from the default branch root, the launcher becomes the entry point for the app batch and links to each `apps/<slug>/index.html` surface.
+
 ## Current GitHub Publication State
 
 | App | Folder | GitHub status | Local source root |
@@ -25,7 +36,7 @@ Already-live sibling repositories remain active:
 
 Each queued app is designed for static hosting. Most can run by opening `index.html` directly in a browser. To deploy through GitHub-backed hosting after source upload, import this repository and set the host root directory to the specific app folder.
 
-For Vercel, create one project per app and set the project root to the desired `apps/<slug>` folder. For GitHub Pages, publish one app at a time from the selected folder or copy the selected app files into a Pages branch/root.
+For GitHub Pages, enable Pages from the default branch root and verify the launcher plus each app card before using the public URL in storefront listings. For Vercel or another host, create one project per app and set the project root to the desired `apps/<slug>` folder.
 
 ## Safety Boundaries
 
