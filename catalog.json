@@ -1,6 +1,6 @@
 {
   "generated_at_hst": "2026-06-12T07:40:31-10:00",
-  "updated_at_hst": "2026-06-12T12:53:00-10:00",
+  "updated_at_hst": "2026-06-12T13:25:36-10:00",
   "repository": "larareoj-code/Trade-Repo",
   "strategy": "github_pages_static_product_hub",
   "portfolio_launcher": {
@@ -12,7 +12,8 @@
   "publishing_notes": [
     "review_copy_and_files_before_customer_delivery",
     "keep_product_promises_specific_original_and_easy_to_verify",
-    "marketplace_uploads_require_working_browser_or_manual_upload_path"
+    "marketplace_uploads_require_working_browser_or_manual_upload_path",
+    "digital_bundle_builder_gumroad_live_verified"
   ],
   "apps": [
     {"slug":"sales-page-snack-pack","title":"Sales Page Snack Pack","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/sales-page-snack-pack/index.html","local_source_root":"work/sales_page_snack_pack","package_artifact":"work/sales_page_snack_pack/Sales-Page-Snack-Pack.zip","package_sha256":"51B6CFCB4964C4F606951FEBE901D96524452B338A20D6082FAA956473F54454","status":"published_and_verified"},
@@ -22,6 +23,6 @@
     {"slug":"rainy-day-quest-maker","title":"Rainy Day Quest Maker","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/rainy-day-quest-maker/index.html","local_source_root":"work/rainy_day_quest_maker","package_artifact":"work/rainy_day_quest_maker/Rainy-Day-Quest-Maker.zip","status":"published_and_verified"},
     {"slug":"video-prompt-pack-builder","title":"Video Prompt Pack Builder","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/video-prompt-pack-builder/index.html","local_source_root":"work/deploy_team/next_product","package_artifact":"work/deploy_team/next_product/Video-Prompt-Pack-Builder.zip","status":"published_and_verified"},
     {"slug":"passive-app-risk-calculator","title":"Passive App Risk Calculator","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/passive-app-risk-calculator/index.html","local_source_root":"work/passive_app_risk_calculator","package_artifact":"work/passive_app_risk_calculator/Passive-App-Risk-Calculator.zip","status":"published_and_verified"},
-    {"slug":"digital-bundle-builder","title":"Digital Bundle Builder","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html","local_source_root":"work/digital_bundle_builder","package_artifact":"work/digital_bundle_builder/Digital-Bundle-Builder.zip","status":"published_and_verified"}
+    {"slug":"digital-bundle-builder","title":"Digital Bundle Builder","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html","local_source_root":"work/digital_bundle_builder","package_artifact":"work/digital_bundle_builder/Digital-Bundle-Builder.zip","status":"published_and_verified","marketplace_channel":"gumroad","marketplace_url":"https://larareoj.gumroad.com/l/digital-bundle-builder","marketplace_status":"live_verified","marketplace_verified_at_hst":"2026-06-12T13:25:36-10:00"}
   ]
 }
