@@ -1,13 +1,15 @@
 # GitHub Publish Manifest
 
 Generated: 2026-06-12T07:40:31-10:00
-Updated: 2026-06-12T10:32:00-10:00
+Updated: 2026-06-12T10:52:00-10:00
 Repository: `larareoj-code/Trade-Repo`
 Strategy: GitHub-first control repo for static/local-first product apps.
 
 ## Published So Far
 
 - Root portfolio README.
+- Root GitHub Pages-ready portfolio launcher: `index.html`, `pages.css`, `pages.js`.
+- GitHub Pages setup runbook: `GITHUB-PAGES-SETUP.md`.
 - Catalog JSON for the queued app portfolio.
 - Full source for `apps/shorts-hook-lab`.
 - Full source for `apps/client-welcome-kit`.
@@ -27,6 +29,13 @@ Strategy: GitHub-first control repo for static/local-first product apps.
 | Passive App Risk Calculator | `apps/passive-app-risk-calculator` | `work/passive_app_risk_calculator` | `work/passive_app_risk_calculator/Passive-App-Risk-Calculator.zip` | source published and verified |
 | Digital Bundle Builder | `apps/digital-bundle-builder` | `work/digital_bundle_builder` | `work/digital_bundle_builder/Digital-Bundle-Builder.zip` | source published and verified |
 
+## Portfolio Launcher Commits
+
+- `9cfa1831e0814ef1ba566df404e7831873eb5864` - root `index.html`
+- `64f06e73129d62c84c3008c9b177643f83b019d0` - root `pages.css`
+- `491aac4594a58ea14a4ec54278b470aea056bda6` - root `pages.js`
+- `505ac03f26abe37f5835569f2efc6ed1f6287b97` - `GITHUB-PAGES-SETUP.md`
+
 ## Connector Limitation
 
 The current GitHub connector can create and update UTF-8 files and Git tree objects. It does not expose a direct local-folder upload or GitHub Releases asset upload flow in this session, so source upload proceeded in app-sized commits. ZIP and PNG package artifacts remain local or marketplace/release-only.
@@ -36,11 +45,11 @@ The current GitHub connector can create and update UTF-8 files and Git tree obje
 - No unsupported earnings claims were added.
 - No regulated advice functionality was added.
 - No account settings, marketplace products, payments, emails, or outreach were changed.
-- GitHub publication is source-control/distribution preparation only; public hosting still requires a host import/deployment step after source files are uploaded.
+- GitHub publication is source-control/distribution preparation only; public hosting still requires GitHub Pages enablement or another host import/deployment step.
 
 ## Next Steps
 
-1. Use GitHub Releases or marketplace upload tools for ZIP/PNG binaries when a release flow is available.
-2. Import each completed `apps/<slug>` folder into Vercel, GitHub Pages, or another static host when authenticated.
-3. Verify public pages after host deployment before adding marketplace links.
+1. Enable GitHub Pages from the default branch root when ready.
+2. Verify the launcher and each app card after Pages builds.
+3. Use GitHub Releases or marketplace upload tools for ZIP/PNG binaries when a release flow is available.
 4. Use the local learning ledger and Obsidian deployment history as the decision log before selecting the next build lane.
