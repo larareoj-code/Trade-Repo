@@ -1,8 +1,27 @@
 {
   "generated_at_hst": "2026-06-12T07:40:31-10:00",
-  "updated_at_hst": "2026-06-12T10:32:00-10:00",
+  "updated_at_hst": "2026-06-12T10:52:00-10:00",
   "repository": "larareoj-code/Trade-Repo",
   "strategy": "github_first_control_repo_app_sized_source_commits",
+  "portfolio_launcher": {
+    "status": "source_published_verified",
+    "files": [
+      "index.html",
+      "pages.css",
+      "pages.js",
+      "GITHUB-PAGES-SETUP.md"
+    ],
+    "commits": [
+      "9cfa1831e0814ef1ba566df404e7831873eb5864",
+      "64f06e73129d62c84c3008c9b177643f83b019d0",
+      "491aac4594a58ea14a4ec54278b470aea056bda6",
+      "505ac03f26abe37f5835569f2efc6ed1f6287b97"
+    ],
+    "risk_flags": [
+      "github_pages_not_enabled_or_verified_in_browser",
+      "source_publish_only_no_account_setting_change"
+    ]
+  },
   "guardrails": [
     "no_unsupported_earnings_claims",
     "no_fake_scarcity_or_reviews",
