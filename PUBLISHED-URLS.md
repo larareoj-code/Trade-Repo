@@ -1,7 +1,7 @@
 # Published URL Registry
 
 Generated: 2026-06-12T11:19:00-10:00
-Updated: 2026-06-12T13:29:36-10:00
+Updated: 2026-06-12T13:55:00-10:00
 
 This registry records public deployment URLs that were verified after publishing. GitHub Pages URLs are free previews and demos unless a separate paid storefront URL is listed and verified.
 
@@ -9,6 +9,9 @@ This registry records public deployment URLs that were verified after publishing
 
 | Product | Storefront URL | Platform | Price | Status | Verification |
 |---|---|---|---:|---|---|
+| Scope Creep Rescue Kit | https://payhip.com/b/1QTL0 | Payhip | $19 | paid checkout live | Public page returned HTTP 200 and contains product title and price |
+| Sales Page Snack Pack | https://payhip.com/b/lWBKA | Payhip | $9 | paid checkout live | Public page returned HTTP 200 and contains product title and price |
+| Micro Offer Lab | https://payhip.com/b/cNulr | Payhip | $9 | paid checkout live | Public page returned HTTP 200 and contains product title and price |
 | Digital Bundle Builder | https://larareoj.gumroad.com/l/digital-bundle-builder | Gumroad | $19 | paid checkout live | Public page returned HTTP 200, product title present, no `not currently for sale` text, and checkout button verified in Chrome |
 
 ## Verified Vercel Production URLs
@@ -24,9 +27,9 @@ This registry records public deployment URLs that were verified after publishing
 | Product | Public URL | Status | Verification |
 |---|---|---|---|
 | Portfolio Launcher | https://larareoj-code.github.io/Trade-Repo/ | live preview hub | GitHub Pages returned HTTP 200; title `Passive Income App Portfolio` |
-| Scope Creep Rescue Kit | https://larareoj-code.github.io/Trade-Repo/apps/scope-creep-rescue-kit/index.html | live preview; paid ZIP ready | HTTP 200 verified; hub card verified |
-| Sales Page Snack Pack | https://larareoj-code.github.io/Trade-Repo/apps/sales-page-snack-pack/index.html | live preview; paid ZIP ready | HTTP 200 verified; hub card verified |
-| Micro Offer Lab | https://larareoj-code.github.io/Trade-Repo/apps/micro-offer-lab/index.html | live preview; paid ZIP ready | HTTP 200 verified; hub card verified |
+| Scope Creep Rescue Kit | https://larareoj-code.github.io/Trade-Repo/apps/scope-creep-rescue-kit/index.html | live preview; Payhip checkout linked | HTTP 200 verified; hub card verified |
+| Sales Page Snack Pack | https://larareoj-code.github.io/Trade-Repo/apps/sales-page-snack-pack/index.html | live preview; Payhip checkout linked | HTTP 200 verified; hub card verified |
+| Micro Offer Lab | https://larareoj-code.github.io/Trade-Repo/apps/micro-offer-lab/index.html | live preview; Payhip checkout linked | HTTP 200 verified; hub card verified |
 | Preview Caption Kit | https://larareoj-code.github.io/Trade-Repo/apps/preview-caption-kit/index.html | live preview; paid ZIP ready | HTTP 200 verified |
 | Client Welcome Kit | https://larareoj-code.github.io/Trade-Repo/apps/client-welcome-kit/index.html | live preview; paid ZIP ready | HTTP 200 verified |
 | Digital Bundle Builder | https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html | live preview; paid Gumroad checkout linked | HTTP 200 verified |
@@ -39,22 +42,22 @@ This registry records public deployment URLs that were verified after publishing
 
 - GitHub Pages cannot enforce payment for static files in this setup; it is the discovery and demo layer.
 - Paid access requires a verified storefront product page or a server-side checkout/license gate.
-- The next paid listing to execute is `Scope Creep Rescue Kit` at $19, followed by `Sales Page Snack Pack` and `Micro Offer Lab`.
+- Current live paid checkouts: three Payhip products plus one Gumroad product.
 
 ## Source-Ready But Not Checkout-Gated
 
 | Surface | Status | Blocker |
 |---|---|---|
-| Scope Creep Rescue Kit ZIP | ready for marketplace upload | Needs Gumroad/Payhip product page and verified paid URL |
-| Sales Page Snack Pack ZIP | ready for marketplace upload | Needs Gumroad/Payhip product page and verified paid URL |
-| Micro Offer Lab ZIP | ready for marketplace upload | Needs Gumroad/Payhip product page and verified paid URL |
 | Preview Caption Kit ZIP | ready for marketplace upload | Needs storefront product page and verified paid URL |
+| Client Welcome Kit ZIP | ready for marketplace upload | Needs storefront product page and verified paid URL |
+| Video Prompt Pack Builder ZIP | ready for marketplace upload | Needs storefront product page and verified paid URL |
+| Remaining Gumroad listings | draft/blocked | New Gumroad file upload did not open through Chrome file chooser |
+| Ko-fi listings | blocked | Ko-fi requires location confirmation and file upload did not open through Chrome file chooser |
 | Trade-Repo release ZIPs | inventoried | GitHub connector cannot upload release assets in this session |
-| Ko-fi/Fourthwall/Buy Me a Coffee listings | not executed in this turn | Marketplace browser upload requires working Chrome/in-app account automation |
 
 ## Publishing Notes
 
 - Do not tell users a tool is paid unless a checkout URL or gated license flow exists.
 - Review copy and files before customer delivery.
 - Keep product promises specific, original, and easy to verify.
-- No payment settings, marketplace account settings, or outreach were changed in this pass.
+- No outreach was changed in this pass.
