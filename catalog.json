@@ -1,6 +1,6 @@
 {
   "generated_at_hst": "2026-06-12T07:40:31-10:00",
-  "updated_at_hst": "2026-06-12T09:12:00-10:00",
+  "updated_at_hst": "2026-06-12T09:42:00-10:00",
   "repository": "larareoj-code/Trade-Repo",
   "strategy": "github_first_control_repo_app_sized_source_commits",
   "guardrails": [
@@ -28,11 +28,7 @@
       "local_source_root": "work/client_welcome_kit",
       "package_artifact": "work/client_welcome_kit/Client-Welcome-Kit.zip",
       "status": "source_published_verified",
-      "source_commit": "e36397ba0e068423f5139dba4caaa45f9861a82e",
-      "status_commits": [
-        "247f4ed997ec1afe4cbdb08aa916ba53b690ef19",
-        "d7ec7cd34940166077c51fa66a1f44068221ec29"
-      ]
+      "source_commit": "e36397ba0e068423f5139dba4caaa45f9861a82e"
     },
     {
       "slug": "rainy-day-quest-maker",
@@ -40,7 +36,22 @@
       "github_folder": "apps/rainy-day-quest-maker",
       "local_source_root": "work/rainy_day_quest_maker",
       "package_artifact": "work/rainy_day_quest_maker/Rainy-Day-Quest-Maker.zip",
-      "status": "runbook_published_source_batch_queued"
+      "status": "source_published_verified",
+      "source_commits": [
+        "d954e47dcb7a2bf0d07822a6d6585027b52a5ba0",
+        "22d909074d239fe046c266f4a82329ecaee8cd96",
+        "4611780ea696db91a9b73c5cefb66d950b097ca0",
+        "33bea47fe4ab62b3b76b4cb2547a14eb5d7da912",
+        "b8e6b8b0310c6bac164bfb2df84cb1538bd04742",
+        "06fb826e247f4f435b34b2520fc27c110ce40a55",
+        "b5b751dd936535fc4ff5afdf22cbca7e8f8c8ac0",
+        "01f96f6d9c21c25c731466f479007dc4b70bb0ce",
+        "170e125d461b70df44f25a61bff76b18260c5cdb"
+      ],
+      "status_commits": [
+        "58360aa3cd940ea2192f99b8e0959a3247ce89af",
+        "087383c11996f1fabfc5dde60fb924d5f23d9da5"
+      ]
     },
     {
       "slug": "video-prompt-pack-builder",
