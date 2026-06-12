@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Rainy Day Quest Maker Tests</title></head>
+<body>
+  <h1>Rainy Day Quest Maker Tests</h1>
+  <ol id="results"></ol>
+  <form id="questForm" hidden>
+    <input name="title"><select name="age"><option value="7-9">7-9</option></select><select name="theme"><option value="cozy">cozy</option></select><select name="difficulty"><option value="medium">medium</option></select><input name="count" value="6"><textarea name="exclusions"></textarea><textarea name="supplies"></textarea>
+  </form>
+  <div id="status"></div><h2 id="questTitle"></h2><p id="questMeta"></p><pre id="briefOutput"></pre><div id="cardsOutput"></div><button id="sampleButton"></button><button id="copyButton"></button><button id="jsonButton"></button><button id="printButton"></button>
+  <script src="app.js"></script>
+  <script>
+    const out = document.getElementById("results");
+    function test(name, fn) { const li = document.createElement("li"); try { fn(); li.textContent = "PASS: " + name; } catch (error) { li.textContent = "FAIL: " + name + " - " + error.message; document.title = "Tests failed"; } out.appendChild(li); }
+    function assert(condition, message) { if (!condition) throw new Error(message); }
+    test("deterministic generation uses same seed", () => {
+      const a = RainyDayQuestMaker.buildQuest({ title:"Test", age:"7-9", theme:"cozy", difficulty:"medium", count:5, exclusions:"kitchen", supplies:"paper" });
+      const b = RainyDayQuestMaker.buildQuest({ title:"Test", age:"7-9", theme:"cozy", difficulty:"medium", count:5, exclusions:"kitchen", supplies:"paper" });
+      assert(a.seed === b.seed, "seed changed");
+      assert(JSON.stringify(a.clues) === JSON.stringify(b.clues), "clues changed");
+    });
+    test("clue count stays inside requested range", () => {
+      const quest = RainyDayQuestMaker.buildQuest({ title:"Test", age:"7-9", theme:"maker", difficulty:"hard", count:8, exclusions:"", supplies:"paper" });
+      assert(quest.clues.length === 8, "wrong clue count");
+    });
+    test("safety text is included", () => {
+      const text = RainyDayQuestMaker.questToText(RainyDayQuestMaker.buildQuest({ title:"Test", age:"7-9", theme:"cozy", difficulty:"easy", count:3, exclusions:"", supplies:"paper" }));
+      assert(text.includes("Safety Review"), "missing safety section");
+      assert(text.includes("grown-up"), "missing supervision note");
+    });
+    if (document.title !== "Tests failed") document.title = "All tests passed";
+  </script>
+</body>
+</html>
