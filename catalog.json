@@ -1,0 +1,63 @@
+{
+  "generated_at_hst": "2026-06-12T07:40:31-10:00",
+  "repository": "larareoj-code/Trade-Repo",
+  "strategy": "github_first_control_repo",
+  "guardrails": [
+    "no_unsupported_earnings_claims",
+    "no_fake_scarcity_or_reviews",
+    "no_spam_outreach",
+    "no_trademark_shortcuts",
+    "no_regulated_advice",
+    "source_publish_only"
+  ],
+  "apps": [
+    {
+      "slug": "shorts-hook-lab",
+      "title": "Shorts Hook Lab",
+      "github_folder": "apps/shorts-hook-lab",
+      "local_source_root": "work/shorts_hook_lab",
+      "package_artifact": "work/shorts_hook_lab/Shorts-Hook-Lab.zip",
+      "status": "runbook_published_source_batch_queued"
+    },
+    {
+      "slug": "client-welcome-kit",
+      "title": "Client Welcome Kit",
+      "github_folder": "apps/client-welcome-kit",
+      "local_source_root": "work/client_welcome_kit",
+      "package_artifact": "work/client_welcome_kit/Client-Welcome-Kit.zip",
+      "status": "runbook_published_source_batch_queued"
+    },
+    {
+      "slug": "rainy-day-quest-maker",
+      "title": "Rainy Day Quest Maker",
+      "github_folder": "apps/rainy-day-quest-maker",
+      "local_source_root": "work/rainy_day_quest_maker",
+      "package_artifact": "work/rainy_day_quest_maker/Rainy-Day-Quest-Maker.zip",
+      "status": "runbook_published_source_batch_queued"
+    },
+    {
+      "slug": "video-prompt-pack-builder",
+      "title": "Video Prompt Pack Builder",
+      "github_folder": "apps/video-prompt-pack-builder",
+      "local_source_root": "work/deploy_team/next_product",
+      "package_artifact": "work/deploy_team/next_product/Video-Prompt-Pack-Builder.zip",
+      "status": "runbook_published_source_batch_queued"
+    },
+    {
+      "slug": "passive-app-risk-calculator",
+      "title": "Passive App Risk Calculator",
+      "github_folder": "apps/passive-app-risk-calculator",
+      "local_source_root": "work/passive_app_risk_calculator",
+      "package_artifact": "work/passive_app_risk_calculator/Passive-App-Risk-Calculator.zip",
+      "status": "runbook_published_source_batch_queued"
+    },
+    {
+      "slug": "digital-bundle-builder",
+      "title": "Digital Bundle Builder",
+      "github_folder": "apps/digital-bundle-builder",
+      "local_source_root": "work/digital_bundle_builder",
+      "package_artifact": "work/digital_bundle_builder/Digital-Bundle-Builder.zip",
+      "status": "runbook_published_source_batch_queued"
+    }
+  ]
+}
