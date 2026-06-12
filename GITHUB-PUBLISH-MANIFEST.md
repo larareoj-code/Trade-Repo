@@ -1,13 +1,14 @@
 # GitHub Publish Manifest
 
 Generated: 2026-06-12T07:40:31-10:00
-Updated: 2026-06-12T11:09:00-10:00
+Updated: 2026-06-12T11:21:00-10:00
 Repository: `larareoj-code/Trade-Repo`
 Strategy: GitHub-first control repo for static/local-first product apps.
 
 ## Published So Far
 
 - Root portfolio README.
+- Verified public URL registry: `PUBLISHED-URLS.md`.
 - Root GitHub Pages-ready portfolio launcher: `index.html`, `pages.css`, `pages.js`.
 - GitHub Pages setup runbook: `GITHUB-PAGES-SETUP.md`.
 - Release package inventory with local ZIP hashes: `RELEASE-PACKAGES.md`.
@@ -19,6 +20,14 @@ Strategy: GitHub-first control repo for static/local-first product apps.
 - Full source for `apps/video-prompt-pack-builder`.
 - Full source for `apps/passive-app-risk-calculator`.
 - Full source for `apps/digital-bundle-builder`.
+
+## Verified Live Apps
+
+| Product | Public URL | Status |
+|---|---|---|
+| Listing Launch Auditor | https://listing-launch-auditor.vercel.app | HTTP 200 verified |
+| Party Quest Maker | https://party-quest-maker.vercel.app | HTTP 200 verified |
+| Story Spark Studio | https://story-spark-studio-two.vercel.app | HTTP 200 verified |
 
 ## Source Roots
 
@@ -39,6 +48,7 @@ Strategy: GitHub-first control repo for static/local-first product apps.
 - `505ac03f26abe37f5835569f2efc6ed1f6287b97` - `GITHUB-PAGES-SETUP.md`
 - `e19eede1bd50db46d8e52c2555213b443304f744` - `RELEASE-PACKAGES.md`
 - `f426aef0a85abe21627d138c7bccd19929eda885` - `STOREFRONT-UPLOAD-MATRIX.md`
+- `914d349e2d96573ca1ec9f4db885353cbb75f904` - `PUBLISHED-URLS.md`
 
 ## Connector Limitation
 
@@ -52,11 +62,13 @@ The current GitHub connector can create and update UTF-8 files and Git tree obje
 - GitHub publication is source-control/distribution preparation only; public hosting still requires GitHub Pages enablement or another host import/deployment step.
 - `RELEASE-PACKAGES.md` is an inventory only, not a public binary release.
 - `STOREFRONT-UPLOAD-MATRIX.md` is a planning/control document only, not a marketplace upload.
+- `PUBLISHED-URLS.md` records verified Vercel production URLs and current blockers for unexecuted channels.
 
 ## Next Steps
 
-1. Enable GitHub Pages from the default branch root when ready.
-2. Verify the launcher and each app card after Pages builds.
-3. Use GitHub Releases or marketplace upload tools for ZIP/PNG binaries when a release flow is available.
-4. Use `STOREFRONT-UPLOAD-MATRIX.md` to prioritize manual Gumroad, Payhip, Ko-fi, Fourthwall, and Buy Me a Coffee uploads.
-5. Use the local learning ledger and Obsidian deployment history as the decision log before selecting the next build lane.
+1. Use the three verified Vercel URLs in storefront listings where appropriate.
+2. Enable GitHub Pages from the default branch root when ready.
+3. Verify the launcher and each app card after Pages builds.
+4. Use GitHub Releases or marketplace upload tools for ZIP/PNG binaries when a release flow is available.
+5. Use `STOREFRONT-UPLOAD-MATRIX.md` to prioritize manual Gumroad, Payhip, Ko-fi, Fourthwall, and Buy Me a Coffee uploads.
+6. Use the local learning ledger and Obsidian deployment history as the decision log before selecting the next build lane.
