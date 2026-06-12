@@ -1,13 +1,13 @@
 {
   "generated_at_hst": "2026-06-12T07:40:31-10:00",
-  "updated_at_hst": "2026-06-12T12:43:00-10:00",
+  "updated_at_hst": "2026-06-12T12:53:00-10:00",
   "repository": "larareoj-code/Trade-Repo",
   "strategy": "github_pages_static_product_hub",
   "portfolio_launcher": {
     "status": "published_and_verified",
     "public_url": "https://larareoj-code.github.io/Trade-Repo/",
-    "latest_launcher_commit": "94437fe4e2b38286bf5330d500f3b268b2513e0c",
-    "latest_successful_pages_run": "https://github.com/larareoj-code/Trade-Repo/actions/runs/27447188098"
+    "latest_launcher_commit": "f1b03defb7a0a0d1cf293b918c22cf165d2d1bfc",
+    "latest_successful_pages_run": "https://github.com/larareoj-code/Trade-Repo/actions/runs/27447578348"
   },
   "publishing_notes": [
     "review_copy_and_files_before_customer_delivery",
@@ -15,12 +15,13 @@
     "marketplace_uploads_require_working_browser_or_manual_upload_path"
   ],
   "apps": [
+    {"slug":"sales-page-snack-pack","title":"Sales Page Snack Pack","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/sales-page-snack-pack/index.html","local_source_root":"work/sales_page_snack_pack","package_artifact":"work/sales_page_snack_pack/Sales-Page-Snack-Pack.zip","package_sha256":"51B6CFCB4964C4F606951FEBE901D96524452B338A20D6082FAA956473F54454","status":"published_and_verified"},
+    {"slug":"micro-offer-lab","title":"Micro Offer Lab","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/micro-offer-lab/index.html","local_source_root":"work/micro_offer_lab","package_artifact":"work/micro_offer_lab/Micro-Offer-Lab.zip","package_sha256":"5ECFC451BAE97BBFDAE3C6E42D7D5984E71E0B35A93E9397C7844F71FB0F4AF3","status":"published_and_verified"},
     {"slug":"shorts-hook-lab","title":"Shorts Hook Lab","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/shorts-hook-lab/index.html","local_source_root":"work/shorts_hook_lab","package_artifact":"work/shorts_hook_lab/Shorts-Hook-Lab.zip","status":"published_and_verified"},
     {"slug":"client-welcome-kit","title":"Client Welcome Kit","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/client-welcome-kit/index.html","local_source_root":"work/client_welcome_kit","package_artifact":"work/client_welcome_kit/Client-Welcome-Kit.zip","status":"published_and_verified"},
     {"slug":"rainy-day-quest-maker","title":"Rainy Day Quest Maker","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/rainy-day-quest-maker/index.html","local_source_root":"work/rainy_day_quest_maker","package_artifact":"work/rainy_day_quest_maker/Rainy-Day-Quest-Maker.zip","status":"published_and_verified"},
     {"slug":"video-prompt-pack-builder","title":"Video Prompt Pack Builder","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/video-prompt-pack-builder/index.html","local_source_root":"work/deploy_team/next_product","package_artifact":"work/deploy_team/next_product/Video-Prompt-Pack-Builder.zip","status":"published_and_verified"},
     {"slug":"passive-app-risk-calculator","title":"Passive App Risk Calculator","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/passive-app-risk-calculator/index.html","local_source_root":"work/passive_app_risk_calculator","package_artifact":"work/passive_app_risk_calculator/Passive-App-Risk-Calculator.zip","status":"published_and_verified"},
-    {"slug":"digital-bundle-builder","title":"Digital Bundle Builder","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html","local_source_root":"work/digital_bundle_builder","package_artifact":"work/digital_bundle_builder/Digital-Bundle-Builder.zip","status":"published_and_verified"},
-    {"slug":"micro-offer-lab","title":"Micro Offer Lab","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/micro-offer-lab/index.html","local_source_root":"work/micro_offer_lab","package_artifact":"work/micro_offer_lab/Micro-Offer-Lab.zip","package_sha256":"5ECFC451BAE97BBFDAE3C6E42D7D5984E71E0B35A93E9397C7844F71FB0F4AF3","status":"published_and_verified"}
+    {"slug":"digital-bundle-builder","title":"Digital Bundle Builder","public_url":"https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html","local_source_root":"work/digital_bundle_builder","package_artifact":"work/digital_bundle_builder/Digital-Bundle-Builder.zip","status":"published_and_verified"}
   ]
 }
