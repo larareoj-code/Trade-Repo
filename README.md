@@ -13,7 +13,7 @@ This repository is intentionally framed as a portfolio of low-touch product expe
 | Rainy Day Quest Maker | `apps/rainy-day-quest-maker` | Runbook published, source batch queued | `work/rainy_day_quest_maker` |
 | Video Prompt Pack Builder | `apps/video-prompt-pack-builder` | Runbook published, source batch queued | `work/deploy_team/next_product` |
 | Passive App Risk Calculator | `apps/passive-app-risk-calculator` | Source published and verified | `work/passive_app_risk_calculator` |
-| Digital Bundle Builder | `apps/digital-bundle-builder` | Runbook published, source batch queued | `work/digital_bundle_builder` |
+| Digital Bundle Builder | `apps/digital-bundle-builder` | Source published and verified | `work/digital_bundle_builder` |
 
 Already-live sibling repositories remain active:
 
