@@ -13,6 +13,7 @@ These public URLs were verified after publishing:
 - [Listing Launch Auditor](https://listing-launch-auditor.vercel.app)
 - [Party Quest Maker](https://party-quest-maker.vercel.app)
 - [Story Spark Studio](https://story-spark-studio-two.vercel.app)
+- [Digital Bundle Builder on Gumroad](https://larareoj.gumroad.com/l/digital-bundle-builder)
 
 See `PUBLISHED-URLS.md` for verification notes, deployment status, and blockers for remaining channels.
 
@@ -46,7 +47,7 @@ The launcher links to each `apps/<slug>/index.html` surface. Seven app-card URLs
 | Rainy Day Quest Maker | `apps/rainy-day-quest-maker` | Source published and Pages URL verified | `work/rainy_day_quest_maker` |
 | Video Prompt Pack Builder | `apps/video-prompt-pack-builder` | Source published and Pages URL verified | `work/deploy_team/next_product` |
 | Passive App Risk Calculator | `apps/passive-app-risk-calculator` | Source published and Pages URL verified | `work/passive_app_risk_calculator` |
-| Digital Bundle Builder | `apps/digital-bundle-builder` | Source published and Pages URL verified | `work/digital_bundle_builder` |
+| Digital Bundle Builder | `apps/digital-bundle-builder` | Source, Pages URL, and Gumroad product verified | `work/digital_bundle_builder` |
 
 Already-live sibling repositories remain active:
 
@@ -61,6 +62,7 @@ Each queued app is designed for static hosting. The GitHub Pages launcher is the
 - Review copy and files before customer delivery.
 - Keep product promises specific, original, and easy to verify.
 - ZIP packages and PNG screenshots remain local build artifacts unless released through GitHub Releases or a marketplace upload flow.
+- Digital Bundle Builder Gumroad page verified live at https://larareoj.gumroad.com/l/digital-bundle-builder on 2026-06-12T13:25:36-10:00.
 
 ## Local Source Of Truth
 
