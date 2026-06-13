@@ -1,7 +1,7 @@
 # Published URL Registry
 
 Generated: 2026-06-12T11:19:00-10:00
-Updated: 2026-06-13T07:03:57-10:00
+Updated: 2026-06-13T07:33:58-10:00
 
 This registry records public deployment URLs that were verified after publishing. GitHub Pages URLs are free previews and demos unless a separate paid storefront URL is listed and verified.
 
@@ -48,6 +48,7 @@ This registry records public deployment URLs that were verified after publishing
 | Party Quest Maker | https://party-quest-maker.vercel.app | live preview; Payhip checkout linked |
 | Invoice Follow-Up Kit | https://larareoj-code.github.io/Trade-Repo/apps/invoice-follow-up-kit/index.html | live preview; Payhip checkout linked |
 | Rush Fee Calculator | https://larareoj-code.github.io/Trade-Repo/apps/rush-fee-calculator/index.html | live preview; Payhip checkout linked |
+| Client Change Order Generator | https://larareoj-code.github.io/Trade-Repo/apps/client-change-order-generator/index.html | live preview; Payhip upload pending |
 | Digital Bundle Builder | https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html | live preview; Gumroad checkout linked |
 
 ## Payment Gate Reality
@@ -68,6 +69,7 @@ This registry records public deployment URLs that were verified after publishing
 
 - Invoice Follow-Up Kit was published as an operational writing toolkit with no legal, tax, collections, payment, response, revenue, or business outcome promises.
 - Rush Fee Calculator was published as an operational pricing aid with no legal, tax, accounting, financial, acceptance, revenue, profit, response, or project outcome promises.
+- Client Change Order Generator preview is published as an operational writing and estimating aid with no legal, tax, accounting, financial, approval, payment, revenue, profit, response, or project outcome promises.
 - Party Quest Maker was published as a web app source kit with no hosting, payment setup, credentials, platform approval, sales, event outcome, or revenue promises.
 - Circuit Courier was published as an original HTML5 game/source kit with no marketplace approval, downloads, revenue, ad performance, ranking, platform approval, or outcome promises.
 - Signal Stack Arcade was published as an original HTML5 game/source kit with no views, followers, sales, ad revenue, monetization, ranking, platform approval, legal compliance, or specific outcome promises.

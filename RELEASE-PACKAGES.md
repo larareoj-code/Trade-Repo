@@ -1,7 +1,7 @@
 # Release Package Inventory
 
 Generated: 2026-06-12T10:58:00-10:00
-Updated: 2026-06-13T07:03:57-10:00
+Updated: 2026-06-13T07:33:58-10:00
 
 This inventory lists local ZIP artifacts that are candidates for GitHub Releases or marketplace uploads. Marketplace URL verification is tracked in `PUBLISHED-URLS.md`; only rows marked with a live storefront status should be treated as customer-available.
 
@@ -11,6 +11,7 @@ This inventory lists local ZIP artifacts that are candidates for GitHub Releases
 |---|---:|---:|---|---|
 | Invoice Follow-Up Kit | `work/invoice_follow_up_kit/Invoice-Follow-Up-Kit.zip` | 39296 | `C13CAE998A7450757280A784576D69DB9B87CB88A4EDDEFA7D6B231900ACE32F` | Payhip checkout live: https://payhip.com/b/6GLdn |
 | Rush Fee Calculator | `work/rush_fee_calculator/Rush-Fee-Calculator.zip` | 8392 | `5799B53B5CA218491BA286A49B2DEC6DFB37FA407F49D3D492A28DD51B48A09F` | Payhip checkout live: https://payhip.com/b/2a3io |
+| Client Change Order Generator | `work/client_change_order_generator/Client-Change-Order-Generator.zip` | 6923 | `F4EF2555B1FC6121541F52138784BED3CAA5D914032FC03559DB7971A91D2872` | paid upload priority 1 |
 | Scope Creep Rescue Kit | `work/scope_creep_rescue_kit/Scope-Creep-Rescue-Kit.zip` | 4646 | `FF164A85AFC64A82FE1B4C474DABD7F993E87B5856323C14D7EC90E41127509F` | Payhip checkout live: https://payhip.com/b/1QTL0 |
 | Sales Page Snack Pack | `work/sales_page_snack_pack/Sales-Page-Snack-Pack.zip` | 5064 | `51B6CFCB4964C4F606951FEBE901D96524452B338A20D6082FAA956473F54454` | paid upload priority 2 |
 | Micro Offer Lab | `work/micro_offer_lab/Micro-Offer-Lab.zip` | 6855 | `5ECFC451BAE97BBFDAE3C6E42D7D5984E71E0B35A93E9397C7844F71FB0F4AF3` | paid upload priority 3 |
