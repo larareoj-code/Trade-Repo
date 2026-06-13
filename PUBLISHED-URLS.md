@@ -1,7 +1,7 @@
 # Published URL Registry
 
 Generated: 2026-06-12T11:19:00-10:00
-Updated: 2026-06-12T16:32:21-10:00
+Updated: 2026-06-12T17:02:23-10:00
 
 This registry records public deployment URLs that were verified after publishing. GitHub Pages URLs are free previews and demos unless a separate paid storefront URL is listed and verified.
 
@@ -9,6 +9,7 @@ This registry records public deployment URLs that were verified after publishing
 
 | Product | Storefront URL | Platform | Price | Status | Verification |
 |---|---|---|---:|---|---|
+| Circuit Courier - Static HTML5 Puzzle Game | https://payhip.com/b/JpDq4 | Payhip | $19 | paid checkout live | HTTP 200; title, price, and no-guarantee language present |
 | Signal Stack Arcade - HTML5 Creator Game Kit | https://payhip.com/b/jgQRm | Payhip | $9 | paid checkout live | HTTP 200; title, price, and no-promise language present |
 | Giggle Spark Organic Growth System | https://payhip.com/b/aeArL | Payhip | $9 | paid checkout live | HTTP 200; title, price, no-guarantee note, and no-spam guardrail present |
 | Threadline Tiles - SwiftUI iOS Puzzle Game Source Kit | https://payhip.com/b/hnFNM | Payhip | $19 | paid checkout live | HTTP 200; title, price, and buyer-note present |
@@ -30,7 +31,7 @@ This registry records public deployment URLs that were verified after publishing
 
 | Product | Public URL | Status |
 |---|---|---|
-| Portfolio Launcher | https://larareoj-code.github.io/Trade-Repo/ | live preview hub; 16 verified checkout links |
+| Portfolio Launcher | https://larareoj-code.github.io/Trade-Repo/ | live preview hub; 17 verified checkout links |
 | Passive App Risk Calculator | https://larareoj-code.github.io/Trade-Repo/apps/passive-app-risk-calculator/index.html | live preview; Payhip checkout linked |
 | Scope Creep Rescue Kit | https://larareoj-code.github.io/Trade-Repo/apps/scope-creep-rescue-kit/index.html | live preview; Payhip checkout linked |
 | Sales Page Snack Pack | https://larareoj-code.github.io/Trade-Repo/apps/sales-page-snack-pack/index.html | live preview; Payhip checkout linked |
@@ -47,7 +48,7 @@ This registry records public deployment URLs that were verified after publishing
 
 - GitHub Pages cannot enforce payment for static files in this setup; it is the discovery and demo layer.
 - Paid access requires a verified storefront product page or a server-side checkout/license gate.
-- Current live paid checkouts: fifteen Payhip products plus one Gumroad product.
+- Current live paid checkouts: sixteen Payhip products plus one Gumroad product.
 
 ## Blocked Or Skipped
 
@@ -59,9 +60,9 @@ This registry records public deployment URLs that were verified after publishing
 
 ## Publishing Notes
 
+- Circuit Courier was published as an original HTML5 game/source kit with no marketplace approval, downloads, revenue, ad performance, ranking, platform approval, or outcome promises.
 - Signal Stack Arcade was published as an original HTML5 game/source kit with no views, followers, sales, ad revenue, monetization, ranking, platform approval, legal compliance, or specific outcome promises.
-- Giggle Spark was published as a planning and production-draft product only, with no traffic, monetization, ranking, platform approval, or audience growth promises.
-- Threadline Tiles was published as a source-code product only, not a compiled iOS app or App Store service.
+- GitHub Pages remains a discovery hub, not a payment gate.
 - Do not tell users a tool is paid unless a checkout URL or gated license flow exists.
 - Review copy and files before customer delivery.
 - Keep product promises specific, original, and easy to verify.
