@@ -1,7 +1,7 @@
 # Storefront Upload Matrix
 
 Generated: 2026-06-12T11:08:00-10:00
-Updated: 2026-06-12T17:02:23-10:00
+Updated: 2026-06-12T18:02:23-10:00
 
 Purpose: convert the release package inventory into a practical upload queue for paid storefronts. GitHub Pages is only the free preview layer.
 
@@ -9,6 +9,7 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 | Product | Platform | Public URL | Price | Verification |
 |---|---|---|---:|---|
+| Party Quest Maker - Web App Source Kit | Payhip | https://payhip.com/b/lgdk8 | $19 | HTTP 200; title, price, source-kit language, and no-guarantee language present |
 | Circuit Courier - Static HTML5 Puzzle Game | Payhip | https://payhip.com/b/JpDq4 | $19 | HTTP 200; title, price, and no-guarantee language present |
 | Signal Stack Arcade - HTML5 Creator Game Kit | Payhip | https://payhip.com/b/jgQRm | $9 | HTTP 200; title, price, and no-promise language present |
 | Giggle Spark Organic Growth System | Payhip | https://payhip.com/b/aeArL | $9 | HTTP 200; title, price, no-guarantee note, and no-spam guardrail present |
@@ -39,7 +40,7 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 ### Payhip
 
-Payhip is currently the most reliable upload route in Chrome and has now published sixteen verified ZIP/source products in this portfolio.
+Payhip is currently the most reliable upload route in Chrome and has now published seventeen verified ZIP/source products in this portfolio.
 
 ### Gumroad
 
