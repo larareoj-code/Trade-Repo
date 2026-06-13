@@ -1,7 +1,7 @@
 # Storefront Upload Matrix
 
 Generated: 2026-06-12T11:08:00-10:00
-Updated: 2026-06-12T16:02:25-10:00
+Updated: 2026-06-12T16:20:21-10:00
 
 Purpose: convert the release package inventory into a practical upload queue for paid storefronts. GitHub Pages is only the free preview layer.
 
@@ -9,6 +9,7 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 | Product | Platform | Public URL | Price | Verification |
 |---|---|---|---:|---|
+| Giggle Spark Organic Growth System | Payhip | https://payhip.com/b/aeArL | $9 | HTTP 200; title, price, no-guarantee note, and no-spam guardrail present |
 | Threadline Tiles - SwiftUI iOS Puzzle Game Source Kit | Payhip | https://payhip.com/b/hnFNM | $19 | HTTP 200; title, price, and buyer-note present |
 | Story Spark Studio Marketplace Pack | Payhip | https://payhip.com/b/Clfqb | $19 | HTTP 200; title and price present |
 | Pulse Pop Arcade Creator Game Kit | Payhip | https://payhip.com/b/PI49k | $9 | HTTP 200; title and price present |
@@ -28,15 +29,15 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 | Priority | Product | Primary platform | Price band | Checkout status | Required review |
 |---:|---|---|---:|---|---|
-| 1 | Giggle Spark Organic Growth System | Ko-fi or Payhip | $9-$19 | hold | no traffic or monetization claims; prove included assets |
-| 2 | New Gumroad duplicates | Gumroad | varies | blocked | file chooser upload path must attach ZIP before publish |
-| 3 | Ko-fi listings | Ko-fi | varies | blocked | location confirmation and file chooser upload path |
+| 1 | New Gumroad duplicates | Gumroad | varies | blocked | file chooser upload path must attach ZIP before publish |
+| 2 | Ko-fi listings | Ko-fi | varies | blocked | location confirmation and file chooser upload path |
+| 3 | Fourthwall / Buy Me a Coffee | platform-specific | varies | blocked | no verified upload flow completed in this pass |
 
 ## Platform Fit
 
 ### Payhip
 
-Payhip is currently the most reliable upload route in Chrome and has now published thirteen verified ZIP products in this portfolio.
+Payhip is currently the most reliable upload route in Chrome and has now published fourteen verified ZIP products in this portfolio.
 
 ### Gumroad
 
