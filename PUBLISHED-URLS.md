@@ -1,7 +1,7 @@
 # Published URL Registry
 
 Generated: 2026-06-12T11:19:00-10:00
-Updated: 2026-06-12T14:10:00-10:00
+Updated: 2026-06-12T15:56:28-10:00
 
 This registry records public deployment URLs that were verified after publishing. GitHub Pages URLs are free previews and demos unless a separate paid storefront URL is listed and verified.
 
@@ -9,6 +9,9 @@ This registry records public deployment URLs that were verified after publishing
 
 | Product | Storefront URL | Platform | Price | Status | Verification |
 |---|---|---|---:|---|---|
+| Story Spark Studio Marketplace Pack | https://payhip.com/b/Clfqb | Payhip | $19 | paid checkout live | HTTP 200; title and price present |
+| Pulse Pop Arcade Creator Game Kit | https://payhip.com/b/PI49k | Payhip | $9 | paid checkout live | HTTP 200; title and price present |
+| Passive App Risk Calculator | https://payhip.com/b/Zsjke | Payhip | $9 | paid checkout live | HTTP 200; title and price present |
 | Scope Creep Rescue Kit | https://payhip.com/b/1QTL0 | Payhip | $19 | paid checkout live | HTTP 200; title and price present |
 | Sales Page Snack Pack | https://payhip.com/b/lWBKA | Payhip | $9 | paid checkout live | HTTP 200; title and price present |
 | Micro Offer Lab | https://payhip.com/b/cNulr | Payhip | $9 | paid checkout live | HTTP 200; title and price present |
@@ -24,7 +27,8 @@ This registry records public deployment URLs that were verified after publishing
 
 | Product | Public URL | Status |
 |---|---|---|
-| Portfolio Launcher | https://larareoj-code.github.io/Trade-Repo/ | live preview hub |
+| Portfolio Launcher | https://larareoj-code.github.io/Trade-Repo/ | live preview hub; 13 verified checkout links |
+| Passive App Risk Calculator | https://larareoj-code.github.io/Trade-Repo/apps/passive-app-risk-calculator/index.html | live preview; Payhip checkout linked |
 | Scope Creep Rescue Kit | https://larareoj-code.github.io/Trade-Repo/apps/scope-creep-rescue-kit/index.html | live preview; Payhip checkout linked |
 | Sales Page Snack Pack | https://larareoj-code.github.io/Trade-Repo/apps/sales-page-snack-pack/index.html | live preview; Payhip checkout linked |
 | Micro Offer Lab | https://larareoj-code.github.io/Trade-Repo/apps/micro-offer-lab/index.html | live preview; Payhip checkout linked |
@@ -35,13 +39,12 @@ This registry records public deployment URLs that were verified after publishing
 | Listing Launch Auditor | https://listing-launch-auditor.vercel.app | live preview; Payhip checkout linked |
 | Rainy Day Quest Maker | https://larareoj-code.github.io/Trade-Repo/apps/rainy-day-quest-maker/index.html | live preview; Payhip checkout linked |
 | Digital Bundle Builder | https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html | live preview; Gumroad checkout linked |
-| Passive App Risk Calculator | https://larareoj-code.github.io/Trade-Repo/apps/passive-app-risk-calculator/index.html | live preview; lead magnet |
 
 ## Payment Gate Reality
 
 - GitHub Pages cannot enforce payment for static files in this setup; it is the discovery and demo layer.
 - Paid access requires a verified storefront product page or a server-side checkout/license gate.
-- Current live paid checkouts: nine Payhip products plus one Gumroad product.
+- Current live paid checkouts: twelve Payhip products plus one Gumroad product.
 
 ## Blocked Or Skipped
 
@@ -50,7 +53,7 @@ This registry records public deployment URLs that were verified after publishing
 | New Gumroad listings | blocked/draft only | New Gumroad file upload did not open through Chrome file chooser; do not publish empty products |
 | Ko-fi listings | blocked | Ko-fi requires location confirmation and file upload did not open through Chrome file chooser |
 | Fourthwall / Buy Me a Coffee | not completed in this pass | No verified upload flow completed before the Payhip batch finished |
-| Passive App Risk Calculator | lead magnet | Kept free/educational instead of charging for a regulated-adjacent calculator |
+| Threadline Tiles / Giggle Spark | held | Needs product QA and storefront-specific packaging before charging |
 
 ## Publishing Notes
 
