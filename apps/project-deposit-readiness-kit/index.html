@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Deposit Readiness Kit</title>
+    <meta name="description" content="Create deposit explanation copy, milestone payment notes, and start-readiness checklists for service projects.">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #17211d;
+        --muted: #5d6b63;
+        --line: #cad8cf;
+        --paper: #fbfcf9;
+        --panel: #ffffff;
+        --mint: #dff5e5;
+        --leaf: #1f7a4c;
+        --gold: #f1c96b;
+        --rose: #ef9c8c;
+        --blue: #b7d7f0;
+        --shadow: 0 18px 44px rgba(33, 62, 45, 0.14);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background:
+          linear-gradient(135deg, rgba(223, 245, 229, 0.92), rgba(251, 252, 249, 0.9) 48%, rgba(183, 215, 240, 0.62)),
+          var(--paper);
+      }
+
+      header {
+        padding: 28px clamp(18px, 4vw, 52px) 18px;
+        border-bottom: 1px solid rgba(23, 33, 29, 0.08);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        max-width: 1180px;
+        margin: 0 auto 34px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 800;
+      }
+
+      .brand-mark {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, var(--leaf), #66b880 54%, var(--gold));
+        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.68);
+      }
+
+      .nav a {
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .hero {
+        max-width: 1180px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+        gap: clamp(24px, 5vw, 56px);
+        align-items: end;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        font-size: 0.78rem;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: var(--leaf);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.35rem, 5.3vw, 5.4rem);
+        line-height: 0.96;
+        letter-spacing: 0;
+        max-width: 820px;
+      }
+
+      .lede {
+        margin: 20px 0 0;
+        max-width: 640px;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.7;
+      }
+
+      .hero-card {
+        background: rgba(255, 255, 255, 0.86);
+        border: 1px solid rgba(31, 122, 76, 0.18);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+        padding: 22px;
+      }
+
+      .hero-card strong {
+        display: block;
+        margin-bottom: 12px;
+        font-size: 1.05rem;
+      }
+
+      .hero-card ul {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 28px));
+        margin: 28px auto 46px;
+        display: grid;
+        grid-template-columns: minmax(300px, 430px) minmax(0, 1fr);
+        gap: 18px;
+        align-items: start;
+      }
+
+      form, .output, .tool-panel {
+        background: rgba(255, 255, 255, 0.94);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        box-shadow: 0 14px 34px rgba(42, 71, 54, 0.09);
+      }
+
+      form { padding: 18px; }
+
+      .field-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      label {
+        display: grid;
+        gap: 6px;
+        color: #31413a;
+        font-size: 0.88rem;
+        font-weight: 800;
+      }
+
+      input, select, textarea {
+        width: 100%;
+        border: 1px solid #bccdc3;
+        border-radius: 6px;
+        padding: 11px 12px;
+        font: inherit;
+        color: var(--ink);
+        background: #fffefa;
+      }
+
+      textarea {
+        min-height: 84px;
+        resize: vertical;
+      }
+
+      .full { grid-column: 1 / -1; }
+
+      .actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 16px;
+      }
+
+      button {
+        border: 0;
+        border-radius: 7px;
+        padding: 12px 16px;
+        font: inherit;
+        font-weight: 900;
+        cursor: pointer;
+        background: var(--leaf);
+        color: white;
+      }
+
+      button.secondary {
+        background: #e9f3ed;
+        color: var(--leaf);
+        border: 1px solid #bad9c6;
+      }
+
+      .output {
+        min-height: 660px;
+        padding: 20px;
+      }
+
+      .score-row {
+        display: grid;
+        grid-template-columns: 120px minmax(0, 1fr);
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .score {
+        width: 112px;
+        height: 112px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: conic-gradient(var(--leaf) calc(var(--score, 72) * 1%), #e4eee8 0);
+        color: var(--ink);
+        font-size: 1.8rem;
+        font-weight: 950;
+        position: relative;
+      }
+
+      .score::before {
+        content: "";
+        position: absolute;
+        inset: 10px;
+        border-radius: 50%;
+        background: #fff;
+      }
+
+      .score span {
+        position: relative;
+      }
+
+      .decision {
+        display: inline-flex;
+        width: fit-content;
+        align-items: center;
+        border-radius: 999px;
+        padding: 7px 11px;
+        background: var(--mint);
+        color: #16613b;
+        font-weight: 900;
+        margin-bottom: 8px;
+      }
+
+      .result-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .tool-panel {
+        padding: 16px;
+        box-shadow: none;
+      }
+
+      .tool-panel h3 {
+        margin: 0 0 8px;
+        font-size: 1rem;
+      }
+
+      .tool-panel p, .tool-panel li {
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .tool-panel ul {
+        margin: 0;
+        padding-left: 19px;
+      }
+
+      .copy-block {
+        white-space: pre-wrap;
+        background: #f7faf6;
+        border: 1px solid #dce8e0;
+        border-radius: 7px;
+        padding: 12px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      .notice {
+        margin-top: 16px;
+        padding: 12px;
+        background: #fff4dc;
+        border: 1px solid #ead09a;
+        border-radius: 7px;
+        color: #664a11;
+        line-height: 1.5;
+      }
+
+      footer {
+        width: min(1180px, calc(100% - 28px));
+        margin: 0 auto 32px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 880px) {
+        .hero, main, .result-grid, .score-row {
+          grid-template-columns: 1fr;
+        }
+
+        h1 { font-size: clamp(2.2rem, 14vw, 4.4rem); }
+      }
+
+      @media (max-width: 620px) {
+        .nav {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .field-grid { grid-template-columns: 1fr; }
+
+        .output { min-height: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span><span>Deposit Readiness Kit</span></a>
+        <a href="#builder">Open builder</a>
+      </nav>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Service-business payment prep</p>
+          <h1>Make project deposits feel clear before work starts.</h1>
+          <p class="lede">Draft a client-friendly deposit note, milestone language, readiness checklist, and internal risk review for small service projects.</p>
+        </div>
+        <aside class="hero-card" aria-label="Included assets">
+          <strong>Included in the paid ZIP</strong>
+          <ul>
+            <li>Local browser generator</li>
+            <li>Deposit explanation templates</li>
+            <li>Milestone and start-readiness checklist</li>
+            <li>Marketplace listing, privacy note, and license</li>
+          </ul>
+        </aside>
+      </section>
+    </header>
+    <main id="builder">
+      <form id="depositForm">
+        <div class="field-grid">
+          <label>Service type
+            <input name="service" value="brand refresh project" maxlength="80">
+          </label>
+          <label>Client type
+            <input name="client" value="solo founder" maxlength="80">
+          </label>
+          <label>Project price
+            <input name="price" type="number" min="0" step="50" value="2400">
+          </label>
+          <label>Deposit percent
+            <input name="deposit" type="number" min="0" max="90" step="5" value="40">
+          </label>
+          <label>Timeline
+            <select name="timeline">
+              <option>1-2 weeks</option>
+              <option selected>2-4 weeks</option>
+              <option>4-8 weeks</option>
+              <option>8+ weeks</option>
+            </select>
+          </label>
+          <label>Risk level
+            <select name="risk">
+              <option>low</option>
+              <option selected>medium</option>
+              <option>high</option>
+            </select>
+          </label>
+          <label class="full">Start prerequisites
+            <textarea name="prereqs">signed proposal, kickoff answers, brand files, first deposit confirmation</textarea>
+          </label>
+          <label class="full">Delivery milestones
+            <textarea name="milestones">strategy outline, first creative draft, revision pass, final delivery</textarea>
+          </label>
+          <label class="full">Tone
+            <select name="tone">
+              <option selected>warm and direct</option>
+              <option>polished and firm</option>
+              <option>friendly and brief</option>
+            </select>
+          </label>
+        </div>
+        <div class="actions">
+          <button type="submit">Generate deposit pack</button>
+          <button type="button" class="secondary" id="copyOutput">Copy output</button>
+        </div>
+        <div class="notice">Operational writing aid only. Review with your contract, platform policies, client relationship, and local requirements before sending or relying on this text.</div>
+      </form>
+      <section class="output" aria-live="polite">
+        <div class="score-row">
+          <div class="score" id="score" style="--score: 74"><span>74</span></div>
+          <div>
+            <span class="decision" id="decision">READY WITH REVIEW</span>
+            <h2 id="resultTitle">Deposit readiness draft</h2>
+            <p id="summary">Use the builder to create a project-specific payment-start note and checklist.</p>
+          </div>
+        </div>
+        <div class="result-grid">
+          <article class="tool-panel">
+            <h3>Client note</h3>
+            <div class="copy-block" id="clientNote"></div>
+          </article>
+          <article class="tool-panel">
+            <h3>Milestone payment note</h3>
+            <div class="copy-block" id="milestoneNote"></div>
+          </article>
+          <article class="tool-panel">
+            <h3>Start-readiness checklist</h3>
+            <ul id="checklist"></ul>
+          </article>
+          <article class="tool-panel">
+            <h3>Review flags</h3>
+            <ul id="flags"></ul>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      This toolkit does not provide legal, tax, accounting, collections, or financial advice. It does not promise payment, client acceptance, better cash flow, revenue, profit, or project outcomes.
+    </footer>
+    <script>
+      const form = document.getElementById("depositForm");
+      const scoreEl = document.getElementById("score");
+      const decisionEl = document.getElementById("decision");
+      const titleEl = document.getElementById("resultTitle");
+      const summaryEl = document.getElementById("summary");
+      const clientNoteEl = document.getElementById("clientNote");
+      const milestoneNoteEl = document.getElementById("milestoneNote");
+      const checklistEl = document.getElementById("checklist");
+      const flagsEl = document.getElementById("flags");
+
+      function money(value) {
+        return Number(value || 0).toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+      }
+
+      function splitList(text) {
+        return String(text || "")
+          .split(/,|\n/)
+          .map(item => item.trim())
+          .filter(Boolean);
+      }
+
+      function sentenceTone(tone) {
+        if (tone === "polished and firm") return "To keep the project reserved and scheduled correctly";
+        if (tone === "friendly and brief") return "So we can hold the schedule and start smoothly";
+        return "To keep the project smooth, clear, and properly scheduled";
+      }
+
+      function renderList(target, items) {
+        target.innerHTML = "";
+        items.forEach(item => {
+          const li = document.createElement("li");
+          li.textContent = item;
+          target.appendChild(li);
+        });
+      }
+
+      function generate() {
+        const data = Object.fromEntries(new FormData(form).entries());
+        const price = Number(data.price || 0);
+        const depositPercent = Number(data.deposit || 0);
+        const depositAmount = price * (depositPercent / 100);
+        const remaining = Math.max(price - depositAmount, 0);
+        const prereqs = splitList(data.prereqs);
+        const milestones = splitList(data.milestones);
+        const flags = [];
+
+        let score = 92;
+        if (!price || price < 250) { score -= 18; flags.push("Confirm the project price and whether a deposit is appropriate for this offer size."); }
+        if (depositPercent < 20) { score -= 12; flags.push("Deposit percent is low; confirm the amount is enough to reserve time and cover setup work."); }
+        if (depositPercent > 60) { score -= 16; flags.push("Deposit percent is high; review buyer expectations, refund language, and local rules before using."); }
+        if (prereqs.length < 3) { score -= 10; flags.push("Add at least three start prerequisites so the client knows what is needed before kickoff."); }
+        if (milestones.length < 3) { score -= 10; flags.push("Add clearer milestones before sharing payment timing language."); }
+        if (data.risk === "high") { score -= 12; flags.push("High-risk project: review scope, cancellation, refunds, and approvals with qualified help if needed."); }
+        flags.push("Do not send until it matches your signed agreement, refund/support policy, and client relationship.");
+        flags.push("No tool can guarantee payment, acceptance, revenue, profit, or a smooth project outcome.");
+
+        score = Math.max(32, Math.min(96, score));
+        const decision = score >= 80 ? "READY WITH REVIEW" : score >= 62 ? "REVISE BEFORE SENDING" : "QUARANTINE FOR REVIEW";
+        const lead = sentenceTone(data.tone);
+        const prereqSentence = prereqs.join(", ");
+        const milestoneSentence = milestones.join(", ");
+
+        titleEl.textContent = `${data.service} deposit pack`;
+        summaryEl.textContent = `${money(depositAmount)} deposit on a ${money(price)} ${data.service} for a ${data.client}.`;
+        decisionEl.textContent = decision;
+        scoreEl.style.setProperty("--score", score);
+        scoreEl.querySelector("span").textContent = score;
+
+        clientNoteEl.textContent = `${lead}, the project begins after these start items are complete: ${prereqSentence}.\n\nFor this ${data.service}, the project total is ${money(price)}. The start deposit is ${money(depositAmount)} (${depositPercent}%). The remaining ${money(remaining)} is scheduled around the agreed milestones and final delivery review.\n\nOnce the start items are ready, I can reserve the project window for ${data.timeline} and send the kickoff steps.`;
+        milestoneNoteEl.textContent = `Suggested milestone language:\n\n- Start deposit: ${money(depositAmount)} due before the project window is reserved.\n- Milestone checkpoints: ${milestoneSentence}.\n- Remaining balance: ${money(remaining)} tied to the agreed milestone or final delivery terms.\n\nReview these amounts against your agreement, refund/support text, and platform rules before sending.`;
+        renderList(checklistEl, [
+          `Confirm final scope for ${data.service}.`,
+          `Confirm buyer has supplied: ${prereqSentence}.`,
+          `Confirm deposit amount and payment timing are reflected in the written agreement.`,
+          `Confirm refund, cancellation, revision, and delivery terms are visible before payment.`,
+          `Confirm no work starts until your own readiness requirements are met.`
+        ]);
+        renderList(flagsEl, flags);
+      }
+
+      form.addEventListener("submit", event => {
+        event.preventDefault();
+        generate();
+      });
+
+      document.getElementById("copyOutput").addEventListener("click", async () => {
+        const text = [
+          titleEl.textContent,
+          summaryEl.textContent,
+          clientNoteEl.textContent,
+          milestoneNoteEl.textContent,
+          "Checklist:",
+          ...Array.from(checklistEl.children).map(li => `- ${li.textContent}`),
+          "Review flags:",
+          ...Array.from(flagsEl.children).map(li => `- ${li.textContent}`)
+        ].join("\n\n");
+        await navigator.clipboard.writeText(text);
+      });
+
+      generate();
+    </script>
+  </body>
+</html>
