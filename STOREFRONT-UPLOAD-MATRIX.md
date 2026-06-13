@@ -9,6 +9,7 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 | Product | Platform | Public URL | Price | Verification |
 |---|---|---|---:|---|
+| Rush Fee Calculator | Payhip | https://payhip.com/b/2a3io | $19 | HTTP 200; title, price, and boundary language present |
 | Invoice Follow-Up Kit | Payhip | https://payhip.com/b/6GLdn | $19 | HTTP 200; title, price, and boundary language present |
 | Party Quest Maker - Web App Source Kit | Payhip | https://payhip.com/b/lgdk8 | $19 | HTTP 200; title, price, source-kit language, and no-guarantee language present |
 | Circuit Courier - Static HTML5 Puzzle Game | Payhip | https://payhip.com/b/JpDq4 | $19 | HTTP 200; title, price, and no-guarantee language present |
@@ -33,16 +34,15 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 | Priority | Product | Primary platform | Price band | Checkout status | Required review |
 |---:|---|---|---:|---|---|
-| 1 | Rush Fee Calculator | Payhip | $19 | package ready | upload ZIP, cover PNG, listing copy, and verify public page before marking paid |
-| 2 | New Gumroad duplicates | Gumroad | varies | blocked | file chooser upload path must attach ZIP before publish |
-| 3 | Ko-fi listings | Ko-fi | varies | blocked | location confirmation and file chooser upload path |
-| 4 | Fourthwall / Buy Me a Coffee | platform-specific | varies | blocked | no verified upload flow completed in this pass |
+| 1 | New Gumroad duplicates | Gumroad | varies | blocked | file chooser upload path must attach ZIP before publish |
+| 2 | Ko-fi listings | Ko-fi | varies | blocked | location confirmation and file chooser upload path |
+| 3 | Fourthwall / Buy Me a Coffee | platform-specific | varies | blocked | no verified upload flow completed in this pass |
 
 ## Platform Fit
 
 ### Payhip
 
-Payhip is currently the most reliable upload route in Chrome and has now published eighteen verified ZIP/source products in this portfolio.
+Payhip is currently the most reliable upload route in Chrome and has now published nineteen verified ZIP/source products in this portfolio.
 
 ### Gumroad
 

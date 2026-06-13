@@ -9,6 +9,7 @@ This registry records public deployment URLs that were verified after publishing
 
 | Product | Storefront URL | Platform | Price | Status | Verification |
 |---|---|---|---:|---|---|
+| Rush Fee Calculator | https://payhip.com/b/2a3io | Payhip | $19 | paid checkout live | HTTP 200; title, price, and boundary language present |
 | Invoice Follow-Up Kit | https://payhip.com/b/6GLdn | Payhip | $19 | paid checkout live | HTTP 200; title, price, and boundary language present |
 | Party Quest Maker - Web App Source Kit | https://payhip.com/b/lgdk8 | Payhip | $19 | paid checkout live | HTTP 200; title, price, source-kit language, and no-guarantee language present |
 | Circuit Courier - Static HTML5 Puzzle Game | https://payhip.com/b/JpDq4 | Payhip | $19 | paid checkout live | HTTP 200; title, price, and no-guarantee language present |
@@ -46,14 +47,14 @@ This registry records public deployment URLs that were verified after publishing
 | Rainy Day Quest Maker | https://larareoj-code.github.io/Trade-Repo/apps/rainy-day-quest-maker/index.html | live preview; Payhip checkout linked |
 | Party Quest Maker | https://party-quest-maker.vercel.app | live preview; Payhip checkout linked |
 | Invoice Follow-Up Kit | https://larareoj-code.github.io/Trade-Repo/apps/invoice-follow-up-kit/index.html | live preview; Payhip checkout linked |
-| Rush Fee Calculator | https://larareoj-code.github.io/Trade-Repo/apps/rush-fee-calculator/index.html | live preview; Payhip upload pending |
+| Rush Fee Calculator | https://larareoj-code.github.io/Trade-Repo/apps/rush-fee-calculator/index.html | live preview; Payhip checkout linked |
 | Digital Bundle Builder | https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html | live preview; Gumroad checkout linked |
 
 ## Payment Gate Reality
 
 - GitHub Pages cannot enforce payment for static files in this setup; it is the discovery and demo layer.
 - Paid access requires a verified storefront product page or a server-side checkout/license gate.
-- Current live paid checkouts: eighteen Payhip products plus one Gumroad product.
+- Current live paid checkouts: nineteen Payhip products plus one Gumroad product.
 
 ## Blocked Or Skipped
 
@@ -66,7 +67,7 @@ This registry records public deployment URLs that were verified after publishing
 ## Publishing Notes
 
 - Invoice Follow-Up Kit was published as an operational writing toolkit with no legal, tax, collections, payment, response, revenue, or business outcome promises.
-- Rush Fee Calculator preview is published as an operational pricing aid with no legal, tax, accounting, financial, acceptance, revenue, profit, response, or project outcome promises.
+- Rush Fee Calculator was published as an operational pricing aid with no legal, tax, accounting, financial, acceptance, revenue, profit, response, or project outcome promises.
 - Party Quest Maker was published as a web app source kit with no hosting, payment setup, credentials, platform approval, sales, event outcome, or revenue promises.
 - Circuit Courier was published as an original HTML5 game/source kit with no marketplace approval, downloads, revenue, ad performance, ranking, platform approval, or outcome promises.
 - Signal Stack Arcade was published as an original HTML5 game/source kit with no views, followers, sales, ad revenue, monetization, ranking, platform approval, legal compliance, or specific outcome promises.
