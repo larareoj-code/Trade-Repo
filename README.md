@@ -9,6 +9,8 @@ This repository is framed as a portfolio of low-touch product experiments, not g
 These public URLs were verified after publishing:
 
 - [GitHub Pages Portfolio Launcher](https://larareoj-code.github.io/Trade-Repo/)
+- [Project Deposit Readiness Kit preview](https://larareoj-code.github.io/Trade-Repo/apps/project-deposit-readiness-kit/index.html)
+- [Project Deposit Readiness Kit paid Payhip checkout](https://payhip.com/b/dcWFG)
 - [Scope Creep Rescue Kit preview](https://larareoj-code.github.io/Trade-Repo/apps/scope-creep-rescue-kit/index.html)
 - [Sales Page Snack Pack preview](https://larareoj-code.github.io/Trade-Repo/apps/sales-page-snack-pack/index.html)
 - [Micro Offer Lab preview](https://larareoj-code.github.io/Trade-Repo/apps/micro-offer-lab/index.html)
@@ -25,8 +27,8 @@ See `PUBLISHED-URLS.md` for verification notes, checkout status, deployment stat
 
 - Public app pages are free previews unless a paid storefront link is shown.
 - Paid ZIP/toolkit access should be handled by Gumroad, Payhip, Ko-fi, Fourthwall, Buy Me a Coffee, or a future server-side checkout/license gate.
-- Current verified checkout: Digital Bundle Builder on Gumroad.
-- Next paid listing target: Scope Creep Rescue Kit at $19.
+- Current verified checkouts: twenty-one Payhip products plus Digital Bundle Builder on Gumroad.
+- Next paid listing target: continue original, non-duplicative service-business utility products on Payhip while Gumroad and Ko-fi upload paths remain blocked.
 
 ## Portfolio Launcher
 
@@ -52,6 +54,7 @@ The launcher links to each `apps/<slug>/index.html` preview and shows whether th
 
 | App | Folder | GitHub status | Paid status | Local source root |
 |---|---|---|---|---|
+| Project Deposit Readiness Kit | `apps/project-deposit-readiness-kit` | Pages URL verified | Payhip checkout verified | `work/project_deposit_readiness_kit` |
 | Scope Creep Rescue Kit | `apps/scope-creep-rescue-kit` | Pages URL verified | paid ZIP ready; no checkout yet | `work/scope_creep_rescue_kit` |
 | Sales Page Snack Pack | `apps/sales-page-snack-pack` | Pages URL verified | paid ZIP ready; no checkout yet | `work/sales_page_snack_pack` |
 | Micro Offer Lab | `apps/micro-offer-lab` | Pages URL verified | paid ZIP ready; no checkout yet | `work/micro_offer_lab` |

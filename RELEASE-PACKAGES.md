@@ -1,7 +1,7 @@
 # Release Package Inventory
 
 Generated: 2026-06-12T10:58:00-10:00
-Updated: 2026-06-13T07:33:58-10:00
+Updated: 2026-06-13T08:03:58-10:00
 
 This inventory lists local ZIP artifacts that are candidates for GitHub Releases or marketplace uploads. Marketplace URL verification is tracked in `PUBLISHED-URLS.md`; only rows marked with a live storefront status should be treated as customer-available.
 
@@ -9,6 +9,7 @@ This inventory lists local ZIP artifacts that are candidates for GitHub Releases
 
 | Product | Local ZIP | Size bytes | SHA-256 | Release readiness |
 |---|---:|---:|---|---|
+| Project Deposit Readiness Kit | `work/project_deposit_readiness_kit/Project-Deposit-Readiness-Kit.zip` | 69872 | `5C6BE9BC5C96D91B632A73CC88AB406BABB8C1B4AC46BF27D7F3C7A63F5C76A3` | Payhip checkout live: https://payhip.com/b/dcWFG |
 | Invoice Follow-Up Kit | `work/invoice_follow_up_kit/Invoice-Follow-Up-Kit.zip` | 39296 | `C13CAE998A7450757280A784576D69DB9B87CB88A4EDDEFA7D6B231900ACE32F` | Payhip checkout live: https://payhip.com/b/6GLdn |
 | Rush Fee Calculator | `work/rush_fee_calculator/Rush-Fee-Calculator.zip` | 8392 | `5799B53B5CA218491BA286A49B2DEC6DFB37FA407F49D3D492A28DD51B48A09F` | Payhip checkout live: https://payhip.com/b/2a3io |
 | Client Change Order Generator | `work/client_change_order_generator/Client-Change-Order-Generator.zip` | 6923 | `F4EF2555B1FC6121541F52138784BED3CAA5D914032FC03559DB7971A91D2872` | Payhip checkout live: https://payhip.com/b/vf5GJ |
