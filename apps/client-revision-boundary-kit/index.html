@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Client Revision Boundary Kit</title>
+    <meta name="description" content="Draft revision-round boundaries, feedback requests, approval notes, and internal risk checks for service projects.">
+    <style>
+      :root {
+        --ink: #181c25;
+        --muted: #596171;
+        --line: #d8dde7;
+        --paper: #fbfbfd;
+        --panel: #ffffff;
+        --blue: #3a6fb5;
+        --teal: #3f9d8c;
+        --sun: #f4ca64;
+        --coral: #ed8b76;
+        --wash: #e8f1fb;
+        --shadow: 0 18px 46px rgba(28, 49, 86, 0.13);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background:
+          linear-gradient(140deg, rgba(232, 241, 251, 0.96), rgba(251, 251, 253, 0.92) 46%, rgba(244, 202, 100, 0.34)),
+          var(--paper);
+      }
+
+      header {
+        padding: 28px clamp(18px, 4vw, 54px) 20px;
+      }
+
+      .nav {
+        max-width: 1180px;
+        margin: 0 auto 34px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 900;
+      }
+
+      .mark {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, var(--blue), var(--teal) 55%, var(--sun));
+        box-shadow: inset 0 0 0 2px rgba(255,255,255,0.72);
+      }
+
+      .nav a:last-child {
+        color: var(--blue);
+        font-weight: 800;
+      }
+
+      .hero {
+        max-width: 1180px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+        gap: clamp(22px, 5vw, 58px);
+        align-items: end;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        color: var(--blue);
+        font-weight: 950;
+        font-size: 0.78rem;
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 820px;
+        font-size: clamp(2.35rem, 5.2vw, 5.35rem);
+        line-height: 0.96;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        margin: 20px 0 0;
+        max-width: 640px;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.68;
+      }
+
+      .hero-card, form, .output, .panel {
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+      }
+
+      .hero-card {
+        padding: 22px;
+      }
+
+      .hero-card strong {
+        display: block;
+        margin-bottom: 12px;
+      }
+
+      .hero-card ul, .panel ul {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 28px));
+        margin: 26px auto 46px;
+        display: grid;
+        grid-template-columns: minmax(300px, 430px) minmax(0, 1fr);
+        gap: 18px;
+        align-items: start;
+      }
+
+      form { padding: 18px; }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      label {
+        display: grid;
+        gap: 6px;
+        font-size: 0.88rem;
+        font-weight: 850;
+        color: #323b4d;
+      }
+
+      input, select, textarea {
+        width: 100%;
+        border: 1px solid #c7cfdd;
+        border-radius: 6px;
+        padding: 11px 12px;
+        font: inherit;
+        color: var(--ink);
+        background: #fff;
+      }
+
+      textarea {
+        min-height: 88px;
+        resize: vertical;
+      }
+
+      .full { grid-column: 1 / -1; }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      button {
+        border: 0;
+        border-radius: 7px;
+        padding: 12px 16px;
+        color: white;
+        background: var(--blue);
+        font: inherit;
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      button.secondary {
+        background: #ecf4fb;
+        color: var(--blue);
+        border: 1px solid #c8dbef;
+      }
+
+      .notice {
+        margin-top: 16px;
+        padding: 12px;
+        border: 1px solid #ead6a5;
+        background: #fff7e3;
+        border-radius: 7px;
+        color: #6a5014;
+        line-height: 1.5;
+      }
+
+      .output {
+        padding: 20px;
+        min-height: 660px;
+      }
+
+      .score-row {
+        display: grid;
+        grid-template-columns: 112px minmax(0, 1fr);
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 18px;
+      }
+
+      .score {
+        width: 106px;
+        height: 106px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: conic-gradient(var(--blue) calc(var(--score, 78) * 1%), #e6edf7 0);
+        position: relative;
+        font-size: 1.75rem;
+        font-weight: 950;
+      }
+
+      .score::before {
+        content: "";
+        position: absolute;
+        inset: 10px;
+        border-radius: 50%;
+        background: #fff;
+      }
+
+      .score span { position: relative; }
+
+      .decision {
+        display: inline-flex;
+        width: fit-content;
+        padding: 7px 11px;
+        border-radius: 999px;
+        background: #e3f4ef;
+        color: #267161;
+        font-weight: 950;
+        margin-bottom: 8px;
+      }
+
+      .result-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .panel {
+        padding: 15px;
+        box-shadow: none;
+      }
+
+      .panel h3 {
+        margin: 0 0 8px;
+        font-size: 1rem;
+      }
+
+      .copy {
+        white-space: pre-wrap;
+        border: 1px solid #dfe6ef;
+        border-radius: 7px;
+        background: #f8fbff;
+        padding: 12px;
+        color: #2b3445;
+        line-height: 1.5;
+        font-size: 0.92rem;
+      }
+
+      footer {
+        width: min(1180px, calc(100% - 28px));
+        margin: 0 auto 32px;
+        color: var(--muted);
+        line-height: 1.5;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 880px) {
+        .hero, main, .result-grid, .score-row { grid-template-columns: 1fr; }
+        h1 { font-size: clamp(2.2rem, 14vw, 4.4rem); }
+      }
+
+      @media (max-width: 620px) {
+        .nav { align-items: flex-start; flex-direction: column; }
+        .grid { grid-template-columns: 1fr; }
+        .output { min-height: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a class="brand" href="./"><span class="mark" aria-hidden="true"></span><span>Revision Boundary Kit</span></a>
+        <a href="#builder">Open builder</a>
+      </nav>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Client feedback control</p>
+          <h1>Keep revision rounds clear before feedback sprawls.</h1>
+          <p class="lede">Draft revision boundaries, feedback requests, approval notes, and internal review flags for service projects without turning every message into a negotiation.</p>
+        </div>
+        <aside class="hero-card" aria-label="Included assets">
+          <strong>Included in the paid ZIP</strong>
+          <ul>
+            <li>Local browser revision-boundary generator</li>
+            <li>Client feedback request and approval note templates</li>
+            <li>Revision-round checklist and risk flags</li>
+            <li>Marketplace listing, privacy note, and license</li>
+          </ul>
+        </aside>
+      </section>
+    </header>
+    <main id="builder">
+      <form id="revisionForm">
+        <div class="grid">
+          <label>Project type
+            <input name="project" value="website refresh" maxlength="80">
+          </label>
+          <label>Client type
+            <input name="client" value="small business owner" maxlength="80">
+          </label>
+          <label>Included revision rounds
+            <input name="rounds" type="number" min="0" max="8" value="2">
+          </label>
+          <label>Feedback deadline
+            <select name="deadline">
+              <option>24 hours</option>
+              <option selected>3 business days</option>
+              <option>5 business days</option>
+              <option>1 week</option>
+            </select>
+          </label>
+          <label>Project phase
+            <select name="phase">
+              <option>concept review</option>
+              <option selected>draft review</option>
+              <option>pre-launch review</option>
+              <option>final approval</option>
+            </select>
+          </label>
+          <label>Risk level
+            <select name="risk">
+              <option>low</option>
+              <option selected>medium</option>
+              <option>high</option>
+            </select>
+          </label>
+          <label class="full">Feedback requested
+            <textarea name="feedback">clear yes/no decisions, typo corrections, priority changes, missing content notes</textarea>
+          </label>
+          <label class="full">Out-of-scope examples
+            <textarea name="scope">new page layouts, new brand direction, extra campaign assets, changes after approval</textarea>
+          </label>
+          <label class="full">Tone
+            <select name="tone">
+              <option selected>warm and precise</option>
+              <option>polished and firm</option>
+              <option>friendly and brief</option>
+            </select>
+          </label>
+        </div>
+        <div class="actions">
+          <button type="submit">Generate revision pack</button>
+          <button type="button" class="secondary" id="copyOutput">Copy output</button>
+        </div>
+        <div class="notice">Operational writing aid only. Review against your agreement, client relationship, platform rules, and local requirements before use.</div>
+      </form>
+      <section class="output" aria-live="polite">
+        <div class="score-row">
+          <div class="score" id="score" style="--score: 82"><span>82</span></div>
+          <div>
+            <span class="decision" id="decision">READY WITH REVIEW</span>
+            <h2 id="resultTitle">Revision boundary draft</h2>
+            <p id="summary">Use the builder to create client-ready revision language and review flags.</p>
+          </div>
+        </div>
+        <div class="result-grid">
+          <article class="panel">
+            <h3>Feedback request</h3>
+            <div class="copy" id="feedbackNote"></div>
+          </article>
+          <article class="panel">
+            <h3>Boundary note</h3>
+            <div class="copy" id="boundaryNote"></div>
+          </article>
+          <article class="panel">
+            <h3>Approval checklist</h3>
+            <ul id="checklist"></ul>
+          </article>
+          <article class="panel">
+            <h3>Review flags</h3>
+            <ul id="flags"></ul>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      This toolkit does not provide legal, tax, accounting, collections, or financial advice. It does not promise client approval, fewer revisions, fewer disputes, payment, revenue, profit, timeline savings, or project outcomes.
+    </footer>
+    <script>
+      const form = document.getElementById("revisionForm");
+      const scoreEl = document.getElementById("score");
+      const decisionEl = document.getElementById("decision");
+      const resultTitle = document.getElementById("resultTitle");
+      const summary = document.getElementById("summary");
+      const feedbackNote = document.getElementById("feedbackNote");
+      const boundaryNote = document.getElementById("boundaryNote");
+      const checklist = document.getElementById("checklist");
+      const flags = document.getElementById("flags");
+
+      function splitList(value) {
+        return String(value || "").split(/,|\n/).map(item => item.trim()).filter(Boolean);
+      }
+
+      function renderList(target, items) {
+        target.innerHTML = "";
+        items.forEach(item => {
+          const li = document.createElement("li");
+          li.textContent = item;
+          target.appendChild(li);
+        });
+      }
+
+      function toneLead(tone) {
+        if (tone === "polished and firm") return "To keep the review accurate and on schedule";
+        if (tone === "friendly and brief") return "To keep this round easy to review";
+        return "To keep this review clear and useful";
+      }
+
+      function generate() {
+        const data = Object.fromEntries(new FormData(form).entries());
+        const rounds = Number(data.rounds || 0);
+        const requested = splitList(data.feedback);
+        const outOfScope = splitList(data.scope);
+        const reviewFlags = [];
+        let score = 92;
+
+        if (rounds < 1) { score -= 18; reviewFlags.push("No included revision rounds are listed; clarify whether the current review is approval-only."); }
+        if (rounds > 3) { score -= 10; reviewFlags.push("Many included revision rounds can blur expectations; define what counts as one round."); }
+        if (requested.length < 3) { score -= 10; reviewFlags.push("Add more specific requested feedback categories before sending."); }
+        if (outOfScope.length < 2) { score -= 12; reviewFlags.push("Add out-of-scope examples so the note does not feel vague."); }
+        if (data.risk === "high") { score -= 14; reviewFlags.push("High-risk project: review scope, approval, delays, and extra-work terms carefully before sending."); }
+        reviewFlags.push("Match the note to the signed agreement, written scope, and relationship context.");
+        reviewFlags.push("Do not imply this note guarantees approval, fewer revisions, payment, fewer disputes, or timeline savings.");
+
+        score = Math.max(34, Math.min(96, score));
+        const decision = score >= 80 ? "READY WITH REVIEW" : score >= 62 ? "REVISE BEFORE SENDING" : "QUARANTINE FOR REVIEW";
+        const lead = toneLead(data.tone);
+        const requestText = requested.join(", ");
+        const scopeText = outOfScope.join(", ");
+
+        scoreEl.style.setProperty("--score", score);
+        scoreEl.querySelector("span").textContent = score;
+        decisionEl.textContent = decision;
+        resultTitle.textContent = `${data.project} revision boundary pack`;
+        summary.textContent = `${rounds} included revision round${rounds === 1 ? "" : "s"} for a ${data.phase} with feedback due within ${data.deadline}.`;
+
+        feedbackNote.textContent = `${lead}, please send feedback for this ${data.phase} within ${data.deadline}.\n\nFor this round, the most useful notes are: ${requestText}.\n\nIf possible, please group feedback in one message or document so I can review it as a complete round rather than as separate changes arriving across multiple threads.`;
+        boundaryNote.textContent = `Included revision boundary:\n\nThis ${data.project} includes ${rounds} revision round${rounds === 1 ? "" : "s"} for the agreed scope. The current round is intended for ${requestText}.\n\nExamples that may need a separate estimate or change order include: ${scopeText}.\n\nI can help map those separately if they become priorities, but I want to keep this round tied to the agreed ${data.phase}.`;
+        renderList(checklist, [
+          `Confirm the current phase is ${data.phase}.`,
+          `Confirm feedback is due within ${data.deadline}.`,
+          `Confirm the included revision count is ${rounds}.`,
+          `Ask for grouped feedback instead of scattered comments.`,
+          `Separate extra work from included revision items before accepting changes.`
+        ]);
+        renderList(flags, reviewFlags);
+      }
+
+      form.addEventListener("submit", event => {
+        event.preventDefault();
+        generate();
+      });
+
+      document.getElementById("copyOutput").addEventListener("click", async () => {
+        const text = [
+          resultTitle.textContent,
+          summary.textContent,
+          feedbackNote.textContent,
+          boundaryNote.textContent,
+          "Approval checklist:",
+          ...Array.from(checklist.children).map(li => `- ${li.textContent}`),
+          "Review flags:",
+          ...Array.from(flags.children).map(li => `- ${li.textContent}`)
+        ].join("\n\n");
+        await navigator.clipboard.writeText(text);
+      });
+
+      generate();
+    </script>
+  </body>
+</html>
