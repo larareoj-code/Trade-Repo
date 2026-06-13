@@ -1,7 +1,7 @@
 # Storefront Upload Matrix
 
 Generated: 2026-06-12T11:08:00-10:00
-Updated: 2026-06-12T14:10:00-10:00
+Updated: 2026-06-12T15:56:28-10:00
 
 Purpose: convert the release package inventory into a practical upload queue for paid storefronts. GitHub Pages is only the free preview layer.
 
@@ -9,6 +9,9 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 | Product | Platform | Public URL | Price | Verification |
 |---|---|---|---:|---|
+| Story Spark Studio Marketplace Pack | Payhip | https://payhip.com/b/Clfqb | $19 | HTTP 200; title and price present |
+| Pulse Pop Arcade Creator Game Kit | Payhip | https://payhip.com/b/PI49k | $9 | HTTP 200; title and price present |
+| Passive App Risk Calculator | Payhip | https://payhip.com/b/Zsjke | $9 | HTTP 200; title and price present |
 | Scope Creep Rescue Kit | Payhip | https://payhip.com/b/1QTL0 | $19 | HTTP 200; title and price present |
 | Sales Page Snack Pack | Payhip | https://payhip.com/b/lWBKA | $9 | HTTP 200; title and price present |
 | Micro Offer Lab | Payhip | https://payhip.com/b/cNulr | $9 | HTTP 200; title and price present |
@@ -24,17 +27,16 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 | Priority | Product | Primary platform | Price band | Checkout status | Required review |
 |---:|---|---|---:|---|---|
-| 1 | Passive App Risk Calculator | Lead magnet / bundle | free-$9 | keep free for now | educational positioning |
-| 2 | Story Spark Studio Marketplace Pack | Payhip or Gumroad | $19 | review first | privacy, child safety, license flow |
-| 3 | Pulse Pop Arcade Creator Game Kit | Payhip or Fourthwall | $5-$15 | review first | game rights and QA |
-| 4 | Threadline Tiles SwiftUI Source Kit | Payhip | $9-$29 | hold | iOS signing/platform policy |
-| 5 | Giggle Spark Organic Growth System | Ko-fi or Payhip | $9-$19 | hold | no traffic or monetization claims |
+| 1 | Threadline Tiles SwiftUI Source Kit | Payhip | $9-$29 | hold | iOS signing/platform policy and source-package QA |
+| 2 | Giggle Spark Organic Growth System | Ko-fi or Payhip | $9-$19 | hold | no traffic or monetization claims; prove included assets |
+| 3 | New Gumroad duplicates | Gumroad | varies | blocked | file chooser upload path must attach ZIP before publish |
+| 4 | Ko-fi listings | Ko-fi | varies | blocked | location confirmation and file chooser upload path |
 
 ## Platform Fit
 
 ### Payhip
 
-Payhip is currently the most reliable upload route in Chrome and successfully published nine ZIP products in this pass.
+Payhip is currently the most reliable upload route in Chrome and has now published twelve verified ZIP products in this portfolio.
 
 ### Gumroad
 
