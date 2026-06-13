@@ -1,28 +1,14 @@
 {
   "generated_at_hst": "2026-06-12T07:40:31-10:00",
-  "updated_at_hst": "2026-06-12T16:32:21-10:00",
+  "updated_at_hst": "2026-06-12T17:02:23-10:00",
   "repository": "larareoj-code/Trade-Repo",
   "strategy": "github_pages_preview_hub_plus_storefront_checkouts",
-  "portfolio_launcher": {
-    "status": "published_and_verified",
-    "public_url": "https://larareoj-code.github.io/Trade-Repo/",
-    "latest_launcher_commit": "pending_signal_stack_update"
-  },
-  "payment_model": {
-    "preview_layer": "GitHub Pages public app pages",
-    "paid_access_layer": "verified storefront checkout or future server-side license gate",
-    "current_paid_checkout_count": 16,
-    "rule": "Do not claim paid availability unless marketplace_url or license_gate_url is verified."
-  },
-  "publishing_notes": [
-    "fifteen_payhip_products_live_verified",
-    "digital_bundle_builder_gumroad_live_verified",
-    "signal_stack_arcade_added_to_payhip_with_png_cover_and_no_outcome_promise_copy",
-    "gumroad_new_upload_blocked_by_file_chooser",
-    "kofi_upload_blocked_by_file_chooser_and_location_confirmation"
-  ],
+  "portfolio_launcher": {"status":"published_and_verified","public_url":"https://larareoj-code.github.io/Trade-Repo/","latest_launcher_commit":"pending_circuit_courier_update"},
+  "payment_model": {"preview_layer":"GitHub Pages public app pages","paid_access_layer":"verified storefront checkout or future server-side license gate","current_paid_checkout_count":17,"rule":"Do not claim paid availability unless marketplace_url or license_gate_url is verified."},
+  "publishing_notes": ["sixteen_payhip_products_live_verified","digital_bundle_builder_gumroad_live_verified","circuit_courier_added_to_payhip_with_screenshot_cover_and_no_outcome_promise_copy","gumroad_new_upload_blocked_by_file_chooser","kofi_upload_blocked_by_file_chooser_and_location_confirmation"],
   "apps": [
-    {"slug":"signal-stack-arcade-html5-creator-game-kit","title":"Signal Stack Arcade - HTML5 Creator Game Kit","public_url":"https://larareoj-code.github.io/Trade-Repo/","local_source_root":"work/signal_stack_arcade","package_artifact":"work/signal_stack_arcade/Signal-Stack-Arcade.zip","package_sha256":"48F3FE0CD68E4A8E04A593BE830CDA1E553F635FEBA673D2348FEE56335AD095","cover_artifact":"work/signal_stack_arcade/signal-stack-cover.png","status":"package_published_to_storefront","paid_status":"paid_checkout_live","target_price_usd":9,"marketplace_channel":"payhip","marketplace_url":"https://payhip.com/b/jgQRm","marketplace_status":"live_verified","marketplace_verified_at_hst":"2026-06-12T16:32:21-10:00","risk_notes":["source_and_game_kit_only","no_views_followers_sales_ad_revenue_monetization_platform_approval_ranking_or_specific_outcome_promises"]},
+    {"slug":"circuit-courier-static-html5-puzzle-game","title":"Circuit Courier - Static HTML5 Puzzle Game","public_url":"https://larareoj-code.github.io/Trade-Repo/","local_source_root":"work/circuit_courier","package_artifact":"work/circuit_courier/Circuit-Courier-HTML5-Puzzle-Game.zip","package_sha256":"37A2D2B6616DF8D27E62DC089BB78B7EC1F83E989FA3B2864C9DAE4BE6A584A9","cover_artifact":"work/circuit_courier/desktop-verified.png","status":"package_published_to_storefront","paid_status":"paid_checkout_live","target_price_usd":19,"marketplace_channel":"payhip","marketplace_url":"https://payhip.com/b/JpDq4","marketplace_status":"live_verified","marketplace_verified_at_hst":"2026-06-12T17:02:23-10:00","risk_notes":["original_static_html5_game_source_kit_only","no_marketplace_approval_downloads_revenue_ad_performance_ranking_or_specific_outcome_promises"]},
+    {"slug":"signal-stack-arcade-html5-creator-game-kit","title":"Signal Stack Arcade - HTML5 Creator Game Kit","marketplace_channel":"payhip","marketplace_url":"https://payhip.com/b/jgQRm","marketplace_status":"live_verified","target_price_usd":9},
     {"slug":"giggle-spark-organic-growth-system","title":"Giggle Spark Organic Growth System","marketplace_channel":"payhip","marketplace_url":"https://payhip.com/b/aeArL","marketplace_status":"live_verified","target_price_usd":9},
     {"slug":"threadline-tiles-swiftui-source-kit","title":"Threadline Tiles - SwiftUI iOS Puzzle Game Source Kit","marketplace_channel":"payhip","marketplace_url":"https://payhip.com/b/hnFNM","marketplace_status":"live_verified","target_price_usd":19},
     {"slug":"story-spark-studio-marketplace-pack","title":"Story Spark Studio Marketplace Pack","marketplace_channel":"payhip","marketplace_url":"https://payhip.com/b/Clfqb","marketplace_status":"live_verified","target_price_usd":19},
