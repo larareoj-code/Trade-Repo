@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rush Fee Calculator</title>
+    <meta name="description" content="Estimate rush project premiums, client-ready language, and delivery safeguards for solo service businesses.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../../" aria-label="Back to Codex Product Studio">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Rush Fee Calculator</span>
+      </a>
+      <nav aria-label="Product navigation">
+        <a href="#workspace">Workspace</a>
+        <a href="#output">Output</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Service-business pricing utility</p>
+          <h1>Quote urgent work without quietly donating your evenings.</h1>
+          <p class="lede">Estimate a rush premium, spot delivery risk, and draft a calm client note that explains the faster timeline and review boundaries.</p>
+        </div>
+        <aside class="hero-panel" aria-label="Kit summary">
+          <dl>
+            <div><dt>Best for</dt><dd>Freelancers, studios, consultants</dd></div>
+            <div><dt>Output</dt><dd>Fee range, rationale, client note, checklist</dd></div>
+            <div><dt>Storage</dt><dd>Browser local only</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="workspace" class="workspace" aria-label="Rush fee workspace">
+        <form id="rushForm" class="panel">
+          <div class="form-grid">
+            <label>
+              Project name
+              <input name="projectName" placeholder="Landing page refresh" value="Landing page refresh">
+            </label>
+            <label>
+              Standard quote
+              <input name="baseQuote" inputmode="decimal" placeholder="1200" value="1200">
+            </label>
+            <label>
+              Normal turnaround days
+              <input name="normalDays" inputmode="numeric" placeholder="10" value="10">
+            </label>
+            <label>
+              Requested turnaround days
+              <input name="rushDays" inputmode="numeric" placeholder="3" value="3">
+            </label>
+            <label>
+              Weekend or after-hours work
+              <select name="afterHours">
+                <option value="none">No</option>
+                <option value="some">Some</option>
+                <option value="heavy">Heavy</option>
+              </select>
+            </label>
+            <label>
+              Scope clarity
+              <select name="scopeClarity">
+                <option value="clear">Clear and documented</option>
+                <option value="mixed">Some unknowns</option>
+                <option value="unclear">Unclear or still changing</option>
+              </select>
+            </label>
+            <label>
+              Client approval speed
+              <select name="approvalSpeed">
+                <option value="fast">Same-day approvals</option>
+                <option value="normal">One business day</option>
+                <option value="slow">Often slower than one day</option>
+              </select>
+            </label>
+            <label>
+              Relationship tone
+              <select name="tone">
+                <option value="warm">Warm and collaborative</option>
+                <option value="direct">Direct and concise</option>
+                <option value="firm">Firm boundary-setting</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Notes about constraints
+            <textarea name="constraints" rows="4" placeholder="Client needs launch assets before a conference. Copy and approvals are not final."></textarea>
+          </label>
+          <div class="actions">
+            <button type="submit">Generate rush quote kit</button>
+            <button type="button" id="copyAll">Copy output</button>
+            <button type="button" id="reset">Reset</button>
+          </div>
+        </form>
+
+        <section id="output" class="panel output" aria-live="polite">
+          <div class="output-head">
+            <div>
+              <p class="eyebrow">Generated kit</p>
+              <h2 id="outputTitle">Ready rush-fee estimate</h2>
+            </div>
+            <span id="statusBadge" class="badge">Draft</span>
+          </div>
+          <div id="result" class="result"></div>
+        </section>
+      </section>
+
+      <section class="notes" aria-labelledby="boundaries">
+        <h2 id="boundaries">Use Boundaries</h2>
+        <ul>
+          <li>This is an operational pricing aid, not legal, tax, accounting, or financial advice.</li>
+          <li>Review every fee and message against your contract, client relationship, local rules, and platform policies before sending.</li>
+          <li>No acceptance, revenue, profit, client response, or project outcome is guaranteed.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <span>Codex Product Studio</span>
+      <span>No account, API, tracking, or cloud storage.</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
