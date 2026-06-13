@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Invoice Follow-Up Kit</title>
+    <meta name="description" content="Create polite invoice reminder copy, status notes, and follow-up checklists for solo service businesses.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../../" aria-label="Back to Codex Product Studio">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Invoice Follow-Up Kit</span>
+      </a>
+      <nav aria-label="Product navigation">
+        <a href="#workspace">Workspace</a>
+        <a href="#output">Output</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Service-business cashflow utility</p>
+          <h1>Turn overdue invoices into calm, client-ready follow-up notes.</h1>
+          <p class="lede">Draft a reminder sequence, status tracker, and payment-plan checkpoint without sounding frantic or making risky legal claims.</p>
+        </div>
+        <aside class="hero-panel" aria-label="Kit summary">
+          <dl>
+            <div><dt>Best for</dt><dd>Freelancers, consultants, studios</dd></div>
+            <div><dt>Output</dt><dd>Email copy, SMS note, call script, checklist</dd></div>
+            <div><dt>Storage</dt><dd>Browser local only</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="workspace" class="workspace" aria-label="Invoice follow-up workspace">
+        <form id="invoiceForm" class="panel">
+          <div class="form-grid">
+            <label>
+              Client name
+              <input name="clientName" placeholder="Acme Studio" value="Northline Studio">
+            </label>
+            <label>
+              Invoice number
+              <input name="invoiceNumber" placeholder="INV-1042" value="INV-1042">
+            </label>
+            <label>
+              Amount due
+              <input name="amountDue" inputmode="decimal" placeholder="850" value="850">
+            </label>
+            <label>
+              Days overdue
+              <input name="daysOverdue" inputmode="numeric" placeholder="14" value="14">
+            </label>
+            <label>
+              Relationship tone
+              <select name="tone">
+                <option value="warm">Warm and collaborative</option>
+                <option value="firm">Firm and concise</option>
+                <option value="final">Final notice before escalation</option>
+              </select>
+            </label>
+            <label>
+              Preferred next step
+              <select name="nextStep">
+                <option value="pay">Ask for payment date</option>
+                <option value="confirm">Ask them to confirm receipt</option>
+                <option value="plan">Offer a short payment-plan conversation</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Context notes
+            <textarea name="context" rows="4" placeholder="Project delivered on May 30. Client approved final files."></textarea>
+          </label>
+          <div class="actions">
+            <button type="submit">Generate follow-up kit</button>
+            <button type="button" id="copyAll">Copy output</button>
+            <button type="button" id="reset">Reset</button>
+          </div>
+        </form>
+
+        <section id="output" class="panel output" aria-live="polite">
+          <div class="output-head">
+            <div>
+              <p class="eyebrow">Generated kit</p>
+              <h2 id="outputTitle">Ready follow-up sequence</h2>
+            </div>
+            <span id="statusBadge" class="badge">Draft</span>
+          </div>
+          <div id="result" class="result"></div>
+        </section>
+      </section>
+
+      <section class="notes" aria-labelledby="boundaries">
+        <h2 id="boundaries">Use Boundaries</h2>
+        <ul>
+          <li>This is an operational writing tool, not legal, tax, collections, or financial advice.</li>
+          <li>Review every message for your contract terms, local rules, client relationship, and platform policies before sending.</li>
+          <li>No payment, collection, response, or revenue outcome is guaranteed.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <span>Codex Product Studio</span>
+      <span>No account, API, tracking, or cloud storage.</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

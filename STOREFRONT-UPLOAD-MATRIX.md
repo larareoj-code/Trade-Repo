@@ -1,7 +1,7 @@
 # Storefront Upload Matrix
 
 Generated: 2026-06-12T11:08:00-10:00
-Updated: 2026-06-12T18:02:23-10:00
+Updated: 2026-06-12T19:31:56-10:00
 
 Purpose: convert the release package inventory into a practical upload queue for paid storefronts. GitHub Pages is only the free preview layer.
 
@@ -32,9 +32,10 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 | Priority | Product | Primary platform | Price band | Checkout status | Required review |
 |---:|---|---|---:|---|---|
-| 1 | New Gumroad duplicates | Gumroad | varies | blocked | file chooser upload path must attach ZIP before publish |
-| 2 | Ko-fi listings | Ko-fi | varies | blocked | location confirmation and file chooser upload path |
-| 3 | Fourthwall / Buy Me a Coffee | platform-specific | varies | blocked | no verified upload flow completed in this pass |
+| 1 | Invoice Follow-Up Kit | Payhip | $19 | ready_for_upload | ZIP, cover, listing, privacy, license, and preview are prepared; upload to Payhip and verify public page before counting as paid |
+| 2 | New Gumroad duplicates | Gumroad | varies | blocked | file chooser upload path must attach ZIP before publish |
+| 3 | Ko-fi listings | Ko-fi | varies | blocked | location confirmation and file chooser upload path |
+| 4 | Fourthwall / Buy Me a Coffee | platform-specific | varies | blocked | no verified upload flow completed in this pass |
 
 ## Platform Fit
 

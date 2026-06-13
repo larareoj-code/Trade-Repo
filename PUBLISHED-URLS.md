@@ -1,7 +1,7 @@
 # Published URL Registry
 
 Generated: 2026-06-12T11:19:00-10:00
-Updated: 2026-06-12T18:02:23-10:00
+Updated: 2026-06-12T19:31:56-10:00
 
 This registry records public deployment URLs that were verified after publishing. GitHub Pages URLs are free previews and demos unless a separate paid storefront URL is listed and verified.
 
@@ -44,13 +44,14 @@ This registry records public deployment URLs that were verified after publishing
 | Listing Launch Auditor | https://listing-launch-auditor.vercel.app | live preview; Payhip checkout linked |
 | Rainy Day Quest Maker | https://larareoj-code.github.io/Trade-Repo/apps/rainy-day-quest-maker/index.html | live preview; Payhip checkout linked |
 | Party Quest Maker | https://party-quest-maker.vercel.app | live preview; Payhip checkout linked |
+| Invoice Follow-Up Kit | https://larareoj-code.github.io/Trade-Repo/apps/invoice-follow-up-kit/index.html | live preview; Payhip package prepared, checkout pending |
 | Digital Bundle Builder | https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html | live preview; Gumroad checkout linked |
 
 ## Payment Gate Reality
 
 - GitHub Pages cannot enforce payment for static files in this setup; it is the discovery and demo layer.
 - Paid access requires a verified storefront product page or a server-side checkout/license gate.
-- Current live paid checkouts: seventeen Payhip products plus one Gumroad product.
+- Current live paid checkouts: seventeen Payhip products plus one Gumroad product. Invoice Follow-Up Kit is preview-published and packaged, but not counted as paid until storefront verification exists.
 
 ## Blocked Or Skipped
 

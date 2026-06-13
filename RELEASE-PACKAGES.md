@@ -1,7 +1,7 @@
 # Release Package Inventory
 
 Generated: 2026-06-12T10:58:00-10:00
-Updated: 2026-06-12T13:30:58-10:00
+Updated: 2026-06-12T19:31:56-10:00
 
 This inventory lists local ZIP artifacts that are candidates for GitHub Releases or marketplace uploads. Marketplace URL verification is tracked in `PUBLISHED-URLS.md`; only rows marked with a live storefront status should be treated as customer-available.
 
@@ -9,6 +9,7 @@ This inventory lists local ZIP artifacts that are candidates for GitHub Releases
 
 | Product | Local ZIP | Size bytes | SHA-256 | Release readiness |
 |---|---:|---:|---|---|
+| Invoice Follow-Up Kit | `work/invoice_follow_up_kit/Invoice-Follow-Up-Kit.zip` | 39296 | `C13CAE998A7450757280A784576D69DB9B87CB88A4EDDEFA7D6B231900ACE32F` | Payhip upload priority; preview live |
 | Scope Creep Rescue Kit | `work/scope_creep_rescue_kit/Scope-Creep-Rescue-Kit.zip` | 4646 | `FF164A85AFC64A82FE1B4C474DABD7F993E87B5856323C14D7EC90E41127509F` | paid upload priority 1 |
 | Sales Page Snack Pack | `work/sales_page_snack_pack/Sales-Page-Snack-Pack.zip` | 5064 | `51B6CFCB4964C4F606951FEBE901D96524452B338A20D6082FAA956473F54454` | paid upload priority 2 |
 | Micro Offer Lab | `work/micro_offer_lab/Micro-Offer-Lab.zip` | 6855 | `5ECFC451BAE97BBFDAE3C6E42D7D5984E71E0B35A93E9397C7844F71FB0F4AF3` | paid upload priority 3 |
