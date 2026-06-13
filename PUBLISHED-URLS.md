@@ -1,7 +1,7 @@
 # Published URL Registry
 
 Generated: 2026-06-12T11:19:00-10:00
-Updated: 2026-06-12T19:31:56-10:00
+Updated: 2026-06-13T06:33:57-10:00
 
 This registry records public deployment URLs that were verified after publishing. GitHub Pages URLs are free previews and demos unless a separate paid storefront URL is listed and verified.
 
@@ -9,6 +9,7 @@ This registry records public deployment URLs that were verified after publishing
 
 | Product | Storefront URL | Platform | Price | Status | Verification |
 |---|---|---|---:|---|---|
+| Invoice Follow-Up Kit | https://payhip.com/b/6GLdn | Payhip | $19 | paid checkout live | HTTP 200; title, price, and boundary language present |
 | Party Quest Maker - Web App Source Kit | https://payhip.com/b/lgdk8 | Payhip | $19 | paid checkout live | HTTP 200; title, price, source-kit language, and no-guarantee language present |
 | Circuit Courier - Static HTML5 Puzzle Game | https://payhip.com/b/JpDq4 | Payhip | $19 | paid checkout live | HTTP 200; title, price, and no-guarantee language present |
 | Signal Stack Arcade - HTML5 Creator Game Kit | https://payhip.com/b/jgQRm | Payhip | $9 | paid checkout live | HTTP 200; title, price, and no-promise language present |
@@ -44,14 +45,14 @@ This registry records public deployment URLs that were verified after publishing
 | Listing Launch Auditor | https://listing-launch-auditor.vercel.app | live preview; Payhip checkout linked |
 | Rainy Day Quest Maker | https://larareoj-code.github.io/Trade-Repo/apps/rainy-day-quest-maker/index.html | live preview; Payhip checkout linked |
 | Party Quest Maker | https://party-quest-maker.vercel.app | live preview; Payhip checkout linked |
-| Invoice Follow-Up Kit | https://larareoj-code.github.io/Trade-Repo/apps/invoice-follow-up-kit/index.html | live preview; Payhip package prepared, checkout pending |
+| Invoice Follow-Up Kit | https://larareoj-code.github.io/Trade-Repo/apps/invoice-follow-up-kit/index.html | live preview; Payhip checkout linked |
 | Digital Bundle Builder | https://larareoj-code.github.io/Trade-Repo/apps/digital-bundle-builder/index.html | live preview; Gumroad checkout linked |
 
 ## Payment Gate Reality
 
 - GitHub Pages cannot enforce payment for static files in this setup; it is the discovery and demo layer.
 - Paid access requires a verified storefront product page or a server-side checkout/license gate.
-- Current live paid checkouts: seventeen Payhip products plus one Gumroad product. Invoice Follow-Up Kit is preview-published and packaged, but not counted as paid until storefront verification exists.
+- Current live paid checkouts: eighteen Payhip products plus one Gumroad product.
 
 ## Blocked Or Skipped
 
@@ -63,6 +64,7 @@ This registry records public deployment URLs that were verified after publishing
 
 ## Publishing Notes
 
+- Invoice Follow-Up Kit was published as an operational writing toolkit with no legal, tax, collections, payment, response, revenue, or business outcome promises.
 - Party Quest Maker was published as a web app source kit with no hosting, payment setup, credentials, platform approval, sales, event outcome, or revenue promises.
 - Circuit Courier was published as an original HTML5 game/source kit with no marketplace approval, downloads, revenue, ad performance, ranking, platform approval, or outcome promises.
 - Signal Stack Arcade was published as an original HTML5 game/source kit with no views, followers, sales, ad revenue, monetization, ranking, platform approval, legal compliance, or specific outcome promises.

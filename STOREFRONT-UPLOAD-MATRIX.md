@@ -1,7 +1,7 @@
 # Storefront Upload Matrix
 
 Generated: 2026-06-12T11:08:00-10:00
-Updated: 2026-06-12T19:31:56-10:00
+Updated: 2026-06-13T06:33:57-10:00
 
 Purpose: convert the release package inventory into a practical upload queue for paid storefronts. GitHub Pages is only the free preview layer.
 
@@ -9,6 +9,7 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 | Product | Platform | Public URL | Price | Verification |
 |---|---|---|---:|---|
+| Invoice Follow-Up Kit | Payhip | https://payhip.com/b/6GLdn | $19 | HTTP 200; title, price, and boundary language present |
 | Party Quest Maker - Web App Source Kit | Payhip | https://payhip.com/b/lgdk8 | $19 | HTTP 200; title, price, source-kit language, and no-guarantee language present |
 | Circuit Courier - Static HTML5 Puzzle Game | Payhip | https://payhip.com/b/JpDq4 | $19 | HTTP 200; title, price, and no-guarantee language present |
 | Signal Stack Arcade - HTML5 Creator Game Kit | Payhip | https://payhip.com/b/jgQRm | $9 | HTTP 200; title, price, and no-promise language present |
@@ -32,16 +33,15 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 | Priority | Product | Primary platform | Price band | Checkout status | Required review |
 |---:|---|---|---:|---|---|
-| 1 | Invoice Follow-Up Kit | Payhip | $19 | ready_for_upload | ZIP, cover, listing, privacy, license, and preview are prepared; upload to Payhip and verify public page before counting as paid |
-| 2 | New Gumroad duplicates | Gumroad | varies | blocked | file chooser upload path must attach ZIP before publish |
-| 3 | Ko-fi listings | Ko-fi | varies | blocked | location confirmation and file chooser upload path |
-| 4 | Fourthwall / Buy Me a Coffee | platform-specific | varies | blocked | no verified upload flow completed in this pass |
+| 1 | New Gumroad duplicates | Gumroad | varies | blocked | file chooser upload path must attach ZIP before publish |
+| 2 | Ko-fi listings | Ko-fi | varies | blocked | location confirmation and file chooser upload path |
+| 3 | Fourthwall / Buy Me a Coffee | platform-specific | varies | blocked | no verified upload flow completed in this pass |
 
 ## Platform Fit
 
 ### Payhip
 
-Payhip is currently the most reliable upload route in Chrome and has now published seventeen verified ZIP/source products in this portfolio.
+Payhip is currently the most reliable upload route in Chrome and has now published eighteen verified ZIP/source products in this portfolio.
 
 ### Gumroad
 
