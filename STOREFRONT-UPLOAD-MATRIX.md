@@ -1,7 +1,7 @@
 # Storefront Upload Matrix
 
 Generated: 2026-06-12T11:08:00-10:00
-Updated: 2026-06-12T16:32:21-10:00
+Updated: 2026-06-12T17:02:23-10:00
 
 Purpose: convert the release package inventory into a practical upload queue for paid storefronts. GitHub Pages is only the free preview layer.
 
@@ -9,6 +9,7 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 | Product | Platform | Public URL | Price | Verification |
 |---|---|---|---:|---|
+| Circuit Courier - Static HTML5 Puzzle Game | Payhip | https://payhip.com/b/JpDq4 | $19 | HTTP 200; title, price, and no-guarantee language present |
 | Signal Stack Arcade - HTML5 Creator Game Kit | Payhip | https://payhip.com/b/jgQRm | $9 | HTTP 200; title, price, and no-promise language present |
 | Giggle Spark Organic Growth System | Payhip | https://payhip.com/b/aeArL | $9 | HTTP 200; title, price, no-guarantee note, and no-spam guardrail present |
 | Threadline Tiles - SwiftUI iOS Puzzle Game Source Kit | Payhip | https://payhip.com/b/hnFNM | $19 | HTTP 200; title, price, and buyer-note present |
@@ -38,11 +39,11 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 ### Payhip
 
-Payhip is currently the most reliable upload route in Chrome and has now published fifteen verified ZIP/source products in this portfolio.
+Payhip is currently the most reliable upload route in Chrome and has now published sixteen verified ZIP/source products in this portfolio.
 
 ### Gumroad
 
-Existing Digital Bundle Builder checkout is live. New Gumroad products are blocked because the file chooser did not open for the ZIP upload controls during this pass. A Scope Creep Rescue Kit product shell may exist as an unpublished draft; it was not published because no deliverable was attached.
+Existing Digital Bundle Builder checkout is live. New Gumroad products are blocked because the file chooser did not open for the ZIP upload controls during this pass. Do not publish empty shells.
 
 ### Ko-fi
 
