@@ -1,7 +1,7 @@
 # Storefront Upload Matrix
 
 Generated: 2026-06-12T11:08:00-10:00
-Updated: 2026-06-13T08:03:58-10:00
+Updated: 2026-06-13T08:34:01-10:00
 
 Purpose: convert the release package inventory into a practical upload queue for paid storefronts. GitHub Pages is only the free preview layer.
 
@@ -9,6 +9,7 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 | Product | Platform | Public URL | Price | Verification |
 |---|---|---|---:|---|
+| Client Revision Boundary Kit | Payhip | https://payhip.com/b/qsCdH | $19 | HTTP 200; title, price, and boundary language present |
 | Project Deposit Readiness Kit | Payhip | https://payhip.com/b/dcWFG | $19 | HTTP 200; title, price, and boundary language present |
 | Client Change Order Generator | Payhip | https://payhip.com/b/vf5GJ | $19 | HTTP 200; title, price, and boundary language present |
 | Rush Fee Calculator | Payhip | https://payhip.com/b/2a3io | $19 | HTTP 200; title, price, and boundary language present |
@@ -44,7 +45,7 @@ Purpose: convert the release package inventory into a practical upload queue for
 
 ### Payhip
 
-Payhip is currently the most reliable upload route in Chrome and has now published twenty-one verified ZIP/source products in this portfolio.
+Payhip is currently the most reliable upload route in Chrome and has now published twenty-two verified ZIP/source products in this portfolio.
 
 ### Gumroad
 

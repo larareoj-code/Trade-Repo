@@ -9,6 +9,8 @@ This repository is framed as a portfolio of low-touch product experiments, not g
 These public URLs were verified after publishing:
 
 - [GitHub Pages Portfolio Launcher](https://larareoj-code.github.io/Trade-Repo/)
+- [Client Revision Boundary Kit preview](https://larareoj-code.github.io/Trade-Repo/apps/client-revision-boundary-kit/index.html)
+- [Client Revision Boundary Kit paid Payhip checkout](https://payhip.com/b/qsCdH)
 - [Project Deposit Readiness Kit preview](https://larareoj-code.github.io/Trade-Repo/apps/project-deposit-readiness-kit/index.html)
 - [Project Deposit Readiness Kit paid Payhip checkout](https://payhip.com/b/dcWFG)
 - [Scope Creep Rescue Kit preview](https://larareoj-code.github.io/Trade-Repo/apps/scope-creep-rescue-kit/index.html)
@@ -27,7 +29,7 @@ See `PUBLISHED-URLS.md` for verification notes, checkout status, deployment stat
 
 - Public app pages are free previews unless a paid storefront link is shown.
 - Paid ZIP/toolkit access should be handled by Gumroad, Payhip, Ko-fi, Fourthwall, Buy Me a Coffee, or a future server-side checkout/license gate.
-- Current verified checkouts: twenty-one Payhip products plus Digital Bundle Builder on Gumroad.
+- Current verified checkouts: twenty-two Payhip products plus Digital Bundle Builder on Gumroad.
 - Next paid listing target: continue original, non-duplicative service-business utility products on Payhip while Gumroad and Ko-fi upload paths remain blocked.
 
 ## Portfolio Launcher
@@ -54,6 +56,7 @@ The launcher links to each `apps/<slug>/index.html` preview and shows whether th
 
 | App | Folder | GitHub status | Paid status | Local source root |
 |---|---|---|---|---|
+| Client Revision Boundary Kit | `apps/client-revision-boundary-kit` | Pages URL verified | Payhip checkout verified | `work/client_revision_boundary_kit` |
 | Project Deposit Readiness Kit | `apps/project-deposit-readiness-kit` | Pages URL verified | Payhip checkout verified | `work/project_deposit_readiness_kit` |
 | Scope Creep Rescue Kit | `apps/scope-creep-rescue-kit` | Pages URL verified | paid ZIP ready; no checkout yet | `work/scope_creep_rescue_kit` |
 | Sales Page Snack Pack | `apps/sales-page-snack-pack` | Pages URL verified | paid ZIP ready; no checkout yet | `work/sales_page_snack_pack` |

@@ -1,7 +1,7 @@
 # Published URL Registry
 
 Generated: 2026-06-12T11:19:00-10:00
-Updated: 2026-06-13T08:03:58-10:00
+Updated: 2026-06-13T08:34:01-10:00
 
 This registry records public deployment URLs that were verified after publishing. GitHub Pages URLs are free previews and demos unless a separate paid storefront URL is listed and verified.
 
@@ -9,6 +9,7 @@ This registry records public deployment URLs that were verified after publishing
 
 | Product | Storefront URL | Platform | Price | Status | Verification |
 |---|---|---|---:|---|---|
+| Client Revision Boundary Kit | https://payhip.com/b/qsCdH | Payhip | $19 | paid checkout live | HTTP 200; title, price, and boundary language present |
 | Project Deposit Readiness Kit | https://payhip.com/b/dcWFG | Payhip | $19 | paid checkout live | HTTP 200; title, price, and boundary language present |
 | Client Change Order Generator | https://payhip.com/b/vf5GJ | Payhip | $19 | paid checkout live | HTTP 200; title, price, and boundary language present |
 | Rush Fee Calculator | https://payhip.com/b/2a3io | Payhip | $19 | paid checkout live | HTTP 200; title, price, and boundary language present |
@@ -36,7 +37,8 @@ This registry records public deployment URLs that were verified after publishing
 
 | Product | Public URL | Status |
 |---|---|---|
-| Portfolio Launcher | https://larareoj-code.github.io/Trade-Repo/ | live preview hub; 22 verified checkout links |
+| Portfolio Launcher | https://larareoj-code.github.io/Trade-Repo/ | live preview hub; 23 verified checkout links |
+| Client Revision Boundary Kit | https://larareoj-code.github.io/Trade-Repo/apps/client-revision-boundary-kit/index.html | live preview; Payhip checkout linked |
 | Project Deposit Readiness Kit | https://larareoj-code.github.io/Trade-Repo/apps/project-deposit-readiness-kit/index.html | live preview; Payhip checkout linked |
 | Passive App Risk Calculator | https://larareoj-code.github.io/Trade-Repo/apps/passive-app-risk-calculator/index.html | live preview; Payhip checkout linked |
 | Scope Creep Rescue Kit | https://larareoj-code.github.io/Trade-Repo/apps/scope-creep-rescue-kit/index.html | live preview; Payhip checkout linked |
@@ -58,7 +60,7 @@ This registry records public deployment URLs that were verified after publishing
 
 - GitHub Pages cannot enforce payment for static files in this setup; it is the discovery and demo layer.
 - Paid access requires a verified storefront product page or a server-side checkout/license gate.
-- Current live paid checkouts: twenty-one Payhip products plus one Gumroad product.
+- Current live paid checkouts: twenty-two Payhip products plus one Gumroad product.
 
 ## Blocked Or Skipped
 
@@ -73,6 +75,7 @@ This registry records public deployment URLs that were verified after publishing
 - Invoice Follow-Up Kit was published as an operational writing toolkit with no legal, tax, collections, payment, response, revenue, or business outcome promises.
 - Rush Fee Calculator was published as an operational pricing aid with no legal, tax, accounting, financial, acceptance, revenue, profit, response, or project outcome promises.
 - Client Change Order Generator was published as an operational writing and estimating aid with no legal, tax, accounting, financial, approval, payment, revenue, profit, response, or project outcome promises.
+- Client Revision Boundary Kit was published as an operational writing aid with no legal, tax, accounting, collections, financial, client approval, fewer revisions, fewer disputes, payment, revenue, profit, timeline savings, or project outcome promises.
 - Project Deposit Readiness Kit was published as an operational writing and planning aid with no legal, tax, accounting, collections, financial, payment, client acceptance, cash flow, revenue, profit, dispute, or project outcome promises.
 - Party Quest Maker was published as a web app source kit with no hosting, payment setup, credentials, platform approval, sales, event outcome, or revenue promises.
 - Circuit Courier was published as an original HTML5 game/source kit with no marketplace approval, downloads, revenue, ad performance, ranking, platform approval, or outcome promises.
